@@ -6,6 +6,7 @@ class CreateProfiles < ActiveRecord::Migration
       t.date :date_of_birth
       t.string :telephone_number
       t.integer :newsletter
+      t.references :user
 
       t.timestamps
     end

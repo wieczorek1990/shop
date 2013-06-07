@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Product:</b>
+  <%= @order_position.product %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @order_position.price %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @order_position.amount %>
+</p>
+
+<p>
+  <b>Weight:</b>
+  <%= @order_position.weight %>
+</p>
+
+
+<%= link_to 'Edit', edit_order_position_path(@order_position) %> |
+<%= link_to 'Back', order_positions_path %>

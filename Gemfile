@@ -44,3 +44,4 @@ gem 'cancan'
 gem 'rolify'
 
 gem 'awesome_nested_set'
+gem "paperclip", "~> 3.0"

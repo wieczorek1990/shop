@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  category: 
+  name: MyString
+  producer: 
+  availability: 1
+  net_price: 1
+  gross_price: 1
+
+two:
+  category: 
+  name: MyString
+  producer: 
+  availability: 1
+  net_price: 1
+  gross_price: 1

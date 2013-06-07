@@ -8,3 +8,5 @@
 require 'active_record/fixtures'
 ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "users")
 User.find(1).add_role :admin
+ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "countries")
+ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "producers")

@@ -1,0 +1,16 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+p1:
+  name: Herbapol
+
+p2:
+  name: Kawon
+
+p3:
+  name: Dar Natury
+
+p4:
+  name: ECOherbs
+
+p5:
+  name: HerbaNordPol

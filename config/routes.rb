@@ -1,4 +1,37 @@
 Shop::Application.routes.draw do
+  resources :orders
+
+
+  resources :products
+
+
+  resources :baskets
+
+
+  resources :order_positions
+
+
+  resources :producers
+
+
+  resources :categories
+
+
+  resources :payment_methods
+
+
+  resources :deliveries
+
+
+  resources :profiles
+
+
+  resources :addresses
+
+
+  resources :countries
+
+
   root :to => "home#index"
 
   get "home/index"

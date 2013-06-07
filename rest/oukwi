@@ -1,13 +1,13 @@
 User:
 	email
-	newsletter
 	encrypted_password
 	adresses [] : Address
 	additional_info : Profile
+	basket : Basket
 
 Address:
-	name
-	surname
+	first_name
+	last_name
 	address_line_1
 	address_line_2
 	postal_code
@@ -17,24 +17,24 @@ Address:
 Country:
 	name
 
-Voivodeship:
-	name
-
 Profile:
 	first_name
 	last_name
 	date_of_birth
 	telephone_number
+	newsletter
 
 Product:
 	category : Category
-	price
 	name
-	producer
-	picture
+	producer : Producer
+	image : Image
 	availability
-	netto
-	brutto
+	net_price
+	gross_price
+
+Producer:
+	name
 
 Delivery:
 	name
@@ -52,9 +52,9 @@ Order:
 	value
 	order_positions [] : OrderPosition
 	status
-	deliveryCost
+	delivery_cost
 	delivery : Delivery
-	paymentMethod : PaymentMethod
+	payment_method : PaymentMethod
 
 OrderPosition:
 	product : Product

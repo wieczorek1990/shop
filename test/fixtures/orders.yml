@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  address: 
+  value: 1
+  status: 1
+  delivery_cost: 1
+  delivery: 
+  payment_method: 
+
+two:
+  address: 
+  value: 1
+  status: 1
+  delivery_cost: 1
+  delivery: 
+  payment_method: 

@@ -1,0 +1,29 @@
+<h1>Listing order_positions</h1>
+
+<table>
+  <tr>
+    <th>Product</th>
+    <th>Price</th>
+    <th>Amount</th>
+    <th>Weight</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @order_positions.each do |order_position| %>
+  <tr>
+    <td><%= order_position.product %></td>
+    <td><%= order_position.price %></td>
+    <td><%= order_position.amount %></td>
+    <td><%= order_position.weight %></td>
+    <td><%= link_to 'Show', order_position %></td>
+    <td><%= link_to 'Edit', edit_order_position_path(order_position) %></td>
+    <td><%= link_to 'Destroy', order_position, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Order position', new_order_position_path %>

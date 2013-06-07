@@ -42,3 +42,5 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'cancan'
 gem 'rolify'
+
+gem 'awesome_nested_set'

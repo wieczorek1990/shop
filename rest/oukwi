@@ -1,25 +1,30 @@
-yiic message ____/message.php
-Yii::app()->language = 'pl';
-'en' - szybsze niż "en"
-"ala {$a}"
-"ala $a.$b"
-
-User -< Adres : podstawowy i dodatkowy
-User -- Profil - płeć, wiek, skąd do nas trafił, telefon
-
-Sprzedaż detaliczna T-Shirt'ów
-http://www.przelewy24.pl/
-
 User:
-	name
-	username
+	email
+	newsletter
+	encrypted_password
 	adresses [] : Address
-	additionalInfo : Profile
+	additional_info : Profile
 
-Address
+Address:
+	name
+	surname
+	address_line_1
+	address_line_2
+	postal_code
+	city
+	country : Country
+
+Country:
+	name
+
+Voivodeship:
+	name
 
 Profile:
-	password
+	first_name
+	last_name
+	date_of_birth
+	telephone_number
 
 Product:
 	category : Category
@@ -30,20 +35,6 @@ Product:
 	availability
 	netto
 	brutto
-	productInfo : ProductInfo
-
-ProductInfo:
-	color : Color
-	gender : Gender
-	size : Size
-	product : Product
-	amount
-
-Color
-
-Gender
-
-Size
 
 Delivery:
 	name
@@ -53,15 +44,11 @@ PaymentMethod:
 	name
 
 Category:
-	categories [] : Category
+	categories [] : Category - nested_set (left, right, parent_id, depth)
 	name
-	nested_set (left, right)
 
 Order:
-	nr
-	date
 	address : Address
-	personalInfo : (email, NIP)
 	value
 	order_positions [] : OrderPosition
 	status
@@ -74,13 +61,8 @@ OrderPosition:
 	price
 	amount
 	weight
-	color : Color
-	size : Size
-	gender : Gender
 
 Basket:
 	user : User
-	color : Color
-	size : Size
-	gender : Gender
+	order_positions [] : OrderPosition
 	status

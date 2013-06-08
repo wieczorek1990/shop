@@ -1,5 +1,5 @@
-<h1>New order_position</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Back', order_positions_path %>
+<%- model_class = OrderPosition -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => model_class.model_name.human.titleize %></h1>
+</div>
+<%= render :partial => 'form' %>

@@ -50,6 +50,12 @@
               <li><%= link_to "Link1", "/path1"  %></li>
               <li><%= link_to "Link2", "/path2"  %></li>
               <li><%= link_to "Link3", "/path3"  %></li>
+              <% unless user_signed_in? %>
+                <li><%= link_to "Login", "/users/sign_in"  %></li>
+                <li><%= link_to "Register", "/users/sign_up"  %></li>
+              <% else %>
+                <li><%= link_to "Logout", "/users/sign_out", :method => :delete  %></li>
+              <%end %>
             </ul>
           </div><!--/.nav-collapse -->
         </div>

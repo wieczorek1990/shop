@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(:version => 20130607123432) do
     t.string   "postal_code"
     t.string   "city"
     t.integer  "country_id"
+    t.integer  "user_id"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
   end
@@ -61,11 +62,12 @@ ActiveRecord::Schema.define(:version => 20130607123432) do
 
   create_table "order_positions", :force => true do |t|
     t.integer  "product_id"
+    t.integer  "container_id"
     t.integer  "price"
     t.integer  "amount"
     t.integer  "weight"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
   add_index "order_positions", ["product_id"], :name => "index_order_positions_on_product_id"
@@ -115,16 +117,6 @@ ActiveRecord::Schema.define(:version => 20130607123432) do
   add_index "products", ["category_id"], :name => "index_products_on_category_id"
   add_index "products", ["producer_id"], :name => "index_products_on_producer_id"
 
-  create_table "profiles", :force => true do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.date     "date_of_birth"
-    t.string   "telephone_number"
-    t.integer  "newsletter"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
-  end
-
   create_table "roles", :force => true do |t|
     t.string   "name"
     t.integer  "resource_id"
@@ -137,6 +129,11 @@ ActiveRecord::Schema.define(:version => 20130607123432) do
   add_index "roles", ["name"], :name => "index_roles_on_name"
 
   create_table "users", :force => true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.date     "date_of_birth"
+    t.string   "telephone_number"
+    t.integer  "newsletter"
     t.string   "email",                  :default => "", :null => false
     t.string   "encrypted_password",     :default => "", :null => false
     t.string   "reset_password_token"

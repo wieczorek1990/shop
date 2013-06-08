@@ -1,4 +1,4 @@
 #!/bin/bash
-cd shop
-xinput set-prop 13 "Device Enabled" 0
+~/shop/rest/turn_off_touchpad.sh
 bash --login
+cd shop

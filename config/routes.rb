@@ -23,9 +23,6 @@ Shop::Application.routes.draw do
   resources :deliveries
 
 
-  resources :profiles
-
-
   resources :addresses
 
 

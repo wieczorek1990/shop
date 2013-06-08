@@ -1,6 +1,11 @@
 User:
 	email
 	encrypted_password
+  first_name
+  last_name
+  date_of_birth
+  telephone_number
+  newsletter
 	adresses [] : Address
 	additional_info : Profile
 	basket : Basket
@@ -16,13 +21,6 @@ Address:
 
 Country:
 	name
-
-Profile:
-	first_name
-	last_name
-	date_of_birth
-	telephone_number
-	newsletter
 
 Product:
 	category : Category

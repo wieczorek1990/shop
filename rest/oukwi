@@ -25,6 +25,7 @@ Country:
 Product:
 	category : Category
 	name
+	description
 	producer : Producer
 	image : Image
 	availability

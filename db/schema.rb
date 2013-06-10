@@ -102,6 +102,7 @@ ActiveRecord::Schema.define(:version => 20130607123432) do
   create_table "products", :force => true do |t|
     t.integer  "category_id"
     t.string   "name"
+    t.text     "description"
     t.integer  "producer_id"
     t.integer  "availability"
     t.integer  "net_price"

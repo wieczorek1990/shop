@@ -8,6 +8,7 @@
       <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:category_id) %></th>
       <th><%= model_class.human_attribute_name(:name) %></th>
+      <th><%= model_class.human_attribute_name(:description) %></th>
       <th><%= model_class.human_attribute_name(:producer_id) %></th>
       <th><%= model_class.human_attribute_name(:availability) %></th>
       <th><%= model_class.human_attribute_name(:net_price) %></th>
@@ -26,6 +27,7 @@
         <td><%= link_to product.id, product_path(product) %></td>
         <td><%= product.category_id %></td>
         <td><%= product.name %></td>
+        <td><%= product.description %></td>
         <td><%= product.producer_id %></td>
         <td><%= product.availability %></td>
         <td><%= product.net_price %></td>

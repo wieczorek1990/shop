@@ -1,4 +1,4 @@
-<%- model_class = Addres -%>
+<%- model_class = Address -%>
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
 </div>
@@ -17,7 +17,7 @@
   <dt><strong><%= model_class.human_attribute_name(:city) %>:</strong></dt>
   <dd><%= @address.city %></dd>
   <dt><strong><%= model_class.human_attribute_name(:country_id) %>:</strong></dt>
-  <dd><%= @address.country_id %></dd>
+  <dd><%= Country.find(@address.country_id).name %></dd>
 </dl>
 
 <div class="form-actions">

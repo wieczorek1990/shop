@@ -11,3 +11,9 @@
  *= require_self
  *= require_tree .
  */
+
+.dl-horizontal > dd:after {
+    display: table;
+    content: "";
+    clear: both;
+}

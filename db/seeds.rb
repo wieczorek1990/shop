@@ -10,3 +10,6 @@ ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "users")
 User.find(1).add_role :admin
 ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "countries")
 ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "producers")
+ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "categories")
+ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "deliveries")
+ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "payment_methods")

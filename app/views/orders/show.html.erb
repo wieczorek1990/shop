@@ -13,9 +13,9 @@
   <dt><strong><%= model_class.human_attribute_name(:delivery_cost) %>:</strong></dt>
   <dd><%= @order.delivery_cost %></dd>
   <dt><strong><%= model_class.human_attribute_name(:delivery_id) %>:</strong></dt>
-  <dd><%= @order.delivery_id %></dd>
+  <dd><%= Delivery.find(@order.delivery_id).name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:payment_method_id) %>:</strong></dt>
-  <dd><%= @order.payment_method_id %></dd>
+  <dd><%= PaymentMethod.find(@order.payment_method_id).name %></dd>
 </dl>
 
 <div class="form-actions">

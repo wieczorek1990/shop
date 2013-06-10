@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  name: MyString
-  cost: 1
+d1:
+  name: Poczta Polska
+  cost: 5.5
 
-two:
-  name: MyString
-  cost: 1
+d2:
+  name: DHL
+  cost: 11

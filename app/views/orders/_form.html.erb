@@ -12,12 +12,6 @@
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :status, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.number_field :status, :class => 'number_field' %>
-    </div>
-  </div>
-  <div class="control-group">
     <%= f.label :delivery_cost, :class => 'control-label' %>
     <div class="controls">
       <%= f.number_field :delivery_cost, :class => 'number_field' %>
@@ -26,13 +20,13 @@
   <div class="control-group">
     <%= f.label :delivery_id, :class => 'control-label' %>
     <div class="controls">
-      <%= f.number_field :delivery_id, :class => 'number_field' %>
+      <%= f.collection_select :delivery_id, Delivery.all, :id, :name %>
     </div>
   </div>
   <div class="control-group">
     <%= f.label :payment_method_id, :class => 'control-label' %>
     <div class="controls">
-      <%= f.number_field :payment_method_id, :class => 'number_field' %>
+      <%= f.collection_select :payment_method_id, PaymentMethod.all, :id, :name %>
     </div>
   </div>
 

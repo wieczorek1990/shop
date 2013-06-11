@@ -13,10 +13,6 @@
       <th><%= model_class.human_attribute_name(:availability) %></th>
       <th><%= model_class.human_attribute_name(:net_price) %></th>
       <th><%= model_class.human_attribute_name(:gross_price) %></th>
-      <th><%= model_class.human_attribute_name(:image_file_name) %></th>
-      <th><%= model_class.human_attribute_name(:image_content_type) %></th>
-      <th><%= model_class.human_attribute_name(:image_file_size) %></th>
-      <th><%= model_class.human_attribute_name(:image_updated_at) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
@@ -30,12 +26,8 @@
         <td><%= product.description %></td>
         <td><%= product.producer_id %></td>
         <td><%= product.availability %></td>
-        <td><%= product.net_price %></td>
-        <td><%= product.gross_price %></td>
-        <td><%= product.image_file_name %></td>
-        <td><%= product.image_content_type %></td>
-        <td><%= product.image_file_size %></td>
-        <td><%= product.image_updated_at %></td>
+        <td><%= number_to_currency2(product.net_price) %></td>
+        <td><%= number_to_currency2(product.gross_price) %></td>
         <td><%=l product.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),

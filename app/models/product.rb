@@ -8,6 +8,6 @@ class Product < ActiveRecord::Base
 
   private
     def calculate_gross_price
-      self.gross_price = self.net_price * (1 + Settings.vat_percent)
+      self.gross_price = self.net_price * (1.0 + Settings.vat_percent)
     end
 end

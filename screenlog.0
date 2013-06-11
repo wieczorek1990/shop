@@ -1,1792 +1,0 @@
-tatus
-# On branch master
-# Changes not staged for commit:
-#   (use "git add/rm <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   .idea/.generators
-#	modified:   .idea/.rakeTasks
-#	modified:   .idea/dataSources.ids
-#	modified:   .idea/dataSources.xml
-#	modified:   .idea/workspace.xml
-#	modified:   Gemfile
-#	modified:   Gemfile.lock
-#	modified:   db/migrate/20130606182556_devise_create_users.rb
-#	deleted:    public/index.html
-#	modified:   rest/oukwi
-#	modified:   rest/scripts.sh
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	rest/oukwi~
-#	screenlog.0
-no changes added to commit (use "git add" and/or "git commit -a")
-luke@luke-ThinkPad-E525:~/shop$ rm screenlog.0 
-luke@luke-ThinkPad-E525:~/shop$ rm rest/ow[Kk[Kukwi1[K~
-luke@luke-ThinkPad-E525:~/shop$ s[Kgits[K t[Kstatus
-# On branch master
-# Changes not staged for commit:
-#   (use "git add/rm <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   .idea/.generators
-#	modified:   .idea/.rakeTasks
-#	modified:   .idea/dataSources.ids
-#	modified:   .idea/dataSources.xml
-#	modified:   .idea/workspace.xml
-#	modified:   Gemfile
-#	modified:   Gemfile.lock
-#	modified:   db/migrate/20130606182556_devise_create_users.rb
-#	deleted:    public/index.html
-#	modified:   rest/oukwi
-#	modified:   rest/scripts.sh
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	screenlog.0
-no changes added to commit (use "git add" and/or "git commit -a")
-luke@luke-ThinkPad-E525:~/shop$ git commit -am'db'
-[master e0f2f42] db
- 11 files changed, 108 insertions(+), 332 deletions(-)
- rewrite .idea/.generators (80%)
- delete mode 100644 public/index.html
-luke@luke-ThinkPad-E525:~/shop$ git puhs[K[Ksh
-Password for 'https://wieczorek1990@bitbucket.org': 
-To https://wieczorek1990@bitbucket.org/wieczorek1990/shop.git
-   5e8b249..e0f2f42  master -> master
-luke@luke-ThinkPad-E525:~/shop$ sudo vi /etc/apt/sources.list
-[sudo] password for luke: 
-[?1049h[?1h=[1;24r[34l[34h[?25h[23m[24m[0m[H[J[?25l[24;1H"/etc/apt/sources.list" 59L, 3369C[1;1H[34m# deb cdrom:[Ubuntu 12.04.2 LTS _Precise Pangolin_ - Release amd64 (20130213)]/  [2;1Hdists/precise/main/binary-i386/
-
-# deb cdrom:[Ubuntu 12.04.2 LTS _Precise Pangolin_ - Release amd64 (20130213)]/  [5;1Hdists/precise/restricted/binary-i386/
-# deb cdrom:[Ubuntu 12.04.2 LTS _Precise Pangolin_ - Release amd64 (20130213)]/  [7;1Hprecise main restricted
-
-# See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
-# newer versions of the distribution.[0m
-[33mdeb[0m [31mhttp://pl.archive.ubuntu.com/ubuntu/[0m [32mprecise[0m [33mmain[0m [33mrestricted
-deb-src[0m [31mhttp://pl.archive.ubuntu.com/ubuntu/[0m [32mprecise[0m [33mmain[0m [33mrestricted[0m
-
-[34m## Major bug fix updates produced after the final release of the
-## distribution.[0m
-[33mdeb[0m [31mhttp://pl.archive.ubuntu.com/ubuntu/[0m [32mprecise-updates[0m [33mmain[0m [33mrestricted
-deb-src[0m [31mhttp://pl.archive.ubuntu.com/ubuntu/[0m [32mprecise-updates[0m [33mmain[0m [33mrestricted[0m
-
-[34m## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu
-## team. Also, please note that software in universe WILL NOT receive any
-## review or updates from the Ubuntu security team.[0m
-[33mdeb[0m [31mhttp://pl.archive.ubuntu.com/ubuntu/[0m [32mprecise[0m [33muniverse
-deb-src[0m [31mhttp://pl.archive.ubuntu.com/ubuntu/[0m [32mprecise[0m [33muniverse[0m[24;63H1,1[10CGóra[1;1H[34h[?25h[?25l[24;63H2,0-1[3;1H[34h[?25h[?25l[24;63H3,1  [4;1H[34h[?25h[?25l[24;63H4[6;1H[34h[?25h[?25l[24;63H5,0-1[8;1H[34h[?25h[?25l[24;63H6,1  [9;1H[34h[?25h[?25l[24;63H7[10;1H[34h[?25h[?25l[24;63H8[11;1H[34h[?25h[?25l[24;63H9[12;1H[34h[?25h[?25l[24;63H10,0-1[13;1H[34h[?25h[?25l[24;64H1,1  [14;1H[34h[?25h[?25l[24;64H2[15;1H[34h[?25h[?25l[24;64H3[16;1H[34h[?25h[?25l[24;64H4[17;1H[34h[?25h[?25l[24;64H5,0-1[18;1H[34h[?25h[?25l[24;64H6,1  [19;1H[34h[?25h[?25l[24;64H7[20;1H[34h[?25h[?25l[24;64H8[21;1H[34h[?25h[?25l[24;64H9[22;1H[34h[?25h[?25l[24;63H20[23;1H[34h[?25h[?25l[1;23r[1;1H[2M[1;24r[22;1H[33mdeb[0m [31mhttp://pl.archive.ubuntu.com/ubuntu/[0m [32mprecise-updates[0m [33muniverse
-deb-src[0m [31mhttp://pl.archive.ubuntu.com/ubuntu/[0m [32mprecise-updates[0m [33muniverse[0m[24;1H[K[24;63H21,1[11C2%[22;1H[34h[?25h[?25l[24;64H2[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[24;63H[K[24;63H23,0-1[9C5%[23;1H[34h[?25h[?25l[1;23r[1;1H[2M[1;24r[22;1H[34m## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu 
-## team, and may not be under a free licence. Please satisfy yourself as to [0m[24;63H[K[24;63H24,1[11C8%[22;1H[34h[?25h[?25l[24;64H5[23;1H[34h[?25h[?25l[1;23r[1;1H[2M[1;24r[22;1H[34m## your rights to use the software. Also, please note that software in 
-## multiverse WILL NOT receive any review or updates from the Ubuntu[0m[24;63H[K[24;63H26,1[10C11%[22;1H[34h[?25h[?25l[24;64H7[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[34m## security team.[0m[24;63H[K[24;63H28,1[10C13%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[33mdeb[0m [31mhttp://pl.archive.ubuntu.com/ubuntu/[0m [32mprecise[0m [33mmultiverse[0m[24;63H[K[24;63H29,1[10C16%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[33mdeb-src[0m [31mhttp://pl.archive.ubuntu.com/ubuntu/[0m [32mprecise[0m [33mmultiverse[0m[24;63H[K[24;63H30,1[10C19%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[33mdeb[0m [31mhttp://pl.archive.ubuntu.com/ubuntu/[0m [32mprecise-updates[0m [33mmultiverse[0m[24;63H[K[24;63H31,1[10C22%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[33mdeb-src[0m [31mhttp://pl.archive.ubuntu.com/ubuntu/[0m [32mprecise-updates[0m [33mmultiverse[0m[24;63H[K[24;63H32,1[10C25%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[24;63H[K[24;63H33,0-1[8C27%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[34m## N.B. software from this repository may not have been tested as[0m[24;63H[K[24;63H34,1[10C30%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[34m## extensively as that contained in the main release, although it includes[0m[24;63H[K[24;63H35,1[10C33%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[34m## newer versions of some applications which may provide useful features.[0m[24;63H[K[24;63H36,1[10C36%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[34m## Also, please note that software in backports WILL NOT receive any review[0m[24;63H[K[24;63H37,1[10C38%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[34m## or updates from the Ubuntu security team.[0m[24;63H[K[24;63H38,1[10C41%[23;1H[34h[?25h[?25l[1;23r[1;1H[2M[1;24r[22;1H[33mdeb[0m [31mhttp://pl.archive.ubuntu.com/ubuntu/[0m [32mprecise-backports[0m [33mmain[0m [33mrestricted[0m [33munivee[23;1Hrse[0m [33mmultiverse[0m[24;63H[K[24;63H39,1[10C45%[22;1H[34h[?25h[?25l[1;23r[1;1H[2M[1;24r[22;1H[33mdeb-src[0m [31mhttp://pl.archive.ubuntu.com/ubuntu/[0m [32mprecise-backports[0m [33mmain[0m [33mrestricted[0m [33muu[23;1Hniverse[0m [33mmultiverse[0m[24;63H[K[24;63H40,1[10C50%[22;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[24;63H[K[24;63H41,0-1[8C52%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[33mdeb[0m [31mhttp://security.ubuntu.com/ubuntu[0m [32mprecise-security[0m [33mmain[0m [33mrestricted[0m[24;63H[K[24;63H42,1[10C55%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[33mdeb-src[0m [31mhttp://security.ubuntu.com/ubuntu[0m [32mprecise-security[0m [33mmain[0m [33mrestricted[0m[24;63H[K[24;63H43,1[10C57%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[33mdeb[0m [31mhttp://security.ubuntu.com/ubuntu[0m [32mprecise-security[0m [33muniverse[0m[24;63H[K[24;63H44,1[10C60%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[33mdeb-src[0m [31mhttp://security.ubuntu.com/ubuntu[0m [32mprecise-security[0m [33muniverse[0m[24;63H[K[24;63H45,1[10C63%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[33mdeb[0m [31mhttp://security.ubuntu.com/ubuntu[0m [32mprecise-security[0m [33mmultiverse[0m[24;63H[K[24;63H46,1[10C65%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[33mdeb-src[0m [31mhttp://security.ubuntu.com/ubuntu[0m [32mprecise-security[0m [33mmultiverse[0m[24;63H[K[24;63H47,1[10C68%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[24;63H[K[24;63H48,0-1[8C71%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[34m## Uncomment the following two lines to add software from Canonical's[0m[24;63H[K[24;63H49,1[10C73%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[34m## 'partner' repository.[0m[24;63H[K[24;63H50,1[10C76%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[34m## This software is not part of Ubuntu, but is offered by Canonical and the[0m[24;63H[K[24;63H51,1[10C78%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[34m## respective vendors as a service to Ubuntu users.[0m[24;63H[K[24;63H52,1[10C81%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[34m# deb http://archive.canonical.com/ubuntu precise partner[0m[24;63H[K[24;63H53,1[10C84%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[34m# deb-src http://archive.canonical.com/ubuntu precise partner[0m[24;63H[K[24;63H54,1[10C86%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[24;63H[K[24;63H55,0-1[8C89%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[34m## This software is not part of Ubuntu, but is offered by third-party[0m[24;63H[K[24;63H56,1[10C92%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[34m## developers who want to ship their latest software.[0m[24;63H[K[24;63H57,1[10C94%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[33mdeb[0m [31mhttp://extras.ubuntu.com/ubuntu[0m [32mprecise[0m [33mmain[0m[24;63H[K[24;63H58,1[10C97%[23;1H[34h[?25h[?25l[1;23r[23;1H
-[1;24r[23;1H[33mdeb-src[0m [31mhttp://extras.ubuntu.com/ubuntu[0m [32mprecise[0m [33mmain[0m[24;63H[K[24;63H59,1[10CDół[23;1H[34h[?25h[?25l[24;66H52[23;52H[34h[?25h[?25l
-[1m-- WPROWADZANIE --[0m[24;63H[K[24;63H59,53[9CDół[23;53H[34h[?25h[?25l[1;23r[1;1H[2M[1;24r[23;1H[1m[34m~                                                                               [0m[24;63H[K[24;63H60,1[10CDół[22;1H[34h[?25h[?25l[23;1H[K[24;64H1[23;1H[34h[?25h[?25l[34m#[0m[24;66H2[23;2H[34h[?25h[?25l[34m#S[0m[24;66H3[23;3H[34h[?25h[?25l[23;2H[K[24;66H2[23;2H[34h[?25h[?25l[34m [0m[24;66H3[23;3H[34h[?25h[?25l[23;2H[K[24;66H2[23;2H[34h[?25h[?25l[34m##[0m[24;66H3[23;3H[34h[?25h[?25l[34m [0m[24;66H4[23;4H[34h[?25h[?25l[34m S[0m[24;66H5[23;5H[34h[?25h[?25l[34mSO[0m[24;66H6[23;6H[34h[?25h[?25l[34mOp[0m[24;66H7[23;7H[34h[?25h[?25l[23;6H[K[24;66H6[23;6H[34h[?25h[?25l[23;5H[K[24;66H5[23;5H[34h[?25h[?25l[34mSp[0m[24;66H6[23;6H[34h[?25h[?25l[34mpo[0m[24;66H7[23;7H[34h[?25h[?25l[34mot[0m[24;66H8[23;8H[34h[?25h[?25l[34mti[0m[24;66H9[23;9H[34h[?25h[?25l[34mif[0m[24;66H10[23;10H[34h[?25h[?25l[34mfy[0m[24;67H1[23;11H[34h[?25h[?25l[1;23r[1;1H[2M[1;24r[23;1H[1m[34m~                                                                               [0m[24;63H[K[24;63H62,1[10CDół[22;1H[34h[?25h[?25l[33mdeb[0m [31mhttp://repository.spotify.com[0m [32mstable[0m [33mnon-free[0m[24;66H50[22;50H[34h[?25h[24;1H[K[22;49H[?25l[24;63H62,49[9CDół[22;49H[34h[?25h[?25l[24;63H[K[24;1H:[34h[?25hw[?25l[34h[?25hq[?25l[34h[?25h[?25l"/etc/apt/sources.list" 62L, 3431C zapisano
-[?1l>[34h[?25h[?1049lluke@luke-ThinkPad-E525:~/shop$ sudo apt-get update
-0% [Pracuje]            Stary http://pl.archive.ubuntu.com precise Release.gpg
-            11% [Oczekiwanie na nagłówki] [Łączenie z security.ubuntu.com] [Łączenie                                                                                Pobieranie:1 http://pl.archive.ubuntu.com precise-updates Release.gpg [198 B]
-97% [Oczekiwanie na nagłówki] [Łączenie z security.ubuntu.com] [Łączenie                                                                                Stary http://pl.archive.ubuntu.com precise-backports Release.gpg
-97% [Łączenie z security.ubuntu.com (91.189.91.15)] [Oczekiwanie na nagłówk                                                                               Stary http://pl.archive.ubuntu.com precise Release
-97% [Łączenie z security.ubuntu.com (91.189.91.15)] [Oczekiwanie na nagłówk97% [Release gpgv 49,6 kB] [Oczekiwanie na nagłówki] [Łączenie z security.u90% [Oczekiwanie na nagłówki] [Łączenie z security.ubuntu.com (91.189.91.15                                                                               Pobieranie:2 http://pl.archive.ubuntu.com precise-updates Release [49,6 kB]
-6% [2 Release 2583 B/49,6 kB 5%] [Łączenie z security.ubuntu.com (91.189.91.1                                                                               Stary http://extras.ubuntu.com precise Release.gpg
-14% [2 Release 6903 B/49,6 kB 14%] [Łączenie z security.ubuntu.com (91.189.91                                                                               Stary http://extras.ubuntu.com precise Release
-63% [2 Release 31,4 kB/49,6 kB 63%] [Łączenie z security.ubuntu.com (91.189.963% [Release gpgv 11,9 kB] [2 Release 31,4 kB/49,6 kB 63%] [Łączenie z securi                                                                               Pobieranie:3 http://repository.spotify.com stable Release.gpg [489 B]
-64% [Release gpgv 11,9 kB] [2 Release 31,4 kB/49,6 kB 63%] [Łączenie z securi64% [Release gpgv 11,9 kB] [2 Release 31,4 kB/49,6 kB 63%] [Łączenie z securi64% [2 Release 31,4 kB/49,6 kB 63%] [Łączenie z security.ubuntu.com (91.189.9                                                                               Stary http://ppa.launchpad.net precise Release.gpg
-64% [2 Release 31,4 kB/49,6 kB 63%] [Oczekiwanie na nagłówki] [Oczekiwanie na100% [Oczekiwanie na nagłówki] [Oczekiwanie na nagłówki] [Oczekiwanie na na100% [2 Release gpgv 49,6 kB] [Oczekiwanie na nagłówki] [Oczekiwanie na nagł                                                                               Stary http://pl.archive.ubuntu.com precise-backports Release
-100% [2 Release gpgv 49,6 kB] [Oczekiwanie na nagłówki] [Oczekiwanie na nagł100% [Oczekiwanie na nagłówki] [Oczekiwanie na nagłówki] [Oczekiwanie na na100% [Release gpgv 49,6 kB] [Oczekiwanie na nagłówki] [Oczekiwanie na nagłó100% [Oczekiwanie na nagłówki] [Oczekiwanie na nagłówki] [Oczekiwanie na na                                                                               Stary http://pl.archive.ubuntu.com precise/main Sources
-100% [Oczekiwanie na nagłówki] [Oczekiwanie na nagłówki] [Oczekiwanie na na                                                                               Stary http://pl.archive.ubuntu.com precise/restricted Sources
-                                                                               Stary http://pl.archive.ubuntu.com precise/universe Sources
-100% [Oczekiwanie na nagłówki] [Oczekiwanie na nagłówki] [Oczekiwanie na na                                                                               Stary http://pl.archive.ubuntu.com precise/multiverse Sources
-                                                                               Stary http://pl.archive.ubuntu.com precise/main amd64 Packages
-                                                                               Stary http://pl.archive.ubuntu.com precise/restricted amd64 Packages
-                                                                               Stary http://pl.archive.ubuntu.com precise/universe amd64 Packages
-                                                                               Stary http://extras.ubuntu.com precise/main Sources
-100% [Oczekiwanie na nagłówki] [Oczekiwanie na nagłówki] [Oczekiwanie na na                                                                               Stary http://pl.archive.ubuntu.com precise/multiverse amd64 Packages
-                                                                               Stary http://pl.archive.ubuntu.com precise/main i386 Packages
-                                                                               Stary http://pl.archive.ubuntu.com precise/restricted i386 Packages
-100% [Oczekiwanie na nagłówki] [Oczekiwanie na nagłówki] [Oczekiwanie na na                                                                               Pobieranie:4 http://repository.spotify.com stable Release [2443 B]
-                                                                               Stary http://ppa.launchpad.net precise Release
-100% [Oczekiwanie na nagłówki] [Oczekiwanie na nagłówki] [Oczekiwanie na na100% [4 Release gpgv 2443 B] [Oczekiwanie na nagłówki] [Oczekiwanie na nagł�                                                                               Ign.  http://repository.spotify.com stable Release
-100% [Oczekiwanie na nagłówki] [Oczekiwanie na nagłówki] [Oczekiwanie na na100% [Release gpgv 11,9 kB] [Oczekiwanie na nagłówki] [Oczekiwanie na nagłó100% [Oczekiwanie na nagłówki] [Oczekiwanie na nagłówki] [Oczekiwanie na na                                                                               Stary http://pl.archive.ubuntu.com precise/universe i386 Packages
-100% [Oczekiwanie na nagłówki] [Oczekiwanie na nagłówki] [Oczekiwanie na na                                                                               Stary http://pl.archive.ubuntu.com precise/multiverse i386 Packages
-                                                                               Stary http://pl.archive.ubuntu.com precise/main TranslationIndex
-                                                                               Stary http://pl.archive.ubuntu.com precise/multiverse TranslationIndex
-100% [Oczekiwanie na nagłówki] [Oczekiwanie na nagłówki] [Oczekiwanie na na                                                                               Stary http://pl.archive.ubuntu.com precise/restricted TranslationIndex
-100% [Oczekiwanie na nagłówki] [Oczekiwanie na nagłówki] [Oczekiwanie na na                                                                               Stary http://extras.ubuntu.com precise/main amd64 Packages
-100% [Oczekiwanie na nagłówki] [Oczekiwanie na nagłówki] [Oczekiwanie na na                                                                               Stary http://extras.ubuntu.com precise/main i386 Packages
-100% [Oczekiwanie na nagłówki] [Oczekiwanie na nagłówki] [Oczekiwanie na na                                                                               Stary http://pl.archive.ubuntu.com precise/universe TranslationIndex
-100% [Oczekiwanie na nagłówki] [Oczekiwanie na nagłówki] [Oczekiwanie na na                                                                               Pobieranie:5 http://pl.archive.ubuntu.com precise-updates/main Sources [395 kB]
-12% [5 Sources 2572 B/395 kB 1%] [Oczekiwanie na nagłówki] [Oczekiwanie na na                                                                               Stary http://ppa.launchpad.net precise/main Sources
-17% [5 Sources 24,2 kB/395 kB 6%] [Oczekiwanie na nagłówki] [Oczekiwanie na n                                                                               Pobieranie:6 http://security.ubuntu.com precise-security Release.gpg [198 B]
-17% [5 Sources 24,2 kB/395 kB 6%] [Oczekiwanie na nagłówki] [Oczekiwanie na n                                                                               Ign.  http://extras.ubuntu.com precise/main TranslationIndex
-25% [5 Sources 57,3 kB/395 kB 14%] [Oczekiwanie na nagłówki] [Oczekiwanie na                                                                                Stary http://ppa.launchpad.net precise/main amd64 Packages
-34% [5 Sources 97,6 kB/395 kB 25%] [Oczekiwanie na nagłówki] [Oczekiwanie na                                                                                Stary http://ppa.launchpad.net precise/main i386 Packages
-34% [5 Sources 97,6 kB/395 kB 25%] [Oczekiwanie na nagłówki] [Oczekiwanie na                                                                                Ign.  http://ppa.launchpad.net precise/main TranslationIndex
-34% [5 Sources 99,1 kB/395 kB 25%] [Oczekiwanie na nagłówki] [Oczekiwanie na                                                                                Ign.  http://repository.spotify.com stable/non-free TranslationIndex
-35% [5 Sources 105 kB/395 kB 27%] [Oczekiwanie na nagłówki] [Oczekiwanie na n                                                                               Pobieranie:7 http://security.ubuntu.com precise-security Release [49,6 kB]
-65% [5 Sources 268 kB/395 kB 68%] [7 Release 2516 B/49,6 kB 5%] [Oczekiwanie na93% [7 Release 14,0 kB/49,6 kB 28%] [Oczekiwanie na nagłówki] [Oczekiwanie na                                                                               Pobieranie:8 http://pl.archive.ubuntu.com precise-updates/restricted Sources [5467 B]
-                                                                               Pobieranie:9 http://pl.archive.ubuntu.com precise-updates/universe Sources [90,5 kB]
-85% [9 Sources 35,6 kB/90,5 kB 39%] [7 Release 14,0 kB/49,6 kB 28%] [Oczekiwani86% [5 Sources bzip2 0 B] [9 Sources 45,7 kB/90,5 kB 51%] [7 Release 14,0 kB/4994% [5 Sources bzip2 0 B] [7 Release 14,0 kB/49,6 kB 28%] [Oczekiwanie na nagł                                                                               Pobieranie:10 http://pl.archive.ubuntu.com precise-updates/multiverse Sources [6582 B]
-93% [5 Sources bzip2 0 B] [10 Sources 0 B/6582 B 0%] [7 Release 14,0 kB/49,6 kB94% [5 Sources bzip2 0 B] [7 Release 14,0 kB/49,6 kB 28%] [Oczekiwanie na nagł                                                                               Pobieranie:11 http://pl.archive.ubuntu.com precise-updates/main amd64 Packages [634 kB]
-46% [5 Sources bzip2 0 B] [11 Packages 0 B/634 kB 0%] [7 Release 14,0 kB/49,6 k                                                                               Pobieranie:12 http://pl.archive.ubuntu.com precise-updates/restricted amd64 Packages [10,1 kB]
-98% [5 Sources bzip2 0 B] [12 Packages 3252 B/10,1 kB 32%] [7 Release 35,6 kB/499% [12 Packages 10,1 kB/10,1 kB 100%] [7 Release 35,6 kB/49,6 kB 72%] [Oczekiw                                                                               Pobieranie:13 http://pl.archive.ubuntu.com precise-updates/universe amd64 Packages [206 kB]
-85% [13 Packages 4399 B/206 kB 2%] [7 Release 35,6 kB/49,6 kB 72%] [Oczekiwanie85% [8 Sources bzip2 0 B] [13 Packages 5839 B/206 kB 3%] [7 Release 35,6 kB/49,86% [13 Packages 21,7 kB/206 kB 11%] [7 Release 35,6 kB/49,6 kB 72%] [Oczekiwan86% [9 Sources bzip2 0 B] [13 Packages 23,1 kB/206 kB 11%] [7 Release 35,6 kB/498% [13 Packages 194 kB/206 kB 95%] [7 Release 35,6 kB/49,6 kB 72%] [Oczekiwani98% [10 Sources bzip2 0 B] [13 Packages 194 kB/206 kB 95%] [7 Release 35,6 kB/499% [10 Sources bzip2 0 B] [7 Release 35,6 kB/49,6 kB 72%] [Oczekiwanie na nag�                                                                               Pobieranie:14 http://pl.archive.ubuntu.com precise-updates/multiverse amd64 Packages [13,6 kB]
-98% [10 Sources bzip2 0 B] [14 Packages 0 B/13,6 kB 0%] [7 Release 35,6 kB/49,699% [14 Packages 8686 B/13,6 kB 64%] [7 Release 35,6 kB/49,6 kB 72%] [Oczekiwan99% [11 Packages bzip2 0 B] [14 Packages 8686 B/13,6 kB 64%] [7 Release 35,6 kB99% [11 Packages bzip2 0 B] [7 Release 35,6 kB/49,6 kB 72%] [Oczekiwanie na nag                                                                               Pobieranie:15 http://pl.archive.ubuntu.com precise-updates/main i386 Packages [649 kB]
-69% [11 Packages bzip2 0 B] [15 Packages 0 B/649 kB 0%] [7 Release 35,6 kB/49,6100% [11 Packages bzip2 0 B] [7 Release 42,8 kB/49,6 kB 86%] [Oczekiwanie na na                                                                               Pobieranie:16 http://pl.archive.ubuntu.com precise-updates/restricted i386 Packages [10,0 kB]
-99% [11 Packages bzip2 0 B] [16 Packages 0 B/10,0 kB 0%] [7 Release 42,8 kB/49,100% [11 Packages bzip2 0 B] [7 Release 42,8 kB/49,6 kB 86%] [Oczekiwanie na na                                                                               Pobieranie:17 http://pl.archive.ubuntu.com precise-updates/universe i386 Packages [209 kB]
-91% [11 Packages bzip2 0 B] [17 Packages 0 B/209 kB 0%] [7 Release 42,8 kB/49,6                                                                               Pobieranie:18 http://repository.spotify.com stable/non-free amd64 Packages [911 B]
-100% [11 Packages bzip2 0 B] [17 Packages 209 kB/209 kB 100%] [7 Release 42,8 k                                                                               Pobieranie:19 http://pl.archive.ubuntu.com precise-updates/multiverse i386 Packages [13,8 kB]
-                                                                               Pobieranie:20 http://repository.spotify.com stable/non-free i386 Packages [914 B]
-99% [11 Packages bzip2 0 B] [19 Packages 5760 B/13,8 kB 42%] [7 Release 42,8 kB99% [18 Packages gzip 0 B] [11 Packages bzip2 0 B] [19 Packages 5760 B/13,8 kB 99% [11 Packages bzip2 0 B] [19 Packages 5760 B/13,8 kB 42%] [7 Release 42,8 kB99% [20 Packages gzip 0 B] [11 Packages bzip2 0 B] [19 Packages 5760 B/13,8 kB 99% [11 Packages bzip2 0 B] [19 Packages 5760 B/13,8 kB 42%] [7 Release 42,8 kB                                                                               Pobieranie:21 http://pl.archive.ubuntu.com precise-updates/main TranslationIndex [3564 B]
-100% [11 Packages bzip2 0 B] [21 TranslationIndex 1740 B/3564 B 49%] [7 Release                                                                               Pobieranie:22 http://pl.archive.ubuntu.com precise-updates/multiverse TranslationIndex [2605 B]
-100% [11 Packages bzip2 0 B] [22 TranslationIndex 761 B/2605 B 29%] [7 Release                                                                                Pobieranie:23 http://pl.archive.ubuntu.com precise-updates/restricted TranslationIndex [2461 B]
-100% [11 Packages bzip2 0 B] [23 TranslationIndex 741 B/2461 B 30%] [7 Release                                                                                Pobieranie:24 http://pl.archive.ubuntu.com precise-updates/universe TranslationIndex [2850 B]
-100% [11 Packages bzip2 0 B] [24 TranslationIndex 2305 B/2850 B 81%] [7 Release                                                                               Stary http://pl.archive.ubuntu.com precise-backports/main Sources
-                                                                               Stary http://pl.archive.ubuntu.com precise-backports/restricted Sources
-                                                                               Stary http://pl.archive.ubuntu.com precise-backports/universe Sources
-                                                                               Stary http://pl.archive.ubuntu.com precise-backports/multiverse Sources
-                                                                               Stary http://pl.archive.ubuntu.com precise-backports/main amd64 Packages
-100% [11 Packages bzip2 0 B] [Oczekiwanie na nagłówki] [7 Release 42,8 kB/49,100% [Oczekiwanie na nagłówki] [7 Release 42,8 kB/49,6 kB 86%] [Oczekiwanie n                                                                               Stary http://pl.archive.ubuntu.com precise-backports/restricted amd64 Packages
-100% [7 Release 42,8 kB/49,6 kB 86%] [Oczekiwanie na nagłówki] [Oczekiwanie n100% [12 Packages bzip2 0 B] [7 Release 42,8 kB/49,6 kB 86%] [Oczekiwanie na na                                                                               Stary http://pl.archive.ubuntu.com precise-backports/universe amd64 Packages
-                                                                               Stary http://pl.archive.ubuntu.com precise-backports/multiverse amd64 Packages
-100% [12 Packages bzip2 0 B] [Oczekiwanie na nagłówki] [7 Release 42,8 kB/49,                                                                               Stary http://pl.archive.ubuntu.com precise-backports/main i386 Packages
-100% [12 Packages bzip2 0 B] [Oczekiwanie na nagłówki] [7 Release 42,8 kB/49,                                                                               Stary http://pl.archive.ubuntu.com precise-backports/restricted i386 Packages
-100% [12 Packages bzip2 0 B] [7 Release 42,8 kB/49,6 kB 86%] [Oczekiwanie na na                                                                               Stary http://pl.archive.ubuntu.com precise-backports/universe i386 Packages
-100% [12 Packages bzip2 0 B] [Oczekiwanie na nagłówki] [7 Release 42,8 kB/49,                                                                               Stary http://pl.archive.ubuntu.com precise-backports/multiverse i386 Packages
-100% [12 Packages bzip2 0 B] [Oczekiwanie na nagłówki] [7 Release 42,8 kB/49,                                                                               Stary http://pl.archive.ubuntu.com precise-backports/main TranslationIndex
-100% [12 Packages bzip2 0 B] [Oczekiwanie na nagłówki] [7 Release 42,8 kB/49,100% [Oczekiwanie na nagłówki] [7 Release 42,8 kB/49,6 kB 86%] [Oczekiwanie n100% [13 Packages bzip2 0 B] [Oczekiwanie na nagłówki] [7 Release 42,8 kB/49,                                                                               Stary http://pl.archive.ubuntu.com precise-backports/multiverse TranslationIndex
-100% [13 Packages bzip2 0 B] [Oczekiwanie na nagłówki] [7 Release 42,8 kB/49,                                                                               Stary http://pl.archive.ubuntu.com precise-backports/restricted TranslationIndex
-100% [13 Packages bzip2 0 B] [Oczekiwanie na nagłówki] [7 Release 42,8 kB/49,                                                                               Stary http://pl.archive.ubuntu.com precise-backports/universe TranslationIndex
-100% [13 Packages bzip2 0 B] [Oczekiwanie na nagłówki] [7 Release 42,8 kB/49,                                                                               Stary http://pl.archive.ubuntu.com precise/main Translation-pl
-                                                                               Stary http://pl.archive.ubuntu.com precise/main Translation-en
-                                                                               Stary http://pl.archive.ubuntu.com precise/multiverse Translation-pl
-                                                                               Stary http://pl.archive.ubuntu.com precise/multiverse Translation-en
-100% [13 Packages bzip2 0 B] [Oczekiwanie na nagłówki] [7 Release 42,8 kB/49,                                                                               Stary http://pl.archive.ubuntu.com precise/restricted Translation-pl
-100% [13 Packages bzip2 0 B] [Oczekiwanie na nagłówki] [7 Release 42,8 kB/49,                                                                               Stary http://pl.archive.ubuntu.com precise/restricted Translation-en
-100% [13 Packages bzip2 0 B] [Oczekiwanie na nagłówki] [7 Release 42,8 kB/49,                                                                               Stary http://pl.archive.ubuntu.com precise/universe Translation-pl
-100% [13 Packages bzip2 0 B] [Oczekiwanie na nagłówki] [7 Release 42,8 kB/49,                                                                               Stary http://pl.archive.ubuntu.com precise/universe Translation-en
-100% [13 Packages bzip2 0 B] [7 Release 42,8 kB/49,6 kB 86%] [Oczekiwanie na na                                                                               Stary http://pl.archive.ubuntu.com precise-updates/main Translation-pl
-100% [13 Packages bzip2 0 B] [7 Release 42,8 kB/49,6 kB 86%] [Oczekiwanie na na                                                                               Pobieranie:25 http://pl.archive.ubuntu.com precise-updates/main Translation-en [289 kB]
-89% [13 Packages bzip2 0 B] [25 Translation-en 0 B/289 kB 0%] [7 Release 42,8 k                                                                               Ign.  http://extras.ubuntu.com precise/main Translation-pl_PL
-91% [13 Packages bzip2 0 B] [25 Translation-en 45,8 kB/289 kB 16%] [7 Release 491% [25 Translation-en 45,8 kB/289 kB 16%] [7 Release 42,8 kB/49,6 kB 86%] [Ocz91% [14 Packages bzip2 0 B] [25 Translation-en 45,8 kB/289 kB 16%] [7 Release 491% [25 Translation-en 60,2 kB/289 kB 21%] [7 Release 42,8 kB/49,6 kB 86%] [Ocz91% [15 Packages bzip2 0 B] [25 Translation-en 60,2 kB/289 kB 21%] [7 Release 4                                                                               Ign.  http://extras.ubuntu.com precise/main Translation-pl
-92% [15 Packages bzip2 0 B] [25 Translation-en 83,2 kB/289 kB 29%] [7 Release 4                                                                               Ign.  http://ppa.launchpad.net precise/main Translation-pl_PL
-92% [15 Packages bzip2 0 B] [25 Translation-en 83,2 kB/289 kB 29%] [7 Release 4                                                                               Ign.  http://extras.ubuntu.com precise/main Translation-en
-94% [15 Packages bzip2 0 B] [25 Translation-en 128 kB/289 kB 44%] [7 Release 42                                                                               Ign.  http://ppa.launchpad.net precise/main Translation-pl
-94% [15 Packages bzip2 0 B] [25 Translation-en 134 kB/289 kB 46%] [7 Release 42                                                                               Ign.  http://repository.spotify.com stable/non-free Translation-pl_PL
-95% [15 Packages bzip2 0 B] [25 Translation-en 165 kB/289 kB 57%] [7 Release 44                                                                               Ign.  http://ppa.launchpad.net precise/main Translation-en
-96% [15 Packages bzip2 0 B] [25 Translation-en 177 kB/289 kB 61%] [7 Release 44                                                                               Ign.  http://repository.spotify.com stable/non-free Translation-pl
-97% [15 Packages bzip2 0 B] [25 Translation-en 217 kB/289 kB 75%] [7 Release 44                                                                               Ign.  http://repository.spotify.com stable/non-free Translation-en
-99% [15 Packages bzip2 0 B] [25 Translation-en 269 kB/289 kB 93%] [7 Release 47                                                                               Stary http://pl.archive.ubuntu.com precise-updates/multiverse Translation-pl
-                                                                               Stary http://pl.archive.ubuntu.com precise-updates/multiverse Translation-en
-                                                                               Stary http://pl.archive.ubuntu.com precise-updates/restricted Translation-pl
-                                                                               Stary http://pl.archive.ubuntu.com precise-updates/restricted Translation-en
-                                                                               Stary http://pl.archive.ubuntu.com precise-updates/universe Translation-pl
-100% [15 Packages bzip2 0 B] [Oczekiwanie na nagłówki] [7 Release 47,2 kB/49,                                                                               Pobieranie:26 http://pl.archive.ubuntu.com precise-updates/universe Translation-en [121 kB]
-96% [15 Packages bzip2 0 B] [26 Translation-en 2793 B/121 kB 2%] [7 Release 47,                                                                               99% [15 Packages bzip2 0 B] [26 Translation-en 99,3 kB/121 kB 82%]                                                                  99% [15 Packages bzip2 0 B] [7 Release gpgv 49,6 kB] [26 Translation-en 99,3 kB                                                                               99% [15 Packages bzip2 0 B] [26 Translation-en 99,3 kB/121 kB 82%]                                                                  Stary http://pl.archive.ubuntu.com precise-backports/main Translation-en
-                                                                  Stary http://pl.archive.ubuntu.com precise-backports/multiverse Translation-en
-                                                                  Stary http://pl.archive.ubuntu.com precise-backports/restricted Translation-en
-                                                                  Stary http://pl.archive.ubuntu.com precise-backports/universe Translation-en
-                                                                  100% [15 Packages bzip2 0 B] [Oczekiwanie na nagłówki]                                                        100% [Oczekiwanie na nagłówki]                                100% [16 Packages bzip2 0 B] [Oczekiwanie na nagłówki]                                                        100% [Oczekiwanie na nagłówki]                                100% [17 Packages bzip2 0 B] [Oczekiwanie na nagłówki]                                                        Pobieranie:27 http://security.ubuntu.com precise-security/main Sources [79,1 kB]
-                                                        97% [17 Packages bzip2 0 B] [27 Sources 1040 B/79,1 kB 1%]                                                          97% [27 Sources 3920 B/79,1 kB 5%]                                  97% [19 Packages bzip2 0 B] [27 Sources 3920 B/79,1 kB 5%]                                                          97% [27 Sources 3920 B/79,1 kB 5%]                                  97% [25 Translation-en bzip2 0 B] [27 Sources 3920 B/79,1 kB 5%]                                                                98% [27 Sources 11,1 kB/79,1 kB 14%]                                    98% [26 Translation-en bzip2 0 B] [27 Sources 11,1 kB/79,1 kB 14%]                                                                  98% [27 Sources 19,8 kB/79,1 kB 25%]                                    100% [Pracuje]              100% [27 Sources bzip2 0 B]                           100% [Oczekiwanie na nagłówki]                                Pobieranie:28 http://security.ubuntu.com precise-security/restricted Sources [2494 B]
-                                100% [28 Sources 0 B/2494 B 0%]                               100% [Pracuje]              100% [28 Sources bzip2 0 B]                           Pobieranie:29 http://security.ubuntu.com precise-security/universe Sources [25,7 kB]
-                           99% [28 Sources bzip2 0 B] [29 Sources 0 B/25,7 kB 0%]                                                      99% [29 Sources 3921 B/25,7 kB 15%]                                   100% [Pracuje]              Pobieranie:30 http://security.ubuntu.com precise-security/multiverse Sources [1380 B]
-              100% [29 Sources bzip2 0 B] [30 Sources 1380 B/1380 B 100%]                                                           100% [29 Sources bzip2 0 B] [Oczekiwanie na nagłówki]                                                       Pobieranie:31 http://security.ubuntu.com precise-security/main amd64 Packages [285 kB]
-                                                       91% [29 Sources bzip2 0 B] [31 Packages 3388 B/285 kB 1%]                                                         91% [31 Packages 10,6 kB/285 kB 4%]                                   91% [30 Sources bzip2 0 B] [31 Packages 10,6 kB/285 kB 4%]                                                          91% [31 Packages 10,6 kB/285 kB 4%]                                   94% [31 Packages 91,2 kB/285 kB 32%]                                    96% [31 Packages 172 kB/285 kB 60%]                                   100% [Pracuje]              Pobieranie:32 http://security.ubuntu.com precise-security/restricted amd64 Packages [4627 B]
-              100% [32 Packages 2772 B/4627 B 60%]                                    100% [31 Packages bzip2 0 B] [32 Packages 4212 B/4627 B 91%]                                                            100% [31 Packages bzip2 0 B]                            Pobieranie:33 http://security.ubuntu.com precise-security/universe amd64 Packages [75,3 kB]
-                            98% [31 Packages bzip2 0 B] [33 Packages 0 B/75,3 kB 0%]                                                        99% [33 Packages 35,2 kB/75,3 kB 47%]                                     99% [32 Packages bzip2 0 B] [33 Packages 35,2 kB/75,3 kB 47%]                                                             99% [33 Packages 35,2 kB/75,3 kB 47%]                                     100% [Pracuje]              Pobieranie:34 http://security.ubuntu.com precise-security/multiverse amd64 Packages [2179 B]
-              100% [34 Packages 2179 B/2179 B 100%]                                     100% [Pracuje]              100% [33 Packages bzip2 0 B] [Oczekiwanie na nagłówki]                                                        Pobieranie:35 http://security.ubuntu.com precise-security/main i386 Packages [301 kB]
-                                                        92% [33 Packages bzip2 0 B] [35 Packages 0 B/301 kB 0%]                                                       92% [35 Packages 16,0 kB/301 kB 5%]                                   92% [34 Packages bzip2 0 B] [35 Packages 16,0 kB/301 kB 5%]                                                           92% [35 Packages 18,9 kB/301 kB 6%]96% [35 Packages 170 kB/301 kB 56%]                                   100% [Pracuje]              Pobieranie:36 http://security.ubuntu.com precise-security/restricted i386 Packages [4620 B]
-              100% [36 Packages 3810 B/4620 B 82%]                                    100% [35 Packages bzip2 0 B] [36 Packages 3810 B/4620 B 82%]                                                            100% [35 Packages bzip2 0 B]                            Pobieranie:37 http://security.ubuntu.com precise-security/universe i386 Packages [77,8 kB]
-                            98% [35 Packages bzip2 0 B] [37 Packages 0 B/77,8 kB 0%]                                                        99% [37 Packages 56,4 kB/77,8 kB 73%]                                     99% [36 Packages bzip2 0 B] [37 Packages 56,4 kB/77,8 kB 73%]                                                             100% [37 Packages 63,6 kB/77,8 kB 82%]                                      100% [Oczekiwanie na nagłówki]                                Pobieranie:38 http://security.ubuntu.com precise-security/multiverse i386 Packages [2375 B]
-                                100% [38 Packages 2375 B/2375 B 100%]                                     100% [Pracuje]              Stary http://security.ubuntu.com precise-security/main TranslationIndex
-              Stary http://security.ubuntu.com precise-security/multiverse TranslationIndex
-              Stary http://security.ubuntu.com precise-security/restricted TranslationIndex
-              100% [Oczekiwanie na nagłówki]                                Stary http://security.ubuntu.com precise-security/universe TranslationIndex
-                                100% [Pracuje]              100% [37 Packages bzip2 0 B] [Oczekiwanie na nagłówki]                                                        100% [Oczekiwanie na nagłówki]                                100% [38 Packages bzip2 0 B] [Oczekiwanie na nagłówki]                                                        100% [Oczekiwanie na nagłówki]                                Stary http://security.ubuntu.com precise-security/main Translation-en
-                                Stary http://security.ubuntu.com precise-security/multiverse Translation-en
-100% [Oczekiwanie na nagłówki]                                Stary http://security.ubuntu.com precise-security/restricted Translation-en
-100% [Oczekiwanie na nagłówki]                                Stary http://security.ubuntu.com precise-security/universe Translation-en
-                                100% [Pracuje]                                                      605 kB/s 0s                                                                               Pobrano 3631 kB w 6s (605 kB/s)
-Czytanie list pakietów... 0%Czytanie list pakietów... 0%Czytanie list pakietów... 1%Czytanie list pakietów... 6%Czytanie list pakietów... 6%Czytanie list pakietów... 6%Czytanie list pakietów... 6%Czytanie list pakietów... 19%Czytanie list pakietów... 28%Czytanie list pakietów... 28%Czytanie list pakietów... 28%Czytanie list pakietów... 28%Czytanie list pakietów... 35%Czytanie list pakietów... 35%Czytanie list pakietów... 35%Czytanie list pakietów... 35%Czytanie list pakietów... 35%Czytanie list pakietów... 57%Czytanie list pakietów... 57%Czytanie list pakietów... 57%Czytanie list pakietów... 57%Czytanie list pakietów... 57%Czytanie list pakietów... 61%Czytanie list pakietów... 61%Czytanie list pakietów... 62%Czytanie list pakietów... 62%Czytanie list pakietów... 62%Czytanie list pakietów... 62%Czytanie list pakietów... 62%Czytanie list pakietów... 62%Czytanie list pakietów... 62%Czytanie list pakietów... 62%Czytanie list pakietów... 62%Czytanie list pakietów... 62%Czytanie list pakietów... 75%Czytanie list pakietów... 75%Czytanie list pakietów... 76%Czytanie list pakietów... 77%Czytanie list pakietów... 77%Czytanie list pakietów... 80%Czytanie list pakietów... 80%Czytanie list pakietów... 81%Czytanie list pakietów... 81%Czytanie list pakietów... 82%Czytanie list pakietów... 82%Czytanie list pakietów... 82%Czytanie list pakietów... 82%Czytanie list pakietów... 85%Czytanie list pakietów... 85%Czytanie list pakietów... 86%Czytanie list pakietów... 86%Czytanie list pakietów... 87%Czytanie list pakietów... 87%Czytanie list pakietów... 87%Czytanie list pakietów... 87%Czytanie list pakietów... 89%Czytanie list pakietów... 89%Czytanie list pakietów... 90%Czytanie list pakietów... 90%Czytanie list pakietów... 90%Czytanie list pakietów... 90%Czytanie list pakietów... 90%Czytanie list pakietów... 90%Czytanie list pakietów... 90%Czytanie list pakietów... 90%Czytanie list pakietów... 90%Czytanie list pakietów... 90%Czytanie list pakietów... 90%Czytanie list pakietów... 90%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 92%Czytanie list pakietów... 94%Czytanie list pakietów... 94%Czytanie list pakietów... 94%Czytanie list pakietów... 94%Czytanie list pakietów... 95%Czytanie list pakietów... 95%Czytanie list pakietów... 95%Czytanie list pakietów... 95%Czytanie list pakietów... 96%Czytanie list pakietów... 96%Czytanie list pakietów... 96%Czytanie list pakietów... 96%Czytanie list pakietów... 97%Czytanie list pakietów... 97%Czytanie list pakietów... 97%Czytanie list pakietów... 97%Czytanie list pakietów... 98%Czytanie list pakietów... 98%Czytanie list pakietów... 98%Czytanie list pakietów... 98%Czytanie list pakietów... 98%Czytanie list pakietów... 98%Czytanie list pakietów... 98%Czytanie list pakietów... 98%Czytanie list pakietów... 98%Czytanie list pakietów... 98%Czytanie list pakietów... 98%Czytanie list pakietów... 98%Czytanie list pakietów... 98%Czytanie list pakietów... 98%Czytanie list pakietów... 98%Czytanie list pakietów... 98%Czytanie list pakietów... 98%Czytanie list pakietów... 98%Czytanie list pakietów... 98%Czytanie list pakietów... 98%Czytanie list pakietów... 99%Czytanie list pakietów... Gotowe
-W: Błąd GPG: http://repository.spotify.com stable Release: Następujące podpisy nie mogły zostać zweryfikowane z powodu braku klucza publicznego: NO_PUBKEY 082CCEDF94558F59
-luke@luke-ThinkPad-E525:~/shop$ sudo apt-get install spotify-client
-Czytanie list pakietów... 0%Czytanie list pakietów... 100%Czytanie list pakietów... Gotowe
-Budowanie drzewa zależności... 0%Budowanie drzewa zależności... 0%Budowanie drzewa zależności... 50%Budowanie drzewa zależności... 50%Budowanie drzewa zależności       
-Odczyt informacji o stanie... 0%Odczyt informacji o stanie... 0%Odczyt informacji o stanie... Gotowe
-Zostaną zainstalowane następujące dodatkowe pakiety:
-  libssl0.9.8
-Zostaną zainstalowane następujące NOWE pakiety:
-  libssl0.9.8 spotify-client
-0 aktualizowanych, 2 nowo instalowanych, 0 usuwanych i 0 nieaktualizowanych.
-Konieczne pobranie 38,4 MB archiwów.
-Po tej operacji zostanie dodatkowo użyte 93,6 MB miejsca na dysku.
-Kontynuować [T/n]? T
-UWAGA: Następujące pakiety nie mogą zostać zweryfikowane!
-  spotify-client
-Zainstalować te pakiety bez weryfikacji [t/N]? t
-0% [Pracuje]            Pobieranie:1 http://pl.archive.ubuntu.com/ubuntu/ precise-updates/universe libssl0.9.8 amd64 0.9.8o-7ubuntu3.1 [861 kB]
-            0% [1 libssl0.9.8 2562 B/861 kB 0%] [Oczekiwanie na nagłówki]                                                               Pobieranie:2 http://repository.spotify.com/ stable/non-free spotify-client amd64 1:0.9.0.133.gd18ed58.259-1 [37,6 MB]
-                                                               0% [1 libssl0.9.8 18,4 kB/861 kB 2%] [2 spotify-client 1080 B/37,6 MB 0%]                                                                         2% [2 spotify-client 57,2 kB/37,6 MB 0%]                                        3% [2 spotify-client 239 kB/37,6 MB 1%]3% [2 spotify-client 455 kB/37,6 MB 1%]4% [2 spotify-client 685 kB/37,6 MB 2%]5% [2 spotify-client 908 kB/37,6 MB 2%]                                       5% [2 spotify-client 1120 kB/37,6 MB 3%]6% [2 spotify-client 1343 kB/37,6 MB 4%]6% [2 spotify-client 1553 kB/37,6 MB 4%]7% [2 spotify-client 1741 kB/37,6 MB 5%]7% [2 spotify-client 1935 kB/37,6 MB 5%]8% [2 spotify-client 2152 kB/37,6 MB 6%]                                        8% [2 spotify-client 2383 kB/37,6 MB 6%]                       535 kB/s 1min 5s9% [2 spotify-client 2638 kB/37,6 MB 7%]                       535 kB/s 1min 5s10% [2 spotify-client 2895 kB/37,6 MB 8%]                      535 kB/s 1min 4s10% [2 spotify-client 3168 kB/37,6 MB 8%]                      535 kB/s 1min 4s11% [2 spotify-client 3411 kB/37,6 MB 9%]                      535 kB/s 1min 3s12% [2 spotify-client 3649 kB/37,6 MB 10%]                     535 kB/s 1min 3s12% [2 spotify-client 3866 kB/37,6 MB 10%]                     535 kB/s 1min 3s13% [2 spotify-client 4112 kB/37,6 MB 11%]                     535 kB/s 1min 2s14% [2 spotify-client 4341 kB/37,6 MB 12%]                     535 kB/s 1min 2s14% [2 spotify-client 4511 kB/37,6 MB 12%]                     535 kB/s 1min 1s14% [2 spotify-client 4681 kB/37,6 MB 12%]                     535 kB/s 1min 1s15% [2 spotify-client 4861 kB/37,6 MB 13%]                     535 kB/s 1min 1s15% [2 spotify-client 5079 kB/37,6 MB 14%]                    449 kB/s 1min 12s16% [2 spotify-client 5320 kB/37,6 MB 14%]                    449 kB/s 1min 11s17% [2 spotify-client 5567 kB/37,6 MB 15%]                    449 kB/s 1min 11s17% [2 spotify-client 5816 kB/37,6 MB 15%]                    449 kB/s 1min 10s18% [2 spotify-client 6088 kB/37,6 MB 16%]                    449 kB/s 1min 10s19% [2 spotify-client 6366 kB/37,6 MB 17%]                     449 kB/s 1min 9s20% [2 spotify-client 6670 kB/37,6 MB 18%]                     449 kB/s 1min 8s21% [2 spotify-client 7040 kB/37,6 MB 19%]                     449 kB/s 1min 7s22% [2 spotify-client 7444 kB/37,6 MB 20%]                     449 kB/s 1min 7s23% [2 spotify-client 7797 kB/37,6 MB 21%]                     449 kB/s 1min 6s23% [2 spotify-client 7982 kB/37,6 MB 21%]                     449 kB/s 1min 5s24% [2 spotify-client 8193 kB/37,6 MB 22%]                     449 kB/s 1min 5s24% [2 spotify-client 8425 kB/37,6 MB 22%]                         557 kB/s 52s25% [2 spotify-client 8670 kB/37,6 MB 23%]                         557 kB/s 51s25% [2 spotify-client 8850 kB/37,6 MB 24%]                         557 kB/s 51s26% [2 spotify-client 9036 kB/37,6 MB 24%]                         557 kB/s 51s26% [2 spotify-client 9181 kB/37,6 MB 24%]                         557 kB/s 50s26% [2 spotify-client 9278 kB/37,6 MB 25%]                         557 kB/s 50s27% [2 spotify-client 9399 kB/37,6 MB 25%]                         557 kB/s 50s27% [2 spotify-client 9521 kB/37,6 MB 25%]                         557 kB/s 50s27% [2 spotify-client 9646 kB/37,6 MB 26%]                         557 kB/s 50s28% [2 spotify-client 9774 kB/37,6 MB 26%]                         557 kB/s 49s28% [2 spotify-client 9914 kB/37,6 MB 26%]                         557 kB/s 49s28% [2 spotify-client 10,1 MB/37,6 MB 27%]                         557 kB/s 49s29% [2 spotify-client 10,2 MB/37,6 MB 27%]                    294 kB/s 1min 32s29% [2 spotify-client 10,4 MB/37,6 MB 28%]                    294 kB/s 1min 32s30% [2 spotify-client 10,5 MB/37,6 MB 28%]                    294 kB/s 1min 31s30% [2 spotify-client 10,7 MB/37,6 MB 29%]                    294 kB/s 1min 31s31% [2 spotify-client 10,9 MB/37,6 MB 29%]                    294 kB/s 1min 30s31% [2 spotify-client 11,0 MB/37,6 MB 29%]                    294 kB/s 1min 30s31% [2 spotify-client 11,2 MB/37,6 MB 30%]                    294 kB/s 1min 29s32% [2 spotify-client 11,4 MB/37,6 MB 30%]                    294 kB/s 1min 28s32% [2 spotify-client 11,6 MB/37,6 MB 31%]                    294 kB/s 1min 28s33% [2 spotify-client 11,8 MB/37,6 MB 31%]                    294 kB/s 1min 27s34% [2 spotify-client 12,1 MB/37,6 MB 32%]                    294 kB/s 1min 26s34% [2 spotify-client 12,3 MB/37,6 MB 33%]                    294 kB/s 1min 25s35% [2 spotify-client 12,6 MB/37,6 MB 34%]                     398 kB/s 1min 2s36% [2 spotify-client 12,9 MB/37,6 MB 34%]                     398 kB/s 1min 2s36% [2 spotify-client 13,1 MB/37,6 MB 35%]                     398 kB/s 1min 1s37% [2 spotify-client 13,3 MB/37,6 MB 35%]                         398 kB/s 60s38% [2 spotify-client 13,6 MB/37,6 MB 36%]                         398 kB/s 60s38% [2 spotify-client 13,8 MB/37,6 MB 37%]                         398 kB/s 59s39% [2 spotify-client 14,0 MB/37,6 MB 37%]                         398 kB/s 59s39% [2 spotify-client 14,2 MB/37,6 MB 38%]                         398 kB/s 58s40% [2 spotify-client 14,4 MB/37,6 MB 38%]                         398 kB/s 58s40% [2 spotify-client 14,6 MB/37,6 MB 39%]                         398 kB/s 57s41% [2 spotify-client 14,9 MB/37,6 MB 40%]                         398 kB/s 57s42% [2 spotify-client 15,1 MB/37,6 MB 40%]                         398 kB/s 56s42% [2 spotify-client 15,4 MB/37,6 MB 41%]                         475 kB/s 46s43% [2 spotify-client 15,7 MB/37,6 MB 42%]                         475 kB/s 45s44% [2 spotify-client 16,0 MB/37,6 MB 43%]                         475 kB/s 45s45% [2 spotify-client 16,4 MB/37,6 MB 44%]                         475 kB/s 44s46% [2 spotify-client 16,8 MB/37,6 MB 45%]                         475 kB/s 43s47% [2 spotify-client 17,1 MB/37,6 MB 46%]                         475 kB/s 43s48% [2 spotify-client 17,5 MB/37,6 MB 47%]                         475 kB/s 42s49% [2 spotify-client 17,8 MB/37,6 MB 47%]                         475 kB/s 41s49% [2 spotify-client 18,0 MB/37,6 MB 48%]                         475 kB/s 41s50% [2 spotify-client 18,3 MB/37,6 MB 49%]                         475 kB/s 40s51% [2 spotify-client 18,6 MB/37,6 MB 50%]                         475 kB/s 39s52% [2 spotify-client 18,9 MB/37,6 MB 50%]                         475 kB/s 39s52% [2 spotify-client 19,3 MB/37,6 MB 51%]                         636 kB/s 28s53% [2 spotify-client 19,6 MB/37,6 MB 52%]                         636 kB/s 28s54% [2 spotify-client 19,8 MB/37,6 MB 53%]                         636 kB/s 27s54% [2 spotify-client 20,0 MB/37,6 MB 53%]                         636 kB/s 27s55% [2 spotify-client 20,2 MB/37,6 MB 54%]                         636 kB/s 27s55% [2 spotify-client 20,4 MB/37,6 MB 54%]                         636 kB/s 26s56% [2 spotify-client 20,6 MB/37,6 MB 55%]                         636 kB/s 26s56% [2 spotify-client 20,8 MB/37,6 MB 55%]                         636 kB/s 26s57% [2 spotify-client 21,1 MB/37,6 MB 56%]                         636 kB/s 25s58% [2 spotify-client 21,3 MB/37,6 MB 57%]                         636 kB/s 25s58% [2 spotify-client 21,4 MB/37,6 MB 57%]                         636 kB/s 25s58% [2 spotify-client 21,5 MB/37,6 MB 57%]                         636 kB/s 25s59% [2 spotify-client 21,7 MB/37,6 MB 58%]                         401 kB/s 39s59% [2 spotify-client 21,9 MB/37,6 MB 58%]                         401 kB/s 39s60% [2 spotify-client 22,0 MB/37,6 MB 59%]                         401 kB/s 38s60% [2 spotify-client 22,2 MB/37,6 MB 59%]                         401 kB/s 38s60% [2 spotify-client 22,3 MB/37,6 MB 59%]                         401 kB/s 37s61% [2 spotify-client 22,5 MB/37,6 MB 60%]                         401 kB/s 37s61% [2 spotify-client 22,6 MB/37,6 MB 60%]                         401 kB/s 37s62% [2 spotify-client 22,8 MB/37,6 MB 61%]                         401 kB/s 36s62% [2 spotify-client 23,0 MB/37,6 MB 61%]                         401 kB/s 36s63% [2 spotify-client 23,2 MB/37,6 MB 62%]                         401 kB/s 35s63% [2 spotify-client 23,4 MB/37,6 MB 62%]                         401 kB/s 35s64% [2 spotify-client 23,6 MB/37,6 MB 63%]                         401 kB/s 34s65% [2 spotify-client 23,9 MB/37,6 MB 64%]                         375 kB/s 36s65% [2 spotify-client 24,2 MB/37,6 MB 64%]                         375 kB/s 35s66% [2 spotify-client 24,5 MB/37,6 MB 65%]                         375 kB/s 34s67% [2 spotify-client 24,8 MB/37,6 MB 66%]                         375 kB/s 34s67% [2 spotify-client 25,0 MB/37,6 MB 67%]                         375 kB/s 33s68% [2 spotify-client 25,3 MB/37,6 MB 67%]                         375 kB/s 32s69% [2 spotify-client 25,6 MB/37,6 MB 68%]                         375 kB/s 31s70% [2 spotify-client 25,8 MB/37,6 MB 69%]                         375 kB/s 31s70% [2 spotify-client 26,1 MB/37,6 MB 70%]                         375 kB/s 30s71% [2 spotify-client 26,4 MB/37,6 MB 70%]                         375 kB/s 29s72% [2 spotify-client 26,7 MB/37,6 MB 71%]                         375 kB/s 28s73% [2 spotify-client 27,0 MB/37,6 MB 72%]                         375 kB/s 28s74% [2 spotify-client 27,4 MB/37,6 MB 73%]                         575 kB/s 17s74% [2 spotify-client 27,6 MB/37,6 MB 74%]                         575 kB/s 17s75% [2 spotify-client 27,8 MB/37,6 MB 74%]                         575 kB/s 16s75% [2 spotify-client 28,1 MB/37,6 MB 75%]                         575 kB/s 16s76% [2 spotify-client 28,3 MB/37,6 MB 75%]                         575 kB/s 16s77% [2 spotify-client 28,6 MB/37,6 MB 76%]                         575 kB/s 15s77% [2 spotify-client 28,9 MB/37,6 MB 77%]                         575 kB/s 15s78% [2 spotify-client 29,1 MB/37,6 MB 77%]                         575 kB/s 14s78% [2 spotify-client 29,2 MB/37,6 MB 78%]                         575 kB/s 14s79% [2 spotify-client 29,4 MB/37,6 MB 78%]                         575 kB/s 14s79% [2 spotify-client 29,5 MB/37,6 MB 78%]                         575 kB/s 14s79% [2 spotify-client 29,6 MB/37,6 MB 79%]                         575 kB/s 13s80% [2 spotify-client 29,7 MB/37,6 MB 79%]                         385 kB/s 20s80% [2 spotify-client 29,8 MB/37,6 MB 79%]                         385 kB/s 20s80% [2 spotify-client 29,9 MB/37,6 MB 80%]                         385 kB/s 19s80% [2 spotify-client 30,0 MB/37,6 MB 80%]                         385 kB/s 19s81% [2 spotify-client 30,2 MB/37,6 MB 80%]                         385 kB/s 19s81% [2 spotify-client 30,3 MB/37,6 MB 81%]                         385 kB/s 18s81% [2 spotify-client 30,4 MB/37,6 MB 81%]                         385 kB/s 18s82% [2 spotify-client 30,6 MB/37,6 MB 81%]                         385 kB/s 18s82% [2 spotify-client 30,7 MB/37,6 MB 82%]                         385 kB/s 17s83% [2 spotify-client 30,9 MB/37,6 MB 82%]                         385 kB/s 17s83% [2 spotify-client 31,1 MB/37,6 MB 83%]                         385 kB/s 16s84% [2 spotify-client 31,3 MB/37,6 MB 83%]                         385 kB/s 16s84% [2 spotify-client 31,4 MB/37,6 MB 84%]                         291 kB/s 21s85% [2 spotify-client 31,6 MB/37,6 MB 84%]                         291 kB/s 20s85% [2 spotify-client 31,8 MB/37,6 MB 85%]                         291 kB/s 19s86% [2 spotify-client 32,0 MB/37,6 MB 85%]                         291 kB/s 19s86% [2 spotify-client 32,1 MB/37,6 MB 86%]                         291 kB/s 18s86% [2 spotify-client 32,2 MB/37,6 MB 86%]                         291 kB/s 18s87% [2 spotify-client 32,4 MB/37,6 MB 86%]                         291 kB/s 17s87% [2 spotify-client 32,5 MB/37,6 MB 87%]                         291 kB/s 17s87% [2 spotify-client 32,7 MB/37,6 MB 87%]                         291 kB/s 16s88% [2 spotify-client 32,9 MB/37,6 MB 88%]                         291 kB/s 16s88% [2 spotify-client 33,1 MB/37,6 MB 88%]                         291 kB/s 15s89% [2 spotify-client 33,2 MB/37,6 MB 88%]                         291 kB/s 14s89% [2 spotify-client 33,3 MB/37,6 MB 89%]                         307 kB/s 13s89% [2 spotify-client 33,4 MB/37,6 MB 89%]                         307 kB/s 13s89% [2 spotify-client 33,5 MB/37,6 MB 89%]                         307 kB/s 13s89% [2 spotify-client 33,5 MB/37,6 MB 89%]                         307 kB/s 13s89% [2 spotify-client 33,5 MB/37,6 MB 89%]                         307 kB/s 13s89% [2 spotify-client 33,5 MB/37,6 MB 89%]                         307 kB/s 13s90% [2 spotify-client 33,6 MB/37,6 MB 89%]                         307 kB/s 12s90% [2 spotify-client 33,7 MB/37,6 MB 90%]                         307 kB/s 12s90% [2 spotify-client 33,9 MB/37,6 MB 90%]                         307 kB/s 11s91% [2 spotify-client 34,0 MB/37,6 MB 91%]                         307 kB/s 11s91% [2 spotify-client 34,2 MB/37,6 MB 91%]                         307 kB/s 10s92% [2 spotify-client 34,4 MB/37,6 MB 92%]                         307 kB/s 10s92% [2 spotify-client 34,6 MB/37,6 MB 92%]                         224 kB/s 13s93% [2 spotify-client 34,9 MB/37,6 MB 93%]                         224 kB/s 11s94% [2 spotify-client 35,2 MB/37,6 MB 94%]                         224 kB/s 10s94% [2 spotify-client 35,4 MB/37,6 MB 94%]                          224 kB/s 9s95% [2 spotify-client 35,7 MB/37,6 MB 95%]                          224 kB/s 8s96% [2 spotify-client 35,9 MB/37,6 MB 96%]                          224 kB/s 7s96% [2 spotify-client 36,2 MB/37,6 MB 96%]                          224 kB/s 6s97% [2 spotify-client 36,4 MB/37,6 MB 97%]                          224 kB/s 5s98% [2 spotify-client 36,6 MB/37,6 MB 98%]                          224 kB/s 4s98% [2 spotify-client 36,8 MB/37,6 MB 98%]                          224 kB/s 3s99% [2 spotify-client 37,1 MB/37,6 MB 99%]                          224 kB/s 2s99% [2 spotify-client 37,3 MB/37,6 MB 99%]                          224 kB/s 0s100% [Pracuje]                                                      224 kB/s 0s                                                                               Pobrano 38,4 MB w 1min 30s (426 kB/s)
-Prekonfiguracja pakietów ...
-Wybieranie wcześniej niewybranego pakietu libssl0.9.8.
-(Odczytywanie bazy danych ... (Odczytywanie bazy danych ... 5%(Odczytywanie bazy danych ... 10%(Odczytywanie bazy danych ... 15%(Odczytywanie bazy danych ... 20%(Odczytywanie bazy danych ... 25%(Odczytywanie bazy danych ... 30%(Odczytywanie bazy danych ... 35%(Odczytywanie bazy danych ... 40%(Odczytywanie bazy danych ... 45%(Odczytywanie bazy danych ... 50%(Odczytywanie bazy danych ... 55%(Odczytywanie bazy danych ... 60%(Odczytywanie bazy danych ... 65%(Odczytywanie bazy danych ... 70%(Odczytywanie bazy danych ... 75%(Odczytywanie bazy danych ... 80%(Odczytywanie bazy danych ... 85%(Odczytywanie bazy danych ... 90%(Odczytywanie bazy danych ... 95%(Odczytywanie bazy danych ... 100%(Odczytywanie bazy danych ... 186650 plików i katalogów obecnie zainstalowanych.)
-Rozpakowanie libssl0.9.8 (z .../libssl0.9.8_0.9.8o-7ubuntu3.1_amd64.deb) ...
-Wybieranie wcześniej niewybranego pakietu spotify-client.
-Rozpakowanie spotify-client (z .../spotify-client_1%3a0.9.0.133.gd18ed58.259-1_amd64.deb) ...
-Konfigurowanie libssl0.9.8 (0.9.8o-7ubuntu3.1) ...
-Konfigurowanie spotify-client (1:0.9.0.133.gd18ed58.259-1) ...
-Przetwarzanie wyzwalaczy dla libc-bin...
-ldconfig deferred processing now taking place
-luke@luke-ThinkPad-E525:~/shop$ sudo apt-get install spotify-clientupdate[Kvi /etc/apt/sources.listgit push[K^C
-luke@luke-ThinkPad-E525:~/shop$ ls
-app	   db	  Gemfile	log	  README.rdoc  script	  tmp
-config	   db.sh  Gemfile.lock	public	  rest	       server.sh  vendor
-config.ru  doc	  lib		Rakefile  screenlog.0  test
-luke@luke-ThinkPad-E525:~/shop$ gedit rest/oukwi &
-[1] 5395
-luke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string
-[1m[37m      invoke[0m  active_record
-[1m[32m      create[0m    db/migrate/20130607112019_create_countries.rb
-[1m[32m      create[0m    app/models/country.rb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/unit/country_test.rb
-[1m[32m      create[0m      test/fixtures/countries.yml
-[1m[37m      invoke[0m  resource_route
-[1m[32m       route[0m    resources :countries
-[1m[37m      invoke[0m  scaffold_controller
-[1m[32m      create[0m    app/controllers/countries_controller.rb
-[1m[37m      invoke[0m    erb
-[1m[32m      create[0m      app/views/countries
-[1m[32m      create[0m      app/views/countries/index.html.erb
-[1m[32m      create[0m      app/views/countries/edit.html.erb
-[1m[32m      create[0m      app/views/countries/show.html.erb
-[1m[32m      create[0m      app/views/countries/new.html.erb
-[1m[32m      create[0m      app/views/countries/_form.html.erb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/functional/countries_controller_test.rb
-[1m[37m      invoke[0m    helper
-[1m[32m      create[0m      app/helpers/countries_helper.rb
-[1m[37m      invoke[0m      test_unit
-[1m[32m      create[0m        test/unit/helpers/countries_helper_test.rb
-[1m[37m      invoke[0m  assets
-[1m[37m      invoke[0m    coffee
-[1m[32m      create[0m      app/assets/javascripts/countries.js.coffee
-[1m[37m      invoke[0m    scss
-[1m[32m      create[0m      app/assets/stylesheets/countries.css.scss
-[1m[37m      invoke[0m  scss
-[1m[32m      create[0m    app/assets/stylesheets/scaffolds.css.scss
-luke@luke-ThinkPad-E525:~/shop$ rails[Kluke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string[Kluke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string[Kluke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string[Kluke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string[Kluke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string[Kluke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string[Kluke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string[Kluke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string[Kluke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string[Kluke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string[Kluke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string[Kluke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string[Kluke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string[Kluke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string[Kluke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string[Kluke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string[Kluke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string[Kluke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string[Kluke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string[Kluke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string[Kluke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string[Kluke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string[Kluke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string[Kluke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string[Kluke@luke-ThinkPad-E525:~/shop$ rails g scaffold Country name:string^C
-luke@luke-ThinkPad-E525:~/shop$ rails g scaffold Cou[K[K[KAddress name:stringfname:stringiname:stringrname:stringsname:stringtname:string_name:string[C[C[C[C[C[C[C[C[C[C[C  last_name:stringaddr[K[K[K[K address_line_1 address_line_2 postal_code s[Kcit[K[K[K[C[1@:[1@s[1@t[1@r[1@i[1@n[1@g[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@:[1@s[1@t[1@r[1@i[1@n[1@g[C[C[C[C[C[C[C[C[C[C[C[C[C[K:st ring city:string country:references
-[1m[37m      invoke[0m  active_record
-[1m[32m      create[0m    db/migrate/20130607112443_create_addresses.rb
-[1m[32m      create[0m    app/models/address.rb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/unit/address_test.rb
-[1m[32m      create[0m      test/fixtures/addresses.yml
-[1m[37m      invoke[0m  resource_route
-[1m[32m       route[0m    resources :addresses
-[1m[37m      invoke[0m  scaffold_controller
-[1m[32m      create[0m    app/controllers/addresses_controller.rb
-[1m[37m      invoke[0m    erb
-[1m[32m      create[0m      app/views/addresses
-[1m[32m      create[0m      app/views/addresses/index.html.erb
-[1m[32m      create[0m      app/views/addresses/edit.html.erb
-[1m[32m      create[0m      app/views/addresses/show.html.erb
-[1m[32m      create[0m      app/views/addresses/new.html.erb
-[1m[32m      create[0m      app/views/addresses/_form.html.erb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/functional/addresses_controller_test.rb
-[1m[37m      invoke[0m    helper
-[1m[32m      create[0m      app/helpers/addresses_helper.rb
-[1m[37m      invoke[0m      test_unit
-[1m[32m      create[0m        test/unit/helpers/addresses_helper_test.rb
-[1m[37m      invoke[0m  assets
-[1m[37m      invoke[0m    coffee
-[1m[32m      create[0m      app/assets/javascripts/addresses.js.coffee
-[1m[37m      invoke[0m    scss
-[1m[32m      create[0m      app/assets/stylesheets/addresses.css.scss
-[1m[37m      invoke[0m  scss
-[1m[34m   identical[0m    app/assets/stylesheets/scaffolds.css.scss
-luke@luke-ThinkPad-E525:~/shop$ rails g scaffold Address first_name:string llast_name:string address_line_1:string address_line_2:string postal_code:strring city:string country:references[K[K[K[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
-[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
-[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[KProfile first_name:string  last_name_[K:string s[Kdate_of_birth:date telephone_number:string newsletter:inte ger
-[1m[37m      invoke[0m  active_record
-[1m[32m      create[0m    db/migrate/20130607114509_create_profiles.rb
-[1m[32m      create[0m    app/models/profile.rb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/unit/profile_test.rb
-[1m[32m      create[0m      test/fixtures/profiles.yml
-[1m[37m      invoke[0m  resource_route
-[1m[32m       route[0m    resources :profiles
-[1m[37m      invoke[0m  scaffold_controller
-[1m[32m      create[0m    app/controllers/profiles_controller.rb
-[1m[37m      invoke[0m    erb
-[1m[32m      create[0m      app/views/profiles
-[1m[32m      create[0m      app/views/profiles/index.html.erb
-[1m[32m      create[0m      app/views/profiles/edit.html.erb
-[1m[32m      create[0m      app/views/profiles/show.html.erb
-[1m[32m      create[0m      app/views/profiles/new.html.erb
-[1m[32m      create[0m      app/views/profiles/_form.html.erb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/functional/profiles_controller_test.rb
-[1m[37m      invoke[0m    helper
-[1m[32m      create[0m      app/helpers/profiles_helper.rb
-[1m[37m      invoke[0m      test_unit
-[1m[32m      create[0m        test/unit/helpers/profiles_helper_test.rb
-[1m[37m      invoke[0m  assets
-[1m[37m      invoke[0m    coffee
-[1m[32m      create[0m      app/assets/javascripts/profiles.js.coffee
-[1m[37m      invoke[0m    scss
-[1m[32m      create[0m      app/assets/stylesheets/profiles.css.scss
-[1m[37m      invoke[0m  scss
-[1m[34m   identical[0m    app/assets/stylesheets/scaffolds.css.scss
-luke@luke-ThinkPad-E525:~/shop$ rails g sh[Kcaffold Devl[K[Klivery [K:nae[K[K[K[K name:sti[Kring cost: integer
-[1m[37m      invoke[0m  active_record
-[1m[32m      create[0m    db/migrate/20130607114610_create_deliveries.rb
-[1m[32m      create[0m    app/models/delivery.rb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/unit/delivery_test.rb
-[1m[32m      create[0m      test/fixtures/deliveries.yml
-[1m[37m      invoke[0m  resource_route
-[1m[32m       route[0m    resources :deliveries
-[1m[37m      invoke[0m  scaffold_controller
-[1m[32m      create[0m    app/controllers/deliveries_controller.rb
-[1m[37m      invoke[0m    erb
-[1m[32m      create[0m      app/views/deliveries
-[1m[32m      create[0m      app/views/deliveries/index.html.erb
-[1m[32m      create[0m      app/views/deliveries/edit.html.erb
-[1m[32m      create[0m      app/views/deliveries/show.html.erb
-[1m[32m      create[0m      app/views/deliveries/new.html.erb
-[1m[32m      create[0m      app/views/deliveries/_form.html.erb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/functional/deliveries_controller_test.rb
-[1m[37m      invoke[0m    helper
-[1m[32m      create[0m      app/helpers/deliveries_helper.rb
-[1m[37m      invoke[0m      test_unit
-[1m[32m      create[0m        test/unit/helpers/deliveries_helper_test.rb
-[1m[37m      invoke[0m  assets
-[1m[37m      invoke[0m    coffee
-[1m[32m      create[0m      app/assets/javascripts/deliveries.js.coffee
-[1m[37m      invoke[0m    scss
-[1m[32m      create[0m      app/assets/stylesheets/deliveries.css.scss
-[1m[37m      invoke[0m  scss
-[1m[34m   identical[0m    app/assets/stylesheets/scaffolds.css.scss
-luke@luke-ThinkPad-E525:~/shop$ rails g c[Kscaffold PaymentMethod name:string
-[1m[37m      invoke[0m  active_record
-[1m[32m      create[0m    db/migrate/20130607114623_create_payment_methods.rb
-[1m[32m      create[0m    app/models/payment_method.rb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/unit/payment_method_test.rb
-[1m[32m      create[0m      test/fixtures/payment_methods.yml
-[1m[37m      invoke[0m  resource_route
-[1m[32m       route[0m    resources :payment_methods
-[1m[37m      invoke[0m  scaffold_controller
-[1m[32m      create[0m    app/controllers/payment_methods_controller.rb
-[1m[37m      invoke[0m    erb
-[1m[32m      create[0m      app/views/payment_methods
-[1m[32m      create[0m      app/views/payment_methods/index.html.erb
-[1m[32m      create[0m      app/views/payment_methods/edit.html.erb
-[1m[32m      create[0m      app/views/payment_methods/show.html.erb
-[1m[32m      create[0m      app/views/payment_methods/new.html.erb
-[1m[32m      create[0m      app/views/payment_methods/_form.html.erb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/functional/payment_methods_controller_test.rb
-[1m[37m      invoke[0m    helper
-[1m[32m      create[0m      app/helpers/payment_methods_helper.rb
-[1m[37m      invoke[0m      test_unit
-[1m[32m      create[0m        test/unit/helpers/payment_methods_helper_test.rb
-[1m[37m      invoke[0m  assets
-[1m[37m      invoke[0m    coffee
-[1m[32m      create[0m      app/assets/javascripts/payment_methods.js.coffee
-[1m[37m      invoke[0m    scss
-[1m[32m      create[0m      app/assets/stylesheets/payment_methods.css.scss
-[1m[37m      invoke[0m  scss
-[1m[34m   identical[0m    app/assets/stylesheets/scaffolds.css.scss
-luke@luke-ThinkPad-E525:~/shop$ rails g scaffoldCa[K[K Category t[Ka[Kname:sr[Ktring paren t:[K_id:integer lft:integer rg[Kht[K[Kgt:integer depth:integer
-[1m[37m      invoke[0m  active_record
-[1m[32m      create[0m    db/migrate/20130607114728_create_categories.rb
-[1m[32m      create[0m    app/models/category.rb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/unit/category_test.rb
-[1m[32m      create[0m      test/fixtures/categories.yml
-[1m[37m      invoke[0m  resource_route
-[1m[32m       route[0m    resources :categories
-[1m[37m      invoke[0m  scaffold_controller
-[1m[32m      create[0m    app/controllers/categories_controller.rb
-[1m[37m      invoke[0m    erb
-[1m[32m      create[0m      app/views/categories
-[1m[32m      create[0m      app/views/categories/index.html.erb
-[1m[32m      create[0m      app/views/categories/edit.html.erb
-[1m[32m      create[0m      app/views/categories/show.html.erb
-[1m[32m      create[0m      app/views/categories/new.html.erb
-[1m[32m      create[0m      app/views/categories/_form.html.erb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/functional/categories_controller_test.rb
-[1m[37m      invoke[0m    helper
-[1m[32m      create[0m      app/helpers/categories_helper.rb
-[1m[37m      invoke[0m      test_unit
-[1m[32m      create[0m        test/unit/helpers/categories_helper_test.rb
-[1m[37m      invoke[0m  assets
-[1m[37m      invoke[0m    coffee
-[1m[32m      create[0m      app/assets/javascripts/categories.js.coffee
-[1m[37m      invoke[0m    scss
-[1m[32m      create[0m      app/assets/stylesheets/categories.css.scss
-[1m[37m      invoke[0m  scss
-[1m[34m   identical[0m    app/assets/stylesheets/scaffolds.css.scss
-luke@luke-ThinkPad-E525:~/shop$ rails g scs[Kaffold OrderPosition [K[Kscaffold Produ[K[K[Kofile [KProduct category:reference s price:integer name:string producer:\^C
-luke@luke-ThinkPad-E525:~/shop$ 
-luke@luke-ThinkPad-E525:~/shop$ rails g scaffold Producer name:string
-[1m[37m      invoke[0m  active_record
-[1m[32m      create[0m    db/migrate/20130607115611_create_producers.rb
-[1m[32m      create[0m    app/models/producer.rb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/unit/producer_test.rb
-[1m[32m      create[0m      test/fixtures/producers.yml
-[1m[37m      invoke[0m  resource_route
-[1m[32m       route[0m    resources :producers
-[1m[37m      invoke[0m  scaffold_controller
-[1m[32m      create[0m    app/controllers/producers_controller.rb
-[1m[37m      invoke[0m    erb
-[1m[32m      create[0m      app/views/producers
-[1m[32m      create[0m      app/views/producers/index.html.erb
-[1m[32m      create[0m      app/views/producers/edit.html.erb
-[1m[32m      create[0m      app/views/producers/show.html.erb
-[1m[32m      create[0m      app/views/producers/new.html.erb
-[1m[32m      create[0m      app/views/producers/_form.html.erb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/functional/producers_controller_test.rb
-[1m[37m      invoke[0m    helper
-[1m[32m      create[0m      app/helpers/producers_helper.rb
-[1m[37m      invoke[0m      test_unit
-[1m[32m      create[0m        test/unit/helpers/producers_helper_test.rb
-[1m[37m      invoke[0m  assets
-[1m[37m      invoke[0m    coffee
-[1m[32m      create[0m      app/assets/javascripts/producers.js.coffee
-[1m[37m      invoke[0m    scss
-[1m[32m      create[0m      app/assets/stylesheets/producers.css.scss
-[1m[37m      invoke[0m  scss
-[1m[34m   identical[0m    app/assets/stylesheets/scaffolds.css.scss
-luke@luke-ThinkPad-E525:~/shop$ rails  [Kg scaffold Product category:reference s price;i[K[K:integer name:string producer:P[Kreferences[Kreferences wva[K[K[Kavailability:integer netrt[K[Kto: integer brutto:integer
-[31mCould not find gem 'paperclip (~> 3.0) ruby' in the gems available on this machine.[0m
-[33mRun `bundle install` to install missing gems.[0m
-luke@luke-ThinkPad-E525:~/shop$ bundle install
-Fetching gem metadata from https://rubygems.org/..........
-Fetching gem metadata from https://rubygems.org/..
-Resolving dependencies...
-Using rake (10.0.4) 
-Using i18n (0.6.1) 
-Using multi_json (1.7.6) 
-Using activesupport (3.2.13) 
-Using builder (3.0.4) 
-Using activemodel (3.2.13) 
-Using erubis (2.7.0) 
-Using journey (1.0.4) 
-Using rack (1.4.5) 
-Using rack-cache (1.2) 
-Using rack-test (0.6.2) 
-Using hike (1.2.3) 
-Using tilt (1.4.1) 
-Using sprockets (2.2.2) 
-Using actionpack (3.2.13) 
-Using mime-types (1.23) 
-Using polyglot (0.3.3) 
-Using treetop (1.4.14) 
-Using mail (2.5.4) 
-Using actionmailer (3.2.13) 
-Using arel (3.0.2) 
-Using tzinfo (0.3.37) 
-Using activerecord (3.2.13) 
-Using activeresource (3.2.13) 
-Using awesome_nested_set (2.1.6) 
-Using bcrypt-ruby (3.0.1) 
-Using bundler (1.3.5) 
-Using cancan (1.6.10) 
-Installing climate_control (0.0.3) 
-Installing cocaine (0.5.1) 
-Using coffee-script-source (1.6.2) 
-Using execjs (1.4.0) 
-Using coffee-script (2.2.0) 
-Using rack-ssl (1.3.3) 
-Using json (1.8.0) 
-Using rdoc (3.12.2) 
-Using thor (0.18.1) 
-Using railties (3.2.13) 
-Using coffee-rails (3.2.2) 
-Using commonjs (0.2.6) 
-Using orm_adapter (0.4.0) 
-Using warden (1.2.1) 
-Using devise (2.2.4) 
-Using jquery-rails (3.0.0) 
-Using less (2.3.2) 
-Using less-rails (2.3.3) 
-Using libv8 (3.11.8.17) 
-Installing paperclip (3.4.2) 
-Using rails (3.2.13) 
-Using ref (1.0.5) 
-Using rolify (3.2.0) 
-Using sass (3.2.9) 
-Using sass-rails (3.2.6) 
-Using sqlite3 (1.3.7) 
-Using therubyracer (0.11.4) 
-Using twitter-bootstrap-rails (2.2.7) 
-Using uglifier (2.1.1) 
-[32mYour bundle is complete![0m
-[32mUse `bundle show [gemname]` to see where a bundled gem is installed.[0m
-[32mPost-install message from paperclip:[0m
-##################################################
-#  NOTE FOR UPGRADING FROM PRE-3.0 VERSION       #
-##################################################
-
-Paperclip 3.0 introduces a non-backward compatible change in your attachment
-path. This will help to prevent attachment name clashes when you have
-multiple attachments with the same name. If you didn't alter your
-attachment's path and are using Paperclip's default, you'll have to add
-`:path` and `:url` to your `has_attached_file` definition. For example:
-
-    has_attached_file :avatar,
-      :path => ":rails_root/public/system/:attachment/:id/:style/:filename",
-      :url => "/system/:attachment/:id/:style/:filename"
-
-luke@luke-ThinkPad-E525:~/shop$ rails generate paperclip Product image[1Pimage image[1P[1@p
-[1m[32m      create[0m  db/migrate/20130607120735_add_attachment_image_to_products.rb
-luke@luke-ThinkPad-E525:~/shop$ rails generate paperclip product image[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[24Pbundle installrails g scaffold Product category:referencess price:integer name:string producer:references availability:integer netto:iinteger brutto:integer
-[1m[37m      invoke[0m  active_record
-[1m[32m      create[0m    db/migrate/20130607120847_create_products.rb
-[1m[32m      create[0m    app/models/product.rb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/unit/product_test.rb
-[1m[32m      create[0m      test/fixtures/products.yml
-[1m[37m      invoke[0m  resource_route
-[1m[32m       route[0m    resources :products
-[1m[37m      invoke[0m  scaffold_controller
-[1m[32m      create[0m    app/controllers/products_controller.rb
-[1m[37m      invoke[0m    erb
-[1m[32m      create[0m      app/views/products
-[1m[32m      create[0m      app/views/products/index.html.erb
-[1m[32m      create[0m      app/views/products/edit.html.erb
-[1m[32m      create[0m      app/views/products/show.html.erb
-[1m[32m      create[0m      app/views/products/new.html.erb
-[1m[32m      create[0m      app/views/products/_form.html.erb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/functional/products_controller_test.rb
-[1m[37m      invoke[0m    helper
-[1m[32m      create[0m      app/helpers/products_helper.rb
-[1m[37m      invoke[0m      test_unit
-[1m[32m      create[0m        test/unit/helpers/products_helper_test.rb
-[1m[37m      invoke[0m  assets
-[1m[37m      invoke[0m    coffee
-[1m[32m      create[0m      app/assets/javascripts/products.js.coffee
-[1m[37m      invoke[0m    scss
-[1m[32m      create[0m      app/assets/stylesheets/products.css.scss
-[1m[37m      invoke[0m  scss
-[1m[34m   identical[0m    app/assets/stylesheets/scaffolds.css.scss
-luke@luke-ThinkPad-E525:~/shop$ rails g scaffold Product category:referencess price:integer name:string producer:references availability:integer netto:iinteger brutto:integerMM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Penerate paperclip product image
-[K
-[KMM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C scaffold Product category:referencess price:integer name:string producer:references availability:integer netto:iinteger brutto:integerM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C:in[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C:int[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-[C[C[C[C[C[C[C[C[C[C[C[C[1P:integer[1P:integer[4P:integer[C[C[C[C[C[Cg:integero:integerr:integers:integer[1P:integer[1P:integer[1P:integerr:integero:integers:integers:integer
-[1m[37m      invoke[0m  active_record
-Another migration is already named create_products: /home/luke/shop/db/migrate/20130607120847_create_products.rb
-luke@luke-ThinkPad-E525:~/shop$ rails destroy scaffold Product
-[1m[37m      invoke[0m  active_record
-[1m[31m      remove[0m    db/migrate/20130607120847_create_products.rb
-[1m[31m      remove[0m    app/models/product.rb
-[1m[37m      invoke[0m    test_unit
-[1m[31m      remove[0m      test/unit/product_test.rb
-[1m[31m      remove[0m      test/fixtures/products.yml
-[1m[37m      invoke[0m  resource_route
-[1m[31m       route[0m    resources :products
-[1m[37m      invoke[0m  scaffold_controller
-[1m[31m      remove[0m    app/controllers/products_controller.rb
-[1m[37m      invoke[0m    erb
-[1m[31m      remove[0m      app/views/products
-[1m[31m      remove[0m      app/views/products/index.html.erb
-[1m[31m      remove[0m      app/views/products/edit.html.erb
-[1m[31m      remove[0m      app/views/products/show.html.erb
-[1m[31m      remove[0m      app/views/products/new.html.erb
-[1m[31m      remove[0m      app/views/products/_form.html.erb
-[1m[37m      invoke[0m    test_unit
-[1m[31m      remove[0m      test/functional/products_controller_test.rb
-[1m[37m      invoke[0m    helper
-[1m[31m      remove[0m      app/helpers/products_helper.rb
-[1m[37m      invoke[0m      test_unit
-[1m[31m      remove[0m        test/unit/helpers/products_helper_test.rb
-[1m[37m      invoke[0m  assets
-[1m[37m      invoke[0m    coffee
-[1m[31m      remove[0m      app/assets/javascripts/products.js.coffee
-[1m[37m      invoke[0m    scss
-[1m[31m      remove[0m      app/assets/stylesheets/products.css.scss
-[1m[37m      invoke[0m  scss
-luke@luke-ThinkPad-E525:~/shop$ rails destroy scaffold Productg scaffold Product category:referencess price:integer name:string producer:references availability:integer net:intteger gross:integer
-[1m[37m      invoke[0m  active_record
-[1m[32m      create[0m    db/migrate/20130607121442_create_products.rb
-[1m[32m      create[0m    app/models/product.rb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/unit/product_test.rb
-[1m[32m      create[0m      test/fixtures/products.yml
-[1m[37m      invoke[0m  resource_route
-[1m[32m       route[0m    resources :products
-[1m[37m      invoke[0m  scaffold_controller
-[1m[32m      create[0m    app/controllers/products_controller.rb
-[1m[37m      invoke[0m    erb
-[1m[32m      create[0m      app/views/products
-[1m[32m      create[0m      app/views/products/index.html.erb
-[1m[32m      create[0m      app/views/products/edit.html.erb
-[1m[32m      create[0m      app/views/products/show.html.erb
-[1m[32m      create[0m      app/views/products/new.html.erb
-[1m[32m      create[0m      app/views/products/_form.html.erb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/functional/products_controller_test.rb
-[1m[37m      invoke[0m    helper
-[1m[32m      create[0m      app/helpers/products_helper.rb
-[1m[37m      invoke[0m      test_unit
-[1m[32m      create[0m        test/unit/helpers/products_helper_test.rb
-[1m[37m      invoke[0m  assets
-[1m[37m      invoke[0m    coffee
-[1m[32m      create[0m      app/assets/javascripts/products.js.coffee
-[1m[37m      invoke[0m    scss
-[1m[32m      create[0m      app/assets/stylesheets/products.css.scss
-[1m[37m      invoke[0m  scss
-[1m[34m   identical[0m    app/assets/stylesheets/scaffolds.css.scss
-luke@luke-ThinkPad-E525:~/shop$ rails g scaffold OrderPosition product:refe rences price:integer ao[Kmount:integer wie[K[Keight:integer
-[1m[37m      invoke[0m  active_record
-[1m[32m      create[0m    db/migrate/20130607122601_create_order_positions.rb
-[1m[32m      create[0m    app/models/order_position.rb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/unit/order_position_test.rb
-[1m[32m      create[0m      test/fixtures/order_positions.yml
-[1m[37m      invoke[0m  resource_route
-[1m[32m       route[0m    resources :order_positions
-[1m[37m      invoke[0m  scaffold_controller
-[1m[32m      create[0m    app/controllers/order_positions_controller.rb
-[1m[37m      invoke[0m    erb
-[1m[32m      create[0m      app/views/order_positions
-[1m[32m      create[0m      app/views/order_positions/index.html.erb
-[1m[32m      create[0m      app/views/order_positions/edit.html.erb
-[1m[32m      create[0m      app/views/order_positions/show.html.erb
-[1m[32m      create[0m      app/views/order_positions/new.html.erb
-[1m[32m      create[0m      app/views/order_positions/_form.html.erb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/functional/order_positions_controller_test.rb
-[1m[37m      invoke[0m    helper
-[1m[32m      create[0m      app/helpers/order_positions_helper.rb
-[1m[37m      invoke[0m      test_unit
-[1m[32m      create[0m        test/unit/helpers/order_positions_helper_test.rb
-[1m[37m      invoke[0m  assets
-[1m[37m      invoke[0m    coffee
-[1m[32m      create[0m      app/assets/javascripts/order_positions.js.coffee
-[1m[37m      invoke[0m    scss
-[1m[32m      create[0m      app/assets/stylesheets/order_positions.css.scss
-[1m[37m      invoke[0m  scss
-[1m[34m   identical[0m    app/assets/stylesheets/scaffolds.css.scss
-luke@luke-ThinkPad-E525:~/shop$ ail[K[K[Krails g svaf[K[K[Kcafof[K[Kfold Basket user:references sta tiu[K[Kus:integer
-[1m[37m      invoke[0m  active_record
-[1m[32m      create[0m    db/migrate/20130607122716_create_baskets.rb
-[1m[32m      create[0m    app/models/basket.rb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/unit/basket_test.rb
-[1m[32m      create[0m      test/fixtures/baskets.yml
-[1m[37m      invoke[0m  resource_route
-[1m[32m       route[0m    resources :baskets
-[1m[37m      invoke[0m  scaffold_controller
-[1m[32m      create[0m    app/controllers/baskets_controller.rb
-[1m[37m      invoke[0m    erb
-[1m[32m      create[0m      app/views/baskets
-[1m[32m      create[0m      app/views/baskets/index.html.erb
-[1m[32m      create[0m      app/views/baskets/edit.html.erb
-[1m[32m      create[0m      app/views/baskets/show.html.erb
-[1m[32m      create[0m      app/views/baskets/new.html.erb
-[1m[32m      create[0m      app/views/baskets/_form.html.erb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/functional/baskets_controller_test.rb
-[1m[37m      invoke[0m    helper
-[1m[32m      create[0m      app/helpers/baskets_helper.rb
-[1m[37m      invoke[0m      test_unit
-[1m[32m      create[0m        test/unit/helpers/baskets_helper_test.rb
-[1m[37m      invoke[0m  assets
-[1m[37m      invoke[0m    coffee
-[1m[32m      create[0m      app/assets/javascripts/baskets.js.coffee
-[1m[37m      invoke[0m    scss
-[1m[32m      create[0m      app/assets/stylesheets/baskets.css.scss
-[1m[37m      invoke[0m  scss
-[1m[34m   identical[0m    app/assets/stylesheets/scaffolds.css.scss
-luke@luke-ThinkPad-E525:~/shop$ rails g scaffold Basket user:references stattus:integerM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[COrderPosition product:references price:integer amount:integer weight:integerMProduct category:references price:integer name:string producer:references availability:integer net:intteger gross:integerMM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pdestroy scaffold Product
-[K
-[KMM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-[1m[37m      invoke[0m  active_record
-[1m[31m      remove[0m    db/migrate/20130607121442_create_products.rb
-[1m[31m      remove[0m    app/models/product.rb
-[1m[37m      invoke[0m    test_unit
-[1m[31m      remove[0m      test/unit/product_test.rb
-[1m[31m      remove[0m      test/fixtures/products.yml
-[1m[37m      invoke[0m  resource_route
-[1m[31m       route[0m    resources :products
-[1m[37m      invoke[0m  scaffold_controller
-[1m[31m      remove[0m    app/controllers/products_controller.rb
-[1m[37m      invoke[0m    erb
-[1m[31m      remove[0m      app/views/products
-[1m[31m      remove[0m      app/views/products/index.html.erb
-[1m[31m      remove[0m      app/views/products/edit.html.erb
-[1m[31m      remove[0m      app/views/products/show.html.erb
-[1m[31m      remove[0m      app/views/products/new.html.erb
-[1m[31m      remove[0m      app/views/products/_form.html.erb
-[1m[37m      invoke[0m    test_unit
-[1m[31m      remove[0m      test/functional/products_controller_test.rb
-[1m[37m      invoke[0m    helper
-[1m[31m      remove[0m      app/helpers/products_helper.rb
-[1m[37m      invoke[0m      test_unit
-[1m[31m      remove[0m        test/unit/helpers/products_helper_test.rb
-[1m[37m      invoke[0m  assets
-[1m[37m      invoke[0m    coffee
-[1m[31m      remove[0m      app/assets/javascripts/products.js.coffee
-[1m[37m      invoke[0m    scss
-[1m[31m      remove[0m      app/assets/stylesheets/products.css.scss
-[1m[37m      invoke[0m  scss
-luke@luke-ThinkPad-E525:~/shop$ rails destroy scaffold Productg scaffold Basket user:references stattus:integerM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[COrderPosition product:references price:integer amount:integer weight:integerMProduct category:references price:integer name:string producer:references availability:integer net:intteger gross:integerM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cname:string producer:references availability:integer net:integer gro[8Pss:integerM[C[Cname:string producer:references availability:integer net:integer gross:int[6PegerM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C_:integer gross:integerM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cp:integer gross:integerM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr:integer gross:integerM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci:integer gross:integerM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc:integer gross:integerM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce:integer gro[Cs:integerM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-[C[C[C_:integer[C[C[C[Cp:integer[C[C[C[C[Cr:integer[C[C[C[C[C[Ci:integerc:integere:integer
-[1m[37m      invoke[0m  active_record
-[1m[32m      create[0m    db/migrate/20130607122803_create_products.rb
-[1m[32m      create[0m    app/models/product.rb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/unit/product_test.rb
-[1m[32m      create[0m      test/fixtures/products.yml
-[1m[37m      invoke[0m  resource_route
-[1m[32m       route[0m    resources :products
-[1m[37m      invoke[0m  scaffold_controller
-[1m[32m      create[0m    app/controllers/products_controller.rb
-[1m[37m      invoke[0m    erb
-[1m[32m      create[0m      app/views/products
-[1m[32m      create[0m      app/views/products/index.html.erb
-[1m[32m      create[0m      app/views/products/edit.html.erb
-[1m[32m      create[0m      app/views/products/show.html.erb
-[1m[32m      create[0m      app/views/products/new.html.erb
-[1m[32m      create[0m      app/views/products/_form.html.erb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/functional/products_controller_test.rb
-[1m[37m      invoke[0m    helper
-[1m[32m      create[0m      app/helpers/products_helper.rb
-[1m[37m      invoke[0m      test_unit
-[1m[32m      create[0m        test/unit/helpers/products_helper_test.rb
-[1m[37m      invoke[0m  assets
-[1m[37m      invoke[0m    coffee
-[1m[32m      create[0m      app/assets/javascripts/products.js.coffee
-[1m[37m      invoke[0m    scss
-[1m[32m      create[0m      app/assets/stylesheets/products.css.scss
-[1m[37m      invoke[0m  scss
-[1m[34m   identical[0m    app/assets/stylesheets/scaffolds.css.scss
-luke@luke-ThinkPad-E525:~/shop$ rails g scaffold Order address:references\^C
-luke@luke-ThinkPad-E525:~/shop$ rails g scaffold Product category:referencess name:string producer:references availability:integer net_price:integer grooss_price:integerMM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pdestroy scaffold Product
-[K
-[KMM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg scaffold Basket user:references stattus:integerM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pdestroy scaffold Product
-[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg scaffold Product category:referencess name:string producer:references availability:integer net_price:integer grooss_price:integerMM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
-[K
-[KMM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crails g scaffold Order address:references v alue:intee[Kger status : [K[K[K:integer delivery_cost:integer delivery:references pam[Kyme nt_method:references
-[1m[37m      invoke[0m  active_record
-[1m[32m      create[0m    db/migrate/20130607123110_create_orders.rb
-[1m[32m      create[0m    app/models/order.rb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/unit/order_test.rb
-[1m[32m      create[0m      test/fixtures/orders.yml
-[1m[37m      invoke[0m  resource_route
-[1m[32m       route[0m    resources :orders
-[1m[37m      invoke[0m  scaffold_controller
-[1m[32m      create[0m    app/controllers/orders_controller.rb
-[1m[37m      invoke[0m    erb
-[1m[32m      create[0m      app/views/orders
-[1m[32m      create[0m      app/views/orders/index.html.erb
-[1m[32m      create[0m      app/views/orders/edit.html.erb
-[1m[32m      create[0m      app/views/orders/show.html.erb
-[1m[32m      create[0m      app/views/orders/new.html.erb
-[1m[32m      create[0m      app/views/orders/_form.html.erb
-[1m[37m      invoke[0m    test_unit
-[1m[32m      create[0m      test/functional/orders_controller_test.rb
-[1m[37m      invoke[0m    helper
-[1m[32m      create[0m      app/helpers/orders_helper.rb
-[1m[37m      invoke[0m      test_unit
-[1m[32m      create[0m        test/unit/helpers/orders_helper_test.rb
-[1m[37m      invoke[0m  assets
-[1m[37m      invoke[0m    coffee
-[1m[32m      create[0m      app/assets/javascripts/orders.js.coffee
-[1m[37m      invoke[0m    scss
-[1m[32m      create[0m      app/assets/stylesheets/orders.css.scss
-[1m[37m      invoke[0m  scss
-[1m[34m   identical[0m    app/assets/stylesheets/scaffolds.css.scss
-luke@luke-ThinkPad-E525:~/shop$ ./server.sh 
-luke@luke-ThinkPad-E525:~/shop$ route^C
-luke@luke-ThinkPad-E525:~/shop$ rake routes
-                  orders GET    /orders(.:format)                   orders#index
-                         POST   /orders(.:format)                   orders#create
-               new_order GET    /orders/new(.:format)               orders#new
-              edit_order GET    /orders/:id/edit(.:format)          orders#edit
-                   order GET    /orders/:id(.:format)               orders#show
-                         PUT    /orders/:id(.:format)               orders#update
-                         DELETE /orders/:id(.:format)               orders#destroy
-                products GET    /products(.:format)                 products#index
-                         POST   /products(.:format)                 products#create
-             new_product GET    /products/new(.:format)             products#new
-            edit_product GET    /products/:id/edit(.:format)        products#edit
-                 product GET    /products/:id(.:format)             products#show
-                         PUT    /products/:id(.:format)             products#update
-                         DELETE /products/:id(.:format)             products#destroy
-                 baskets GET    /baskets(.:format)                  baskets#index
-                         POST   /baskets(.:format)                  baskets#create
-              new_basket GET    /baskets/new(.:format)              baskets#new
-             edit_basket GET    /baskets/:id/edit(.:format)         baskets#edit
-                  basket GET    /baskets/:id(.:format)              baskets#show
-                         PUT    /baskets/:id(.:format)              baskets#update
-                         DELETE /baskets/:id(.:format)              baskets#destroy
-         order_positions GET    /order_positions(.:format)          order_positions#index
-                         POST   /order_positions(.:format)          order_positions#create
-      new_order_position GET    /order_positions/new(.:format)      order_positions#new
-     edit_order_position GET    /order_positions/:id/edit(.:format) order_positions#edit
-          order_position GET    /order_positions/:id(.:format)      order_positions#show
-                         PUT    /order_positions/:id(.:format)      order_positions#update
-                         DELETE /order_positions/:id(.:format)      order_positions#destroy
-               producers GET    /producers(.:format)                producers#index
-                         POST   /producers(.:format)                producers#create
-            new_producer GET    /producers/new(.:format)            producers#new
-           edit_producer GET    /producers/:id/edit(.:format)       producers#edit
-                producer GET    /producers/:id(.:format)            producers#show
-                         PUT    /producers/:id(.:format)            producers#update
-                         DELETE /producers/:id(.:format)            producers#destroy
-              categories GET    /categories(.:format)               categories#index
-                         POST   /categories(.:format)               categories#create
-            new_category GET    /categories/new(.:format)           categories#new
-           edit_category GET    /categories/:id/edit(.:format)      categories#edit
-                category GET    /categories/:id(.:format)           categories#show
-                         PUT    /categories/:id(.:format)           categories#update
-                         DELETE /categories/:id(.:format)           categories#destroy
-         payment_methods GET    /payment_methods(.:format)          payment_methods#index
-                         POST   /payment_methods(.:format)          payment_methods#create
-      new_payment_method GET    /payment_methods/new(.:format)      payment_methods#new
-     edit_payment_method GET    /payment_methods/:id/edit(.:format) payment_methods#edit
-          payment_method GET    /payment_methods/:id(.:format)      payment_methods#show
-                         PUT    /payment_methods/:id(.:format)      payment_methods#update
-                         DELETE /payment_methods/:id(.:format)      payment_methods#destroy
-              deliveries GET    /deliveries(.:format)               deliveries#index
-                         POST   /deliveries(.:format)               deliveries#create
-            new_delivery GET    /deliveries/new(.:format)           deliveries#new
-           edit_delivery GET    /deliveries/:id/edit(.:format)      deliveries#edit
-                delivery GET    /deliveries/:id(.:format)           deliveries#show
-                         PUT    /deliveries/:id(.:format)           deliveries#update
-                         DELETE /deliveries/:id(.:format)           deliveries#destroy
-                profiles GET    /profiles(.:format)                 profiles#index
-                         POST   /profiles(.:format)                 profiles#create
-             new_profile GET    /profiles/new(.:format)             profiles#new
-            edit_profile GET    /profiles/:id/edit(.:format)        profiles#edit
-                 profile GET    /profiles/:id(.:format)             profiles#show
-                         PUT    /profiles/:id(.:format)             profiles#update
-                         DELETE /profiles/:id(.:format)             profiles#destroy
-               addresses GET    /addresses(.:format)                addresses#index
-                         POST   /addresses(.:format)                addresses#create
-             new_address GET    /addresses/new(.:format)            addresses#new
-            edit_address GET    /addresses/:id/edit(.:format)       addresses#edit
-                 address GET    /addresses/:id(.:format)            addresses#show
-                         PUT    /addresses/:id(.:format)            addresses#update
-                         DELETE /addresses/:id(.:format)            addresses#destroy
-               countries GET    /countries(.:format)                countries#index
-                         POST   /countries(.:format)                countries#create
-             new_country GET    /countries/new(.:format)            countries#new
-            edit_country GET    /countries/:id/edit(.:format)       countries#edit
-                 country GET    /countries/:id(.:format)            countries#show
-                         PUT    /countries/:id(.:format)            countries#update
-                         DELETE /countries/:id(.:format)            countries#destroy
-                    root        /                                   home#index
-              home_index GET    /home/index(.:format)               home#index
-        new_user_session GET    /users/sign_in(.:format)            devise/sessions#new
-            user_session POST   /users/sign_in(.:format)            devise/sessions#create
-    destroy_user_session DELETE /users/sign_out(.:format)           devise/sessions#destroy
-           user_password POST   /users/password(.:format)           devise/passwords#create
-       new_user_password GET    /users/password/new(.:format)       devise/passwords#new
-      edit_user_password GET    /users/password/edit(.:format)      devise/passwords#edit
-                         PUT    /users/password(.:format)           devise/passwords#update
-cancel_user_registration GET    /users/cancel(.:format)             devise/registrations#cancel
-       user_registration POST   /users(.:format)                    devise/registrations#create
-   new_user_registration GET    /users/sign_up(.:format)            devise/registrations#new
-  edit_user_registration GET    /users/edit(.:format)               devise/registrations#edit
-                         PUT    /users(.:format)                    devise/registrations#update
-                         DELETE /users(.:format)                    devise/registrations#destroy
-       user_confirmation POST   /users/confirmation(.:format)       devise/confirmations#create
-   new_user_confirmation GET    /users/confirmation/new(.:format)   devise/confirmations#new
-                         GET    /users/confirmation(.:format)       devise/confirmations#show
-luke@luke-ThinkPad-E525:~/shop$ ra[K[K./db.ds[K[Ksh
-==  DeviseCreateUsers: migrating ==============================================
--- create_table(:users)
-   -> 0.0369s
--- add_index(:users, :email, {:unique=>true})
-   -> 0.0020s
--- add_index(:users, :reset_password_token, {:unique=>true})
-   -> 0.0015s
--- add_index(:users, :confirmation_token, {:unique=>true})
-   -> 0.0014s
-==  DeviseCreateUsers: migrated (0.0433s) =====================================
-
-==  RolifyCreateRoles: migrating ==============================================
--- create_table(:roles)
-   -> 0.0044s
--- create_table(:users_roles, {:id=>false})
-   -> 0.0007s
--- add_index(:roles, :name)
-   -> 0.0006s
--- add_index(:roles, [:name, :resource_type, :resource_id])
-   -> 0.0008s
--- add_index(:users_roles, [:user_id, :role_id])
-   -> 0.0005s
-==  RolifyCreateRoles: migrated (0.0077s) =====================================
-
-==  CreateCountries: migrating ================================================
--- create_table(:countries)
-   -> 0.0041s
-==  CreateCountries: migrated (0.0043s) =======================================
-
-==  CreateAddresses: migrating ================================================
--- create_table(:addresses)
-   -> 0.0068s
--- add_index(:addresses, :country_id)
-   -> 0.0007s
-==  CreateAddresses: migrated (0.0078s) =======================================
-
-==  CreateProfiles: migrating =================================================
--- create_table(:profiles)
-   -> 0.0025s
-==  CreateProfiles: migrated (0.0026s) ========================================
-
-==  CreateDeliveries: migrating ===============================================
--- create_table(:deliveries)
-   -> 0.0044s
-==  CreateDeliveries: migrated (0.0047s) ======================================
-
-==  CreatePaymentMethods: migrating ===========================================
--- create_table(:payment_methods)
-   -> 0.0049s
-==  CreatePaymentMethods: migrated (0.0051s) ==================================
-
-==  CreateCategories: migrating ===============================================
--- create_table(:categories)
-   -> 0.0056s
-==  CreateCategories: migrated (0.0059s) ======================================
-
-==  CreateProducers: migrating ================================================
--- create_table(:producers)
-   -> 0.0045s
-==  CreateProducers: migrated (0.0048s) =======================================
-
-==  AddAttachmentImageToProducts: migrating ===================================
--- change_table(:products)
-rake aborted!
-An error has occurred, this and all later migrations canceled:
-
-SQLite3::SQLException: no such table: products: ALTER TABLE "products" ADD "image_file_name" varchar(255)/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/sqlite3-1.3.7/lib/sqlite3/database.rb:91:in `initialize'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/sqlite3-1.3.7/lib/sqlite3/database.rb:91:in `new'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/sqlite3-1.3.7/lib/sqlite3/database.rb:91:in `prepare'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/sqlite3-1.3.7/lib/sqlite3/database.rb:134:in `execute'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/connection_adapters/sqlite_adapter.rb:278:in `block in execute'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract_adapter.rb:280:in `block in log'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract_adapter.rb:275:in `log'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/connection_adapters/sqlite_adapter.rb:278:in `execute'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/schema_statements.rb:264:in `add_column'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/connection_adapters/sqlite_adapter.rb:400:in `add_column'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/schema_definitions.rb:338:in `column'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/paperclip-3.4.2/lib/paperclip/schema.rb:52:in `block (2 levels) in attachment'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/paperclip-3.4.2/lib/paperclip/schema.rb:51:in `each_pair'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/paperclip-3.4.2/lib/paperclip/schema.rb:51:in `block in attachment'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/paperclip-3.4.2/lib/paperclip/schema.rb:50:in `each'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/paperclip-3.4.2/lib/paperclip/schema.rb:50:in `attachment'
-/home/luke/shop/db/migrate/20130607120735_add_attachment_image_to_products.rb:4:in `block in up'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/schema_statements.rb:243:in `change_table'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/migration.rb:466:in `block in method_missing'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/migration.rb:438:in `block in say_with_time'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/migration.rb:438:in `say_with_time'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/migration.rb:458:in `method_missing'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/migration.rb:334:in `method_missing'
-/home/luke/shop/db/migrate/20130607120735_add_attachment_image_to_products.rb:3:in `up'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/migration.rb:370:in `up'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/migration.rb:410:in `block (2 levels) in migrate'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/migration.rb:410:in `block in migrate'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_pool.rb:129:in `with_connection'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/migration.rb:389:in `migrate'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/migration.rb:528:in `migrate'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/migration.rb:720:in `block (2 levels) in migrate'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/migration.rb:775:in `call'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/migration.rb:775:in `block in ddl_transaction'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/database_statements.rb:192:in `transaction'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/transactions.rb:208:in `transaction'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/migration.rb:775:in `ddl_transaction'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/migration.rb:719:in `block in migrate'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/migration.rb:700:in `each'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/migration.rb:700:in `migrate'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/migration.rb:570:in `up'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/migration.rb:551:in `migrate'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/railties/databases.rake:193:in `block (2 levels) in <top (required)>'
-/home/luke/.rvm/gems/ruby-2.0.0-p195@global/gems/rake-10.0.4/lib/rake/task.rb:246:in `call'
-/home/luke/.rvm/gems/ruby-2.0.0-p195@global/gems/rake-10.0.4/lib/rake/task.rb:246:in `block in execute'
-/home/luke/.rvm/gems/ruby-2.0.0-p195@global/gems/rake-10.0.4/lib/rake/task.rb:241:in `each'
-/home/luke/.rvm/gems/ruby-2.0.0-p195@global/gems/rake-10.0.4/lib/rake/task.rb:241:in `execute'
-/home/luke/.rvm/gems/ruby-2.0.0-p195@global/gems/rake-10.0.4/lib/rake/task.rb:184:in `block in invoke_with_call_chain'
-/home/luke/.rvm/gems/ruby-2.0.0-p195@global/gems/rake-10.0.4/lib/rake/task.rb:177:in `invoke_with_call_chain'
-/home/luke/.rvm/gems/ruby-2.0.0-p195@global/gems/rake-10.0.4/lib/rake/task.rb:170:in `invoke'
-/home/luke/.rvm/gems/ruby-2.0.0-p195@global/gems/rake-10.0.4/lib/rake/application.rb:143:in `invoke_task'
-/home/luke/.rvm/gems/ruby-2.0.0-p195@global/gems/rake-10.0.4/lib/rake/application.rb:101:in `block (2 levels) in top_level'
-/home/luke/.rvm/gems/ruby-2.0.0-p195@global/gems/rake-10.0.4/lib/rake/application.rb:101:in `each'
-/home/luke/.rvm/gems/ruby-2.0.0-p195@global/gems/rake-10.0.4/lib/rake/application.rb:101:in `block in top_level'
-/home/luke/.rvm/gems/ruby-2.0.0-p195@global/gems/rake-10.0.4/lib/rake/application.rb:110:in `run_with_threads'
-/home/luke/.rvm/gems/ruby-2.0.0-p195@global/gems/rake-10.0.4/lib/rake/application.rb:95:in `top_level'
-/home/luke/.rvm/gems/ruby-2.0.0-p195@global/gems/rake-10.0.4/lib/rake/application.rb:73:in `block in run'
-/home/luke/.rvm/gems/ruby-2.0.0-p195@global/gems/rake-10.0.4/lib/rake/application.rb:160:in `standard_exception_handling'
-/home/luke/.rvm/gems/ruby-2.0.0-p195@global/gems/rake-10.0.4/lib/rake/application.rb:70:in `run'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/bin/ruby_noexec_wrapper:14:in `eval'
-/home/luke/.rvm/gems/ruby-2.0.0-p195/bin/ruby_noexec_wrapper:14:in `<main>'
-Tasks: TOP => db:migrate
-(See full trace by running task with --trace)
-You have 5 pending migrations:
-  20130607120735 AddAttachmentImageToProducts
-  20130607122601 CreateOrderPositions
-  20130607122716 CreateBaskets
-  20130607122803 CreateProducts
-  20130607123110 CreateOrders
-Run `rake db:migrate` to update your database then try again.
-luke@luke-ThinkPad-E525:~/shop$ cddb[K[K db/migrate/
-luke@luke-ThinkPad-E525:~/shop/db/migrate$ ls
-20130606182556_devise_create_users.rb
-20130606202733_rolify_create_roles.rb
-20130607112019_create_countries.rb
-20130607112443_create_addresses.rb
-20130607114509_create_profiles.rb
-20130607114610_create_deliveries.rb
-20130607114623_create_payment_methods.rb
-20130607114728_create_categories.rb
-20130607115611_create_producers.rb
-20130607120735_add_attachment_image_to_products.rb
-20130607122601_create_order_positions.rb
-20130607122716_create_baskets.rb
-20130607122803_create_products.rb
-20130607123110_create_orders.rb
-luke@luke-ThinkPad-E525:~/shop/db/migrate$ lscd db/migrate/[7P./db.shrake routes./server.sh rails g scaffold Order address:reeferences value:integer status:integer delivery_cost:integer delivery:refereences payment_method:referencesMM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CProduct category:references name:string producer:references availability:integer net_price:[3Pinteger gross_price:integerMM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pdestroy scaffold Product
-[K
-[KMM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C^C
-luke@luke-ThinkPad-E525:~/shop/db/migrate$ lscd db/migrate/[7P./db.shrake routes./server.sh rails g scaffold Order address:reeferences value:integer status:integer delivery_cost:integer delivery:refereences payment_method:referencesMM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CProduct category:references name:string producer:references availability:integer net_price:[3Pinteger gross_price:integerMM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pdestroy scaffold Product
-[K
-[KMM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg scaffold Basket user:refeerences status:integerM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[COrderPosition product:references price:integer amount:integer weight:integer^C
-luke@luke-ThinkPad-E525:~/shop/db/migrate$ ^C
-luke@luke-ThinkPad-E525:~/shop/db/migrate$ ^C
-luke@luke-ThinkPad-E525:~/shop/db/migrate$ ^C
-luke@luke-ThinkPad-E525:~/shop/db/migrate$ ^C
-luke@luke-ThinkPad-E525:~/shop/db/migrate$ clear
-[H[Jluke@luke-ThinkPad-E525:~/shop/db/migrate$ rails g paperclip product image
-Another migration is already named add_attachment_image_to_products: /home/luke/shop/db/migrate/20130607120735_add_attachment_image_to_products.rb
-luke@luke-ThinkPad-E525:~/shop/db/migrate$ ls
-20130606182556_devise_create_users.rb
-20130606202733_rolify_create_roles.rb
-20130607112019_create_countries.rb
-20130607112443_create_addresses.rb
-20130607114509_create_profiles.rb
-20130607114610_create_deliveries.rb
-20130607114623_create_payment_methods.rb
-20130607114728_create_categories.rb
-20130607115611_create_producers.rb
-20130607120735_add_attachment_image_to_products.rb
-20130607122601_create_order_positions.rb
-20130607122716_create_baskets.rb
-20130607122803_create_products.rb
-20130607123110_create_orders.rb
-luke@luke-ThinkPad-E525:~/shop/db/migrate$ rm 20130607120735_add_attachment _image_to_products.rb
-luke@luke-ThinkPad-E525:~/shop/db/migrate$ rm 20130607120735_add_attachment__image_to_products.rbM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
-[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crails g paperclip product image
-[1m[32m      create[0m  db/migrate/20130607123432_add_attachment_image_to_products.rb
-luke@luke-ThinkPad-E525:~/shop/db/migrate$ cd ../..\
-> ^C
-luke@luke-ThinkPad-E525:~/shop/db/migrate$ cd ../..\[K
-luke@luke-ThinkPad-E525:~/shop$ ls
-app	   db	  Gemfile	log	  README.rdoc  script	  tmp
-config	   db.sh  Gemfile.lock	public	  rest	       server.sh  vendor
-config.ru  doc	  lib		Rakefile  screenlog.0  test
-luke@luke-ThinkPad-E525:~/shop$ ./db.sh
-==  DeviseCreateUsers: migrating ==============================================
--- create_table(:users)
-   -> 0.0083s
--- add_index(:users, :email, {:unique=>true})
-   -> 0.0008s
--- add_index(:users, :reset_password_token, {:unique=>true})
-   -> 0.0007s
--- add_index(:users, :confirmation_token, {:unique=>true})
-   -> 0.0007s
-==  DeviseCreateUsers: migrated (0.0110s) =====================================
-
-==  RolifyCreateRoles: migrating ==============================================
--- create_table(:roles)
-   -> 0.0043s
--- create_table(:users_roles, {:id=>false})
-   -> 0.0013s
--- add_index(:roles, :name)
-   -> 0.0016s
--- add_index(:roles, [:name, :resource_type, :resource_id])
-   -> 0.0017s
--- add_index(:users_roles, [:user_id, :role_id])
-   -> 0.0011s
-==  RolifyCreateRoles: migrated (0.0110s) =====================================
-
-==  CreateCountries: migrating ================================================
--- create_table(:countries)
-   -> 0.0041s
-==  CreateCountries: migrated (0.0047s) =======================================
-
-==  CreateAddresses: migrating ================================================
--- create_table(:addresses)
-   -> 0.0058s
--- add_index(:addresses, :country_id)
-   -> 0.0013s
-==  CreateAddresses: migrated (0.0075s) =======================================
-
-==  CreateProfiles: migrating =================================================
--- create_table(:profiles)
-   -> 0.0050s
-==  CreateProfiles: migrated (0.0052s) ========================================
-
-==  CreateDeliveries: migrating ===============================================
--- create_table(:deliveries)
-   -> 0.0050s
-==  CreateDeliveries: migrated (0.0053s) ======================================
-
-==  CreatePaymentMethods: migrating ===========================================
--- create_table(:payment_methods)
-   -> 0.0051s
-==  CreatePaymentMethods: migrated (0.0053s) ==================================
-
-==  CreateCategories: migrating ===============================================
--- create_table(:categories)
-   -> 0.0050s
-==  CreateCategories: migrated (0.0052s) ======================================
-
-==  CreateProducers: migrating ================================================
--- create_table(:producers)
-   -> 0.0043s
-==  CreateProducers: migrated (0.0046s) =======================================
-
-==  CreateOrderPositions: migrating ===========================================
--- create_table(:order_positions)
-   -> 0.0048s
--- add_index(:order_positions, :product_id)
-   -> 0.0022s
-==  CreateOrderPositions: migrated (0.0074s) ==================================
-
-==  CreateBaskets: migrating ==================================================
--- create_table(:baskets)
-   -> 0.0051s
--- add_index(:baskets, :user_id)
-   -> 0.0015s
-==  CreateBaskets: migrated (0.0072s) =========================================
-
-==  CreateProducts: migrating =================================================
--- create_table(:products)
-   -> 0.0051s
--- add_index(:products, :category_id)
-   -> 0.0014s
--- add_index(:products, :producer_id)
-   -> 0.0023s
-==  CreateProducts: migrated (0.0095s) ========================================
-
-==  CreateOrders: migrating ===================================================
--- create_table(:orders)
-   -> 0.0059s
--- add_index(:orders, :address_id)
-   -> 0.0014s
--- add_index(:orders, :delivery_id)
-   -> 0.0015s
--- add_index(:orders, :payment_method_id)
-   -> 0.0016s
-==  CreateOrders: migrated (0.0112s) ==========================================
-
-==  AddAttachmentImageToProducts: migrating ===================================
--- change_table(:products)
-   -> 0.0062s
-==  AddAttachmentImageToProducts: migrated (0.0072s) ==========================
-
-luke@luke-ThinkPad-E525:~/shop$ history | grep Address
-  247  rails g scaffold Address first_name:string last_name:string address_line_1:string address_line_2:string postal_code:string city:string country:references
-  279  history | grep Address
-luke@luke-ThinkPad-E525:~/shop$ man grep^C
-luke@luke-ThinkPad-E525:~/shop$ history | less
-[?1049h[?1h=    1  sudo apt-get update
-    2  sudo apt-get install gnome-shell
-    3  sudo su
-    4  /opt/RubyMine-5.4.2/bin/rubymine.sh 
-    5  $ \curl -L https://get.rvm.io | bash -s stable --rails
-    6  sudo apt-get install curl
-    7  sudo apt-get install chromium
-    8  sudo add-apt-repository ppa:webupd8team/java
-    9  sudo apt-get update
-   10  sudo apt-get install oracle-java7-installer
-   11  sudo apt-get install curl
-   12  sudo apt-get install chromium
-   13  sudo apt-get install chromium-bsu
-   14  apt-cache show chromium-bsu
-   15  sudo apt-get install chromium-browser
-   16  sudo apt-get purge openjdk-6-jdk
-   17  sudo apt-get install oracle-java7-installer
-   18  java -version
-   19  exit
-   20  ls
-   21  cat typescript 
-   22  script
-   23  exit
-:[K[K/[Kaa[Kdd[Kdd[Krr[Kee[Kss[Kss[K[1;1H    1  sudo apt-get update
-[2;1H    2  sudo apt-get install gnome-shell
-[3;1H    3  sudo su
-[4;1H    4  /opt/RubyMine-5.4.2/bin/rubymine.sh 
-[5;1H    5  $ \curl -L https://get.rvm.io | bash -s stable --rails
-[6;1H    6  sudo apt-get install curl
-[7;1H    7  sudo apt-get install chromium
-[8;1H    8  sudo add-apt-repository ppa:webupd8team/java
-[9;1H    9  sudo apt-get update
-[10;1H   10  sudo apt-get install oracle-java7-installer
-[11;1H   11  sudo apt-get install curl
-[12;1H   12  sudo apt-get install chromium
-[13;1H   13  sudo apt-get install chromium-bsu
-[14;1H   14  apt-cache show chromium-bsu
-[15;1H   15  sudo apt-get install chromium-browser
-[16;1H   16  sudo apt-get purge openjdk-6-jdk
-[17;1H   17  sudo apt-get install oracle-java7-installer
-[18;1H   18  java -version
-[19;1H   19  exit
-[20;1H   20  ls
-[21;1H   21  cat typescript 
-[22;1H   22  script
-[23;1H   23  exit
-[24;1H[1;1H    1  sudo apt-get update
-[2;1H    2  sudo apt-get install gnome-shell
-[3;1H    3  sudo su
-[4;1H    4  /opt/RubyMine-5.4.2/bin/rubymine.sh 
-[5;1H    5  $ \curl -L https://get.rvm.io | bash -s stable --rails
-[6;1H    6  sudo apt-get install curl
-[7;1H    7  sudo apt-get install chromium
-[8;1H    8  sudo add-apt-repository ppa:webupd8team/java
-[9;1H    9  sudo apt-get update
-[10;1H   10  sudo apt-get install oracle-java7-installer
-[11;1H   11  sudo apt-get install curl
-[12;1H   12  sudo apt-get install chromium
-[13;1H   13  sudo apt-get install chromium-bsu
-[14;1H   14  apt-cache show chromium-bsu
-[15;1H   15  sudo apt-get install chromium-browser
-[16;1H   16  sudo apt-get purge openjdk-6-jdk
-[17;1H   17  sudo apt-get install oracle-java7-installer
-[18;1H   18  java -version
-[19;1H   19  exit
-[20;1H   20  ls
-[21;1H   21  cat typescript 
-[22;1H   22  script
-[23;1H   23  exit
-[24;1H...skipping...
-  247  rails g scaffold Address first_name:string last_name:string [3maddress[23m_ line_1:string [3maddress[23m_line_2:string postal_code:string city:string country: references
-  248  rails g scaffold Profile first_name:string last_name:string date_of_ birth:date telephone_number:string newsletter:integer
-  249  rails g scaffold Delivery name:string cost:integer
-  250  rails g scaffold PaymentMethod name:string
-  251  rails g scaffold Category name:string parent_id:integer lft:integer  rgt:integer depth:integer
-  252  rails g scaffold Producer name:string
-  253  rails g scaffold Product category:references price:integer name:stri ng producer:references availability:integer netto:integer brutto:integer
-  254  bundle install
-  255  rails generate paperclip product image
-  256  rails g scaffold Product category:references price:integer name:stri ng producer:references availability:integer netto:integer brutto:integer
-  257  rails g scaffold Product category:references price:integer name:stri ng producer:references availability:integer net:integer gross:integer
-  258  rails destroy scaffold Product
-  259  rails g scaffold Product category:references price:integer name:stri ng producer:references availability:integer net:integer gross:integer
-  260  rails g scaffold OrderPosition product:references price:integer amou nt:integer weight:integer
-:[K[K/[K...skipping...
-  264  rails g scaffold Order [3maddress[23m:references value:integer status:integ er delivery_cost:integer delivery:references payment_method:references
-  265  ./server.sh 
-  266  rake routes
-  267  ./db.sh
-  268  cd db/migrate/
-  269  ls
-  270  clear
-  271  rails g paperclip product image
-  272  ls
-  273  rm 20130607120735_add_attachment_image_to_products.rb
-  274  rails g paperclip product image
-  275  cd ../..\
-  276  cd ../..
-  277  ls
-  278  ./db.sh
-  279  history | grep Address
-  280  history | less
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[3m(END)[23m[K[K?[K[H[J[HMnt:integer weight:integer
-[HM  260  rails g scaffold OrderPosition product:references price:integer amou[HMng producer:references availability:integer net:integer gross:integer
-[HM  259  rails g scaffold Product category:references price:integer name:stri[HM  258  rails destroy scaffold Product
-[HMng producer:references availability:integer net:integer gross:integer
-[HM  257  rails g scaffold Product category:references price:integer name:stri[HMng producer:references availability:integer netto:integer brutto:integer
-[HM  256  rails g scaffold Product category:references price:integer name:stri[HM  255  rails generate paperclip product image
-[HM  254  bundle install
-[HMng producer:references availability:integer netto:integer brutto:integer
-[HM  253  rails g scaffold Product category:references price:integer name:stri[HM  252  rails g scaffold Producer name:string
-[HMrgt:integer depth:integer
-[HM  251  rails g scaffold Category name:string parent_id:integer lft:integer [HM  250  rails g scaffold PaymentMethod name:string
-[HM  249  rails g scaffold Delivery name:string cost:integer
-[HMbirth:date telephone_number:string newsletter:integer
-[HM  248  rails g scaffold Profile first_name:string last_name:string date_of_[HMreferences
-[HMline_1:string [3maddress[23m_line_2:string postal_code:string city:string country:[HM  247  rails g scaffold Address first_name:string last_name:string [3maddress[23m_[24;1H[K:[K[K:[K[K[?1l>[?1049lluke@luke-ThinkPad-E525:~/shop$ rails s[Kc
-Loading development environment (Rails 3.2.13)
-2.0.0-p195 :001 > c = Country.create(:name =?[K> 'Uzbekistan')
-  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
-  [1m[35mSQL (5.4ms)[0m  INSERT INTO "countries" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 07 Jun 2013 12:48:55 UTC +00:00], ["name", "Uzbekistan"], ["updated_at", Fri, 07 Jun 2013 12:48:55 UTC +00:00]]
-  [1m[36m (150.7ms)[0m  [1mcommit transaction[0m
- => #<Country id: 1048168632, name: "Uzbekistan", created_at: "2013-06-07 12:48:55", updated_at: "2013-06-07 12:48:55"> 
-2.0.0-p195 :002 > c
- => #<Country id: 1048168632, name: "Uzbekistan", created_at: "2013-06-07 12:48:55", updated_at: "2013-06-07 12:48:55"> 
-2.0.0-p195 :003 > Ad[K[Ka = add[K[K[KAddress=[K.create(first_name [1@:[C[C[C[C[C[C[C[C[C[C[C=> 'Lukas', country;country[1Pcountry:country[C[C[C[C[C[C[C => c) M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K)
-ActiveModel::MassAssignmentSecurity::Error: Can't mass-assign protected attributes: country
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activemodel-3.2.13/lib/active_model/mass_assignment_security/sanitizer.rb:48:in `process_removed_attributes'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activemodel-3.2.13/lib/active_model/mass_assignment_security/sanitizer.rb:20:in `debug_protected_attribute_removal'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activemodel-3.2.13/lib/active_model/mass_assignment_security/sanitizer.rb:12:in `sanitize'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activemodel-3.2.13/lib/active_model/mass_assignment_security.rb:230:in `sanitize_for_mass_assignment'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/attribute_assignment.rb:75:in `assign_attributes'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/base.rb:498:in `initialize'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/persistence.rb:44:in `new'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/persistence.rb:44:in `create'
-	from (irb):3
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/railties-3.2.13/lib/rails/commands/console.rb:47:in `start'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/railties-3.2.13/lib/rails/commands/console.rb:8:in `start'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/railties-3.2.13/lib/rails/commands.rb:41:in `<top (required)>'
-	from script/rails:6:in `require'
-	from script/rails:6:in `<main>'
-2.0.0-p195 :004 > [K2.0.0-p195 :004 > a = Address.create(:first_name => 'Lukas', :country => c)
-ActiveModel::MassAssignmentSecurity::Error: Can't mass-assign protected attributes: country
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activemodel-3.2.13/lib/active_model/mass_assignment_security/sanitizer.rb:48:in `process_removed_attributes'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activemodel-3.2.13/lib/active_model/mass_assignment_security/sanitizer.rb:20:in `debug_protected_attribute_removal'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activemodel-3.2.13/lib/active_model/mass_assignment_security/sanitizer.rb:12:in `sanitize'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activemodel-3.2.13/lib/active_model/mass_assignment_security.rb:230:in `sanitize_for_mass_assignment'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/attribute_assignment.rb:75:in `assign_attributes'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/base.rb:498:in `initialize'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/persistence.rb:44:in `new'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/persistence.rb:44:in `create'
-	from (irb):4
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/railties-3.2.13/lib/rails/commands/console.rb:47:in `start'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/railties-3.2.13/lib/rails/commands/console.rb:8:in `start'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/railties-3.2.13/lib/rails/commands.rb:41:in `<top (required)>'
-	from script/rails:6:in `require'
-	from script/rails:6:in `<main>'
-2.0.0-p195 :005 > a = Address.create(:first_name => 'Lukas', :country => c)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)
-  [1m[35m (0.1ms)[0m  begin transaction
-  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "addresses" ("address_line_1", "address_line_2", "city", "country_id", "created_at", "first_name", "last_name", "postal_code", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address_line_1", nil], ["address_line_2", nil], ["city", nil], ["country_id", nil], ["created_at", Fri, 07 Jun 2013 12:50:30 UTC +00:00], ["first_name", "Lukas"], ["last_name", nil], ["postal_code", nil], ["updated_at", Fri, 07 Jun 2013 12:50:30 UTC +00:00]]
-  [1m[35m (170.5ms)[0m  commit transaction
- => #<Address id: 1, first_name: "Lukas", last_name: nil, address_line_1: nil, address_line_2: nil, postal_code: nil, city: nil, country_id: nil, created_at: "2013-06-07 12:50:30", updated_at: "2013-06-07 12:50:30"> 
-2.0.0-p195 :006 > a.country = c;[K
- => #<Country id: 1048168632, name: "Uzbekistan", created_at: "2013-06-07 12:48:55", updated_at: "2013-06-07 12:48:55"> 
-2.0.0-p195 :007 > a.country = c = Address.create(:first_name => 'Lukas'), :country => c)
-ActiveModel::MassAssignmentSecurity::Error: Can't mass-assign protected attributes: country
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activemodel-3.2.13/lib/active_model/mass_assignment_security/sanitizer.rb:48:in `process_removed_attributes'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activemodel-3.2.13/lib/active_model/mass_assignment_security/sanitizer.rb:20:in `debug_protected_attribute_removal'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activemodel-3.2.13/lib/active_model/mass_assignment_security/sanitizer.rb:12:in `sanitize'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activemodel-3.2.13/lib/active_model/mass_assignment_security.rb:230:in `sanitize_for_mass_assignment'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/attribute_assignment.rb:75:in `assign_attributes'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/base.rb:498:in `initialize'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/persistence.rb:44:in `new'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/persistence.rb:44:in `create'
-	from (irb):7
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/railties-3.2.13/lib/rails/commands/console.rb:47:in `start'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/railties-3.2.13/lib/rails/commands/console.rb:8:in `start'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/railties-3.2.13/lib/rails/commands.rb:41:in `<top (required)>'
-	from script/rails:6:in `require'
-	from script/rails:6:in `<main>'
-2.0.0-p195 :008 > a = Address.create(:first_name => 'Lukas', :country => c)
-ActiveModel::MassAssignmentSecurity::Error: Can't mass-assign protected attributes: country
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activemodel-3.2.13/lib/active_model/mass_assignment_security/sanitizer.rb:48:in `process_removed_attributes'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activemodel-3.2.13/lib/active_model/mass_assignment_security/sanitizer.rb:20:in `debug_protected_attribute_removal'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activemodel-3.2.13/lib/active_model/mass_assignment_security/sanitizer.rb:12:in `sanitize'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activemodel-3.2.13/lib/active_model/mass_assignment_security.rb:230:in `sanitize_for_mass_assignment'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/attribute_assignment.rb:75:in `assign_attributes'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/base.rb:498:in `initialize'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/persistence.rb:44:in `new'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/persistence.rb:44:in `create'
-	from (irb):8
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/railties-3.2.13/lib/rails/commands/console.rb:47:in `start'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/railties-3.2.13/lib/rails/commands/console.rb:8:in `start'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/railties-3.2.13/lib/rails/commands.rb:41:in `<top (required)>'
-	from script/rails:6:in `require'
-	from script/rails:6:in `<main>'
-2.0.0-p195 :009 > ecxi[K[K[Kxit
-luke@luke-ThinkPad-E525:~/shop$ rails chistory | less[7Prails c
-Loading development environment (Rails 3.2.13)
-2.0.0-p195 :001 > exita = Address.create(:first_name => 'Lukas', :country => c)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.country = c[K = Address.create(:first_name => 'Lukas')[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc[K = Country.create(:name => 'Uzbekistan')
-  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
-  [1m[35mSQL (5.4ms)[0m  INSERT INTO "countries" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 07 Jun 2013 12:51:31 UTC +00:00], ["name", "Uzbekistan"], ["updated_at", Fri, 07 Jun 2013 12:51:31 UTC +00:00]]
-  [1m[36m (160.6ms)[0m  [1mcommit transaction[0m
- => #<Country id: 1048168633, name: "Uzbekistan", created_at: "2013-06-07 12:51:31", updated_at: "2013-06-07 12:51:31"> 
-2.0.0-p195 :002 > c = Country.create(:name => 'Uzbekistan')[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Ka = Address.create(:first_name => 'Lukas', :country => c)
-ActiveModel::MassAssignmentSecurity::Error: Can't mass-assign protected attributes: country
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activemodel-3.2.13/lib/active_model/mass_assignment_security/sanitizer.rb:48:in `process_removed_attributes'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activemodel-3.2.13/lib/active_model/mass_assignment_security/sanitizer.rb:20:in `debug_protected_attribute_removal'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activemodel-3.2.13/lib/active_model/mass_assignment_security/sanitizer.rb:12:in `sanitize'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activemodel-3.2.13/lib/active_model/mass_assignment_security.rb:230:in `sanitize_for_mass_assignment'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/attribute_assignment.rb:75:in `assign_attributes'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/base.rb:498:in `initialize'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/persistence.rb:44:in `new'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/persistence.rb:44:in `create'
-	from (irb):2
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/railties-3.2.13/lib/rails/commands/console.rb:47:in `start'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/railties-3.2.13/lib/rails/commands/console.rb:8:in `start'
-	from /home/luke/.rvm/gems/ruby-2.0.0-p195/gems/railties-3.2.13/lib/rails/commands.rb:41:in `<top (required)>'
-	from script/rails:6:in `require'
-	from script/rails:6:in `<main>'
-2.0.0-p195 :003 > exit
-[1]+  Done                    gedit rest/oukwi
-luke@luke-ThinkPad-E525:~/shop$ git commit -^C
-luke@luke-ThinkPad-E525:~/shop$ git status
-# On branch master
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   .idea/shop.iml
-#	modified:   .idea/workspace.xml
-#	modified:   Gemfile
-#	modified:   Gemfile.lock
-#	modified:   app/models/user.rb
-#	modified:   config/environments/development.rb
-#	modified:   config/routes.rb
-#	modified:   db/schema.rb
-#	modified:   db/seeds.rb
-#	modified:   rest/oukwi
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	app/assets/javascripts/addresses.js.coffee
-#	app/assets/javascripts/baskets.js.coffee
-#	app/assets/javascripts/categories.js.coffee
-#	app/assets/javascripts/countries.js.coffee
-#	app/assets/javascripts/deliveries.js.coffee
-#	app/assets/javascripts/order_positions.js.coffee
-#	app/assets/javascripts/orders.js.coffee
-#	app/assets/javascripts/payment_methods.js.coffee
-#	app/assets/javascripts/producers.js.coffee
-#	app/assets/javascripts/products.js.coffee
-#	app/assets/javascripts/profiles.js.coffee
-#	app/assets/stylesheets/addresses.css.scss
-#	app/assets/stylesheets/baskets.css.scss
-#	app/assets/stylesheets/categories.css.scss
-#	app/assets/stylesheets/countries.css.scss
-#	app/assets/stylesheets/deliveries.css.scss
-#	app/assets/stylesheets/order_positions.css.scss
-#	app/assets/stylesheets/orders.css.scss
-#	app/assets/stylesheets/payment_methods.css.scss
-#	app/assets/stylesheets/producers.css.scss
-#	app/assets/stylesheets/products.css.scss
-#	app/assets/stylesheets/profiles.css.scss
-#	app/assets/stylesheets/scaffolds.css.scss
-#	app/controllers/addresses_controller.rb
-#	app/controllers/baskets_controller.rb
-#	app/controllers/categories_controller.rb
-#	app/controllers/countries_controller.rb
-#	app/controllers/deliveries_controller.rb
-#	app/controllers/order_positions_controller.rb
-#	app/controllers/orders_controller.rb
-#	app/controllers/payment_methods_controller.rb
-#	app/controllers/producers_controller.rb
-#	app/controllers/products_controller.rb
-#	app/controllers/profiles_controller.rb
-#	app/helpers/addresses_helper.rb
-#	app/helpers/baskets_helper.rb
-#	app/helpers/categories_helper.rb
-#	app/helpers/countries_helper.rb
-#	app/helpers/deliveries_helper.rb
-#	app/helpers/order_positions_helper.rb
-#	app/helpers/orders_helper.rb
-#	app/helpers/payment_methods_helper.rb
-#	app/helpers/producers_helper.rb
-#	app/helpers/products_helper.rb
-#	app/helpers/profiles_helper.rb
-#	app/models/address.rb
-#	app/models/basket.rb
-#	app/models/category.rb
-#	app/models/country.rb
-#	app/models/delivery.rb
-#	app/models/order.rb
-#	app/models/order_position.rb
-#	app/models/payment_method.rb
-#	app/models/producer.rb
-#	app/models/product.rb
-#	app/models/profile.rb
-#	app/views/addresses/
-#	app/views/baskets/
-#	app/views/categories/
-#	app/views/countries/
-#	app/views/deliveries/
-#	app/views/order_positions/
-#	app/views/orders/
-#	app/views/payment_methods/
-#	app/views/producers/
-#	app/views/products/
-#	app/views/profiles/
-#	db/migrate/20130607112019_create_countries.rb
-#	db/migrate/20130607112443_create_addresses.rb
-#	db/migrate/20130607114509_create_profiles.rb
-#	db/migrate/20130607114610_create_deliveries.rb
-#	db/migrate/20130607114623_create_payment_methods.rb
-#	db/migrate/20130607114728_create_categories.rb
-#	db/migrate/20130607115611_create_producers.rb
-#	db/migrate/20130607122601_create_order_positions.rb
-#	db/migrate/20130607122716_create_baskets.rb
-#	db/migrate/20130607122803_create_products.rb
-#	db/migrate/20130607123110_create_orders.rb
-#	db/migrate/20130607123432_add_attachment_image_to_products.rb
-#	screenlog.0
-#	test/fixtures/addresses.yml
-#	test/fixtures/baskets.yml
-#	test/fixtures/categories.yml
-#	test/fixtures/countries.yml
-#	test/fixtures/deliveries.yml
-#	test/fixtures/order_positions.yml
-#	test/fixtures/orders.yml
-#	test/fixtures/payment_methods.yml
-#	test/fixtures/producers.yml
-#	test/fixtures/products.yml
-#	test/fixtures/profiles.yml
-#	test/functional/addresses_controller_test.rb
-#	test/functional/baskets_controller_test.rb
-#	test/functional/categories_controller_test.rb
-#	test/functional/countries_controller_test.rb
-#	test/functional/deliveries_controller_test.rb
-#	test/functional/order_positions_controller_test.rb
-#	test/functional/orders_controller_test.rb
-#	test/functional/payment_methods_controller_test.rb
-#	test/functional/producers_controller_test.rb
-#	test/functional/products_controller_test.rb
-#	test/functional/profiles_controller_test.rb
-#	test/unit/address_test.rb
-#	test/unit/basket_test.rb
-#	test/unit/category_test.rb
-#	test/unit/country_test.rb
-#	test/unit/delivery_test.rb
-#	test/unit/helpers/addresses_helper_test.rb
-#	test/unit/helpers/baskets_helper_test.rb
-#	test/unit/helpers/categories_helper_test.rb
-#	test/unit/helpers/countries_helper_test.rb
-#	test/unit/helpers/deliveries_helper_test.rb
-#	test/unit/helpers/order_positions_helper_test.rb
-#	test/unit/helpers/orders_helper_test.rb
-#	test/unit/helpers/payment_methods_helper_test.rb
-#	test/unit/helpers/producers_helper_test.rb
-#	test/unit/helpers/products_helper_test.rb
-#	test/unit/helpers/profiles_helper_test.rb
-#	test/unit/order_position_test.rb
-#	test/unit/order_test.rb
-#	test/unit/payment_method_test.rb
-#	test/unit/producer_test.rb
-#	test/unit/product_test.rb
-#	test/unit/profile_test.rb
-no changes added to commit (use "git add" and/or "git commit -a")
-luke@luke-ThinkPad-E525:~/shop$ git add .
-luke@luke-ThinkPad-E525:~/shop$ git commit -am'models' '&' 'd'b'
-[master 42a442c] models & db
- 178 files changed, 5165 insertions(+), 125 deletions(-)
- create mode 100644 app/assets/javascripts/addresses.js.coffee
- create mode 100644 app/assets/javascripts/baskets.js.coffee
- create mode 100644 app/assets/javascripts/categories.js.coffee
- create mode 100644 app/assets/javascripts/countries.js.coffee
- create mode 100644 app/assets/javascripts/deliveries.js.coffee
- create mode 100644 app/assets/javascripts/order_positions.js.coffee
- create mode 100644 app/assets/javascripts/orders.js.coffee
- create mode 100644 app/assets/javascripts/payment_methods.js.coffee
- create mode 100644 app/assets/javascripts/producers.js.coffee
- create mode 100644 app/assets/javascripts/products.js.coffee
- create mode 100644 app/assets/javascripts/profiles.js.coffee
- create mode 100644 app/assets/stylesheets/addresses.css.scss
- create mode 100644 app/assets/stylesheets/baskets.css.scss
- create mode 100644 app/assets/stylesheets/categories.css.scss
- create mode 100644 app/assets/stylesheets/countries.css.scss
- create mode 100644 app/assets/stylesheets/deliveries.css.scss
- create mode 100644 app/assets/stylesheets/order_positions.css.scss
- create mode 100644 app/assets/stylesheets/orders.css.scss
- create mode 100644 app/assets/stylesheets/payment_methods.css.scss
- create mode 100644 app/assets/stylesheets/producers.css.scss
- create mode 100644 app/assets/stylesheets/products.css.scss
- create mode 100644 app/assets/stylesheets/profiles.css.scss
- create mode 100644 app/assets/stylesheets/scaffolds.css.scss
- create mode 100644 app/controllers/addresses_controller.rb
- create mode 100644 app/controllers/baskets_controller.rb
- create mode 100644 app/controllers/categories_controller.rb
- create mode 100644 app/controllers/countries_controller.rb
- create mode 100644 app/controllers/deliveries_controller.rb
- create mode 100644 app/controllers/order_positions_controller.rb
- create mode 100644 app/controllers/orders_controller.rb
- create mode 100644 app/controllers/payment_methods_controller.rb
- create mode 100644 app/controllers/producers_controller.rb
- create mode 100644 app/controllers/products_controller.rb
- create mode 100644 app/controllers/profiles_controller.rb
- create mode 100644 app/helpers/addresses_helper.rb
- create mode 100644 app/helpers/baskets_helper.rb
- create mode 100644 app/helpers/categories_helper.rb
- create mode 100644 app/helpers/countries_helper.rb
- create mode 100644 app/helpers/deliveries_helper.rb
- create mode 100644 app/helpers/order_positions_helper.rb
- create mode 100644 app/helpers/orders_helper.rb
- create mode 100644 app/helpers/payment_methods_helper.rb
- create mode 100644 app/helpers/producers_helper.rb
- create mode 100644 app/helpers/products_helper.rb
- create mode 100644 app/helpers/profiles_helper.rb
- create mode 100644 app/models/address.rb
- create mode 100644 app/models/basket.rb
- create mode 100644 app/models/category.rb
- create mode 100644 app/models/country.rb
- create mode 100644 app/models/delivery.rb
- create mode 100644 app/models/order.rb
- create mode 100644 app/models/order_position.rb
- create mode 100644 app/models/payment_method.rb
- create mode 100644 app/models/producer.rb
- create mode 100644 app/models/product.rb
- create mode 100644 app/models/profile.rb
- create mode 100644 app/views/addresses/_form.html.erb
- create mode 100644 app/views/addresses/edit.html.erb
- create mode 100644 app/views/addresses/index.html.erb
- create mode 100644 app/views/addresses/new.html.erb
- create mode 100644 app/views/addresses/show.html.erb
- create mode 100644 app/views/baskets/_form.html.erb
- create mode 100644 app/views/baskets/edit.html.erb
- create mode 100644 app/views/baskets/index.html.erb
- create mode 100644 app/views/baskets/new.html.erb
- create mode 100644 app/views/baskets/show.html.erb
- create mode 100644 app/views/categories/_form.html.erb
- create mode 100644 app/views/categories/edit.html.erb
- create mode 100644 app/views/categories/index.html.erb
- create mode 100644 app/views/categories/new.html.erb
- create mode 100644 app/views/categories/show.html.erb
- create mode 100644 app/views/countries/_form.html.erb
- create mode 100644 app/views/countries/edit.html.erb
- create mode 100644 app/views/countries/index.html.erb
- create mode 100644 app/views/countries/new.html.erb
- create mode 100644 app/views/countries/show.html.erb
- create mode 100644 app/views/deliveries/_form.html.erb
- create mode 100644 app/views/deliveries/edit.html.erb
- create mode 100644 app/views/deliveries/index.html.erb
- create mode 100644 app/views/deliveries/new.html.erb
- create mode 100644 app/views/deliveries/show.html.erb
- create mode 100644 app/views/order_positions/_form.html.erb
- create mode 100644 app/views/order_positions/edit.html.erb
- create mode 100644 app/views/order_positions/index.html.erb
- create mode 100644 app/views/order_positions/new.html.erb
- create mode 100644 app/views/order_positions/show.html.erb
- create mode 100644 app/views/orders/_form.html.erb
- create mode 100644 app/views/orders/edit.html.erb
- create mode 100644 app/views/orders/index.html.erb
- create mode 100644 app/views/orders/new.html.erb
- create mode 100644 app/views/orders/show.html.erb
- create mode 100644 app/views/payment_methods/_form.html.erb
- create mode 100644 app/views/payment_methods/edit.html.erb
- create mode 100644 app/views/payment_methods/index.html.erb
- create mode 100644 app/views/payment_methods/new.html.erb
- create mode 100644 app/views/payment_methods/show.html.erb
- create mode 100644 app/views/producers/_form.html.erb
- create mode 100644 app/views/producers/edit.html.erb
- create mode 100644 app/views/producers/index.html.erb
- create mode 100644 app/views/producers/new.html.erb
- create mode 100644 app/views/producers/show.html.erb
- create mode 100644 app/views/products/_form.html.erb
- create mode 100644 app/views/products/edit.html.erb
- create mode 100644 app/views/products/index.html.erb
- create mode 100644 app/views/products/new.html.erb
- create mode 100644 app/views/products/show.html.erb
- create mode 100644 app/views/profiles/_form.html.erb
- create mode 100644 app/views/profiles/edit.html.erb
- create mode 100644 app/views/profiles/index.html.erb
- create mode 100644 app/views/profiles/new.html.erb
- create mode 100644 app/views/profiles/show.html.erb
- create mode 100644 db/migrate/20130607112019_create_countries.rb
- create mode 100644 db/migrate/20130607112443_create_addresses.rb
- create mode 100644 db/migrate/20130607114509_create_profiles.rb
- create mode 100644 db/migrate/20130607114610_create_deliveries.rb
- create mode 100644 db/migrate/20130607114623_create_payment_methods.rb
- create mode 100644 db/migrate/20130607114728_create_categories.rb
- create mode 100644 db/migrate/20130607115611_create_producers.rb
- create mode 100644 db/migrate/20130607122601_create_order_positions.rb
- create mode 100644 db/migrate/20130607122716_create_baskets.rb
- create mode 100644 db/migrate/20130607122803_create_products.rb
- create mode 100644 db/migrate/20130607123110_create_orders.rb
- create mode 100644 db/migrate/20130607123432_add_attachment_image_to_products.rb
- create mode 100644 screenlog.0
- create mode 100644 test/fixtures/addresses.yml
- create mode 100644 test/fixtures/baskets.yml
- create mode 100644 test/fixtures/categories.yml
- create mode 100644 test/fixtures/countries.yml
- create mode 100644 test/fixtures/deliveries.yml
- create mode 100644 test/fixtures/order_positions.yml
- create mode 100644 test/fixtures/orders.yml
- create mode 100644 test/fixtures/payment_methods.yml
- create mode 100644 test/fixtures/producers.yml
- create mode 100644 test/fixtures/products.yml
- create mode 100644 test/fixtures/profiles.yml
- create mode 100644 test/functional/addresses_controller_test.rb
- create mode 100644 test/functional/baskets_controller_test.rb
- create mode 100644 test/functional/categories_controller_test.rb
- create mode 100644 test/functional/countries_controller_test.rb
- create mode 100644 test/functional/deliveries_controller_test.rb
- create mode 100644 test/functional/order_positions_controller_test.rb
- create mode 100644 test/functional/orders_controller_test.rb
- create mode 100644 test/functional/payment_methods_controller_test.rb
- create mode 100644 test/functional/producers_controller_test.rb
- create mode 100644 test/functional/products_controller_test.rb
- create mode 100644 test/functional/profiles_controller_test.rb
- create mode 100644 test/unit/address_test.rb
- create mode 100644 test/unit/basket_test.rb
- create mode 100644 test/unit/category_test.rb
- create mode 100644 test/unit/country_test.rb
- create mode 100644 test/unit/delivery_test.rb
- create mode 100644 test/unit/helpers/addresses_helper_test.rb
- create mode 100644 test/unit/helpers/baskets_helper_test.rb
- create mode 100644 test/unit/helpers/categories_helper_test.rb
- create mode 100644 test/unit/helpers/countries_helper_test.rb
- create mode 100644 test/unit/helpers/deliveries_helper_test.rb
- create mode 100644 test/unit/helpers/order_positions_helper_test.rb
- create mode 100644 test/unit/helpers/orders_helper_test.rb
- create mode 100644 test/unit/helpers/payment_methods_helper_test.rb
- create mode 100644 test/unit/helpers/producers_helper_test.rb
- create mode 100644 test/unit/helpers/products_helper_test.rb
- create mode 100644 test/unit/helpers/profiles_helper_test.rb
- create mode 100644 test/unit/order_position_test.rb
- create mode 100644 test/unit/order_test.rb
- create mode 100644 test/unit/payment_method_test.rb
- create mode 100644 test/unit/producer_test.rb
- create mode 100644 test/unit/product_test.rb
- create mode 100644 test/unit/profile_test.rb
-luke@luke-ThinkPad-E525:~/shop$ git push
-Password for 'https://wieczorek1990@bitbucket.org': 
-To https://wieczorek1990@bitbucket.org/wieczorek1990/shop.git
-   e0f2f42..42a442c  master -> master
-luke@luke-ThinkPad-E525:~/shop$ exit
-logout
-luke@luke-ThinkPad-E525:~/shop$ exit
-exit

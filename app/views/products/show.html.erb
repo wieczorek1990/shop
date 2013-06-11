@@ -4,10 +4,11 @@
 </div>
 
 <dl class="dl-horizontal">
-  <dt><strong><%= model_class.human_attribute_name(:category_id) %>:</strong></dt>
-  <dd><%= Category.find(@product.category_id).name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
   <dd><%= @product.name %></dd>
+  <dd><%= image_tag @product.image.url(:medium) %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:category_id) %>:</strong></dt>
+  <dd><%= link_to Category.find(@product.category_id).name, category_path(@product.category_id) %></dd>
   <dt><strong><%= model_class.human_attribute_name(:description) %>:</strong></dt>
   <dd><%= @product.description %></dd>
   <dt><strong><%= model_class.human_attribute_name(:producer_id) %>:</strong></dt>
@@ -18,8 +19,6 @@
   <dd><%= @product.net_price %></dd>
   <dt><strong><%= model_class.human_attribute_name(:gross_price) %>:</strong></dt>
   <dd><%= @product.gross_price %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:image) %>:</strong></dt>
-  <dd><%= image_tag @product.image.url(:medium) %></dd>
 </dl>
 
 <div class="form-actions">

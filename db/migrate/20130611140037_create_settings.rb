@@ -12,6 +12,7 @@ class CreateSettings < ActiveRecord::Migration
 
     # Settings list
     Settings.vat_percent = 0.23
+    Settings.currency_abbreviation = 'zł'
   end
 
   def self.down

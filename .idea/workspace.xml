@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44c576ee-e7d8-47fe-a97a-0a6da606261d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130607122716_create_baskets.rb" afterPath="$PROJECT_DIR$/db/migrate/20130607122716_create_baskets.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/baskets/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/baskets/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/basket.rb" afterPath="$PROJECT_DIR$/app/models/basket.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/baskets/index.html.erb" afterPath="$PROJECT_DIR$/app/views/baskets/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/oukwi" afterPath="$PROJECT_DIR$/rest/oukwi" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/baskets/show.html.erb" afterPath="$PROJECT_DIR$/app/views/baskets/show.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/registrations_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shop.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,6 +57,9 @@
     <file path="/a.dummy" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370975742810" ignored="false" />
     <file path="/categories_controller.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370974682727" ignored="false" />
     <file path="/categories_helper.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370976361690" ignored="false" />
+    <file path="/registrations_controller.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370981747832" ignored="false" />
+    <file path="/routes.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370981996306" ignored="false" />
+    <file path="/sessions_controller.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370982340075" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,83 +78,7 @@
     <favorites_list name="shop" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="basket.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/basket.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20130607122716_create_baskets.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130607122716_create_baskets.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.11406844">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="oukwi" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest/oukwi">
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="36" selection-start="828" selection-end="828" vertical-scroll-proportion="-15.931034">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/baskets/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="268" selection-end="268" vertical-scroll-proportion="-4.375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/baskets/edit.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/baskets/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="61" selection-start="266" selection-end="331" vertical-scroll-proportion="-5.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/baskets/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/baskets/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="33" selection-start="281" selection-end="281" vertical-scroll-proportion="-4.375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -171,9 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/products/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/categories/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/product.rb" />
         <option value="$PROJECT_DIR$/app/controllers/products_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/categories_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/category.rb" />
@@ -187,6 +109,9 @@
         <option value="$PROJECT_DIR$/app/views/baskets/show.html.erb" />
         <option value="$PROJECT_DIR$/app/models/basket.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130607122716_create_baskets.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/registrations_controller.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
       </list>
     </option>
   </component>
@@ -303,7 +228,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -317,11 +242,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -339,61 +260,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="baskets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -717,11 +584,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-10" y="19" width="1300" height="1015" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32678983" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290993" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290993" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27317074" sideWeight="0.6709007" order="0" side_tool="false" content_ui="combo" />
@@ -800,41 +667,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/fixtures/categories.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="8" selection-start="367" selection-end="367" vertical-scroll-proportion="0.75510204">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/categories_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="218" selection-end="218" vertical-scroll-proportion="0.2722323">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/category.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="20" selection-start="113" selection-end="113" vertical-scroll-proportion="0.08166969">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/products/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="11" selection-start="2161" selection-end="2172" vertical-scroll-proportion="0.76653695">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/fixtures/users.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="0" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.81595093">
@@ -861,28 +693,35 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="36" selection-start="828" selection-end="828" vertical-scroll-proportion="-15.931034">
+        <state line="65" column="36" selection-start="828" selection-end="828" vertical-scroll-proportion="0.92957747">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/baskets/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="268" selection-end="268" vertical-scroll-proportion="-4.375">
-          <folding />
+        <state line="7" column="0" selection-start="268" selection-end="268" vertical-scroll-proportion="0.20916335">
+          <folding>
+            <marker date="1370980591751" expanded="true" signature="-1:-1" placeholder="do ... end" />
+            <marker date="1370980591751" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1370980591751" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1370980591751" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/baskets/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1370703982380" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/baskets/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="61" selection-start="266" selection-end="331" vertical-scroll-proportion="-5.0">
+        <state line="8" column="61" selection-start="266" selection-end="331" vertical-scroll-proportion="0.23346303">
           <folding />
         </state>
       </provider>
@@ -890,20 +729,29 @@
     <entry file="file://$PROJECT_DIR$/app/views/baskets/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1370703981960" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/baskets/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="33" selection-start="281" selection-end="281" vertical-scroll-proportion="-4.375">
+        <state line="7" column="33" selection-start="281" selection-end="281" vertical-scroll-proportion="0.20428015">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/basket.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/about_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -911,6 +759,34 @@
     <entry file="file://$PROJECT_DIR$/db/migrate/20130607122716_create_baskets.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.11406844">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/basket.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="100" selection-end="100" vertical-scroll-proportion="0.08555133">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/registrations_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="22" selection-start="147" selection-end="147" vertical-scroll-proportion="0.108892925">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="20" selection-start="97" selection-end="97" vertical-scroll-proportion="0.08166969">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="61" selection-start="444" selection-end="444" vertical-scroll-proportion="0.6533575">
           <folding />
         </state>
       </provider>

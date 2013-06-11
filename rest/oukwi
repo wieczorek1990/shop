@@ -6,7 +6,7 @@ User:
   date_of_birth
   telephone_number
   newsletter
-	adresses [] : Address
+	addresses [] : Address
 	additional_info : Profile
 	basket : Basket
 

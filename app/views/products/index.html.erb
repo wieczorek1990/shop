@@ -2,18 +2,17 @@
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
 </div>
+<% if user_signed_in? and current_user.has_role? :admin %>
 <table class="table table-striped">
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:category_id) %></th>
       <th><%= model_class.human_attribute_name(:name) %></th>
-      <th><%= model_class.human_attribute_name(:description) %></th>
       <th><%= model_class.human_attribute_name(:producer_id) %></th>
       <th><%= model_class.human_attribute_name(:availability) %></th>
       <th><%= model_class.human_attribute_name(:net_price) %></th>
       <th><%= model_class.human_attribute_name(:gross_price) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
@@ -21,14 +20,12 @@
     <% @products.each do |product| %>
       <tr>
         <td><%= link_to product.id, product_path(product) %></td>
-        <td><%= product.category_id %></td>
+        <td><%= link_to Category.find(product.category_id).name, category_path(product.category_id) %></td>
         <td><%= product.name %></td>
-        <td><%= product.description %></td>
-        <td><%= product.producer_id %></td>
+        <td><%= link_to Producer.find(product.producer_id).name, producer_path(product.producer_id) %></td>
         <td><%= product.availability %></td>
         <td><%= number_to_currency2(product.net_price) %></td>
         <td><%= number_to_currency2(product.gross_price) %></td>
-        <td><%=l product.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_product_path(product), :class => 'btn btn-mini' %>
@@ -46,3 +43,35 @@
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_product_path,
             :class => 'btn btn-primary' %>
+<% else %>
+  <div class="row-fluid">
+    <% @products.each do |product| %>
+      <div class="span12">
+        <h1><%= product.name %></h1><br>
+        <div class="row-fluid">
+          <div class="span6">
+            <%= image_tag product.image.url(:medium) %>
+          </div>
+          <div class="span6">
+            <b><%= model_class.human_attribute_name(:category_id) + ':' %></b>
+            <%= link_to Category.find(product.category_id).name, category_path(product.category_id) %><br>
+            <b><%= model_class.human_attribute_name(:producer_id) + ':' %></b>
+            <%= link_to Producer.find(product.producer_id).name, producer_path(product.producer_id) %><br>
+            <b><%= model_class.human_attribute_name(:availability) + ':' %></b>
+            <%= product.availability %><br>
+            <b><%= model_class.human_attribute_name(:net_price) + ':' %></b>
+            <%= number_to_currency2(product.net_price) %><br>
+            <b><%= model_class.human_attribute_name(:gross_price) + ':' %></b>
+            <%= number_to_currency2(product.gross_price) %><br>
+            <br>
+            <%# TODO %>
+            <%= link_to 'Add to basket', 'home/index', :class => 'btn btn-primary' %>
+          </div>
+        </div>
+        <b><%= model_class.human_attribute_name(:description) + ':' %></b><br>
+        <%= product.description %>
+        <hr>
+      </div>
+    <% end %>
+  </div>
+<% end %>

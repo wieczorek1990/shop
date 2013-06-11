@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44c576ee-e7d8-47fe-a97a-0a6da606261d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/registrations_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/countries_pl.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/categories.yml" afterPath="$PROJECT_DIR$/test/fixtures/categories.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/countries.yml" afterPath="$PROJECT_DIR$/test/fixtures/countries.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/deliveries.yml" afterPath="$PROJECT_DIR$/test/fixtures/deliveries.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/payment_methods.yml" afterPath="$PROJECT_DIR$/test/fixtures/payment_methods.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/producers.yml" afterPath="$PROJECT_DIR$/test/fixtures/producers.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shop.iws" />
@@ -15,7 +19,7 @@
     <file path="/seeds.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370898748862" ignored="false" />
     <file path="/user.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370962745611" ignored="false" />
     <file path="/20130606182556_devise_create_users.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370728499017" ignored="false" />
-    <file path="/countries.yml" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370604713504" ignored="false" />
+    <file path="/countries.yml" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370983117270" ignored="false" />
     <file path="/development.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370960337935" ignored="false" />
     <file path="/product.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370965047009" ignored="false" />
     <file path="/producers.yml" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370607554662" ignored="false" />
@@ -33,19 +37,19 @@
     <file path="/20130607122716_create_baskets.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370640690340" ignored="false" />
     <file path="/20130607122601_create_order_positions.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370640832032" ignored="false" />
     <file path="/20130607114509_create_profiles.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370640890878" ignored="false" />
-    <file path="/application.html.erb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370955621038" ignored="false" />
+    <file path="/application.html.erb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370982780874" ignored="false" />
     <file path="/a.rxml" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370705839456" ignored="false" />
     <file path="/new.html.erb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370895292694" ignored="false" />
     <file path="/_form.html.erb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370963790567" ignored="false" />
     <file path="/edit.html.erb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370895288019" ignored="false" />
     <file path="/index.html.erb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370974177571" ignored="false" />
     <file path="/show.html.erb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370976666851" ignored="false" />
-    <file path="/categories.yml" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370896759772" ignored="false" />
+    <file path="/categories.yml" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370982994839" ignored="false" />
     <file path="/oukwi" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370966669231" ignored="false" />
     <file path="/20130607122803_create_products.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370897001348" ignored="false" />
     <file path="/orders_controller.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370898298234" ignored="false" />
-    <file path="/deliveries.yml" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370898467453" ignored="false" />
-    <file path="/payment_methods.yml" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370953628465" ignored="false" />
+    <file path="/deliveries.yml" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370983137422" ignored="false" />
+    <file path="/payment_methods.yml" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370983156134" ignored="false" />
     <file path="/settings.yml" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370956706453" ignored="false" />
     <file path="/20130611140037_create_settings.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370964159300" ignored="false" />
     <file path="/devise.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370960148363" ignored="false" />
@@ -60,6 +64,7 @@
     <file path="/registrations_controller.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370981747832" ignored="false" />
     <file path="/routes.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370981996306" ignored="false" />
     <file path="/sessions_controller.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370982340075" ignored="false" />
+    <file path="$PROJECT_DIR$/log/development.log" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370982939348" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +83,89 @@
     <favorites_list name="shop" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="82" selection-start="2795" selection-end="2795" vertical-scroll-proportion="-11.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addresses.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/fixtures/addresses.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="baskets.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/fixtures/baskets.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deliveries.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/fixtures/deliveries.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="9" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order_positions.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/fixtures/order_positions.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="payment_methods.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/fixtures/payment_methods.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="27" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="producers.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/fixtures/producers.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="2" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="products.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/fixtures/products.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/fixtures/users.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -96,12 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/products_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/categories_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/category.rb" />
-        <option value="$PROJECT_DIR$/test/fixtures/categories.yml" />
-        <option value="$PROJECT_DIR$/app/helpers/categories_helper.rb" />
-        <option value="$PROJECT_DIR$/app/views/products/_client_view_index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/categories/show.html.erb" />
         <option value="$PROJECT_DIR$/rest/oukwi" />
         <option value="$PROJECT_DIR$/app/views/baskets/_form.html.erb" />
@@ -112,6 +193,12 @@
         <option value="$PROJECT_DIR$/app/controllers/registrations_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/test/fixtures/categories.yml" />
+        <option value="$PROJECT_DIR$/test/fixtures/countries.yml" />
+        <option value="$PROJECT_DIR$/test/fixtures/deliveries.yml" />
+        <option value="$PROJECT_DIR$/test/fixtures/payment_methods.yml" />
+        <option value="$PROJECT_DIR$/test/fixtures/producers.yml" />
       </list>
     </option>
   </component>
@@ -214,6 +301,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fixtures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="rest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -245,6 +364,10 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -260,7 +383,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -280,6 +421,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/fixtures" />
       <recent name="$PROJECT_DIR$/app/views/devise/registrations" />
     </key>
   </component>
@@ -584,11 +726,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-10" y="19" width="1300" height="1015" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32678983" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290993" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290993" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27317074" sideWeight="0.6709007" order="0" side_tool="false" content_ui="combo" />
@@ -667,102 +809,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.81595093">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/products/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/products/_client_view_index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="33" selection-start="147" selection-end="147" vertical-scroll-proportion="0.12096774">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest/oukwi">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="36" selection-start="828" selection-end="828" vertical-scroll-proportion="0.92957747">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/baskets/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="268" selection-end="268" vertical-scroll-proportion="0.20916335">
-          <folding>
-            <marker date="1370980591751" expanded="true" signature="-1:-1" placeholder="do ... end" />
-            <marker date="1370980591751" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1370980591751" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1370980591751" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/baskets/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1370703982380" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/baskets/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="61" selection-start="266" selection-end="331" vertical-scroll-proportion="0.23346303">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/baskets/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1370703981960" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/baskets/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="33" selection-start="281" selection-end="281" vertical-scroll-proportion="0.20428015">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/about_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130607122716_create_baskets.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.11406844">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/basket.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="0" selection-start="100" selection-end="100" vertical-scroll-proportion="0.08555133">
@@ -787,6 +833,90 @@
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="61" selection-start="444" selection-end="444" vertical-scroll-proportion="0.6533575">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="82" selection-start="2795" selection-end="2795" vertical-scroll-proportion="-11.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/addresses.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/countries_pl.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/countries.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="15" selection-start="218" selection-end="218" vertical-scroll-proportion="0.49001816">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/categories.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="14" selection-start="330" selection-end="330" vertical-scroll-proportion="0.7622505">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/baskets.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/deliveries.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="9" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/order_positions.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/payment_methods.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="27" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/producers.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="2" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/products.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/users.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

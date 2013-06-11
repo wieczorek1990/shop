@@ -7,4 +7,4 @@ pm2:
   name: Przelewy24
 
 pm3:
-  name: Płatność za pobraniem
+  name: Payment on delivery

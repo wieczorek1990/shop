@@ -2,7 +2,7 @@
 
 c1:
   id: 1
-  name: Zioła
+  name: Herbs
   parent_id: 0
   lft: 1
   rgt: 16
@@ -10,7 +10,7 @@ c1:
 
 c2:
   id: 2
-  name: Herbaty
+  name: Tee
   parent_id: 1
   lft: 1
   rgt: 4
@@ -18,7 +18,7 @@ c2:
 
 c3:
   id: 3
-  name: Lecznicze
+  name: Medicinal
   parent_id: 2
   lft: 1
   rgt: 2
@@ -26,7 +26,7 @@ c3:
 
 c4:
   id: 4
-  name: Zwykłe
+  name: Common
   parent_id: 2
   lft: 3
   rgt: 4

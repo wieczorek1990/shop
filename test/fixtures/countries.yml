@@ -1,139 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 c1:
-  name: Albania
+  name: Poland
 
 c2:
-  name: Andora
+  name: Germany
 
-c3:
-  name: Austria
+ c3:
+  name: France
 
 c4:
-  name: Belgia
+  name: Italy
 
 c5:
-  name: Białoruś
+  name: England
 
 c6:
-  name: Bośnia i Hercegowina
-
-c7:
-  name: Bułgaria
-
-c8:
-  name: Chorwacja
-
-c9:
-  name: Czarnogóra
-
-c10:
-  name: Czechy
-
-c11:
-  name: Dania
-
-c12:
-  name: Estonia
-
-c13:
-  name: Finlandia
-
-c14:
-  name: Francja
-
-c15:
-  name: Grecja
-
-c16:
-  name: Hiszpania
-
-c17:
-  name: Holandia
-
-c18:
-  name: Irlandia
-
-c19:
-  name: Islandia
-
-c20:
-  name: Kazachstan
-
-c21:
-  name: Liechtenstein
-
-c22:
-  name: Litwa
-
-c23:
-  name: Luksemburg
-
-c24:
-  name: Łotwa
-
-c25:
-  name: Macedonia
-
-c26:
-  name: Malta
-
-c27:
-  name: Mołdawia
-
-c28:
-  name: Monako
-
-c29:
-  name: Niemcy
-
-c30:
-  name: Norwegia
-
-c31:
-  name: Polska
-
-c32:
-  name: Portugalia
-
-c33:
-  name: Rosja
-
-c34:
-  name: Rumunia
-
-c35:
-  name: San Marino
-
-c36:
-  name: Serbia
-
-c37:
-  name: Słowacja
-
-c38:
-  name: Słowenia
-
-c39:
-  name: Szwajcaria
-
-c40:
-  name: Szwecja
-
-c41:
-  name: Turcja
-
-c42:
-  name: Ukraina
-
-c43:
-  name: Watykan
-
-c44:
-  name: Węgry
-
-c45:
-  name: Wielka Brytania
-
-c46:
-  name: Włochy
+  name: Irleand

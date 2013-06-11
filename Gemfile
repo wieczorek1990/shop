@@ -44,5 +44,6 @@ gem 'cancan'
 gem 'rolify'
 
 gem 'awesome_nested_set'
-gem "paperclip", "~> 3.0"
-gem "rails_config"
+gem 'paperclip', '~> 3.0'
+gem 'rails-settings-cached', '0.2.4'
+gem 'mailcatcher'

@@ -39,4 +39,8 @@ Shop::Application.configure do
 
   # Paperclip
   Paperclip.options[:command_path] = "/usr/bin/"
+
+  # Mailcatcher
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
 end

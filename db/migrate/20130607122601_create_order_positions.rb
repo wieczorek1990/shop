@@ -5,7 +5,6 @@ class CreateOrderPositions < ActiveRecord::Migration
       t.references :container
       t.integer :price
       t.integer :amount
-      t.integer :weight
 
       t.timestamps
     end

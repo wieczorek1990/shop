@@ -59,7 +59,6 @@ OrderPosition:
 	product : Product
 	price
 	amount
-	weight
 
 Basket:
 	user : User

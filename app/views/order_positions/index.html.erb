@@ -9,7 +9,6 @@
       <th><%= model_class.human_attribute_name(:product_id) %></th>
       <th><%= model_class.human_attribute_name(:price) %></th>
       <th><%= model_class.human_attribute_name(:amount) %></th>
-      <th><%= model_class.human_attribute_name(:weight) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
@@ -21,7 +20,6 @@
         <td><%= order_position.product_id %></td>
         <td><%= order_position.price %></td>
         <td><%= order_position.amount %></td>
-        <td><%= order_position.weight %></td>
         <td><%=l order_position.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),

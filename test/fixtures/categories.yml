@@ -3,16 +3,16 @@
 c1:
   id: 1
   name: Zioła
-  parent_id: nil
-  lft: nil
-  rgt: nil
+  parent_id: 0
+  lft: 1
+  rgt: 16
   depth: 1
 
 c2:
   id: 2
   name: Herbaty
   parent_id: 1
-  lft: 3
+  lft: 1
   rgt: 4
   depth: 2
 
@@ -20,14 +20,14 @@ c3:
   id: 3
   name: Lecznicze
   parent_id: 2
-  lft: nil
-  rgt: nil
+  lft: 1
+  rgt: 2
   depth: 3
 
 c4:
   id: 4
   name: Zwykłe
   parent_id: 2
-  lft: nil
-  rgt: nil
+  lft: 3
+  rgt: 4
   depth: 3

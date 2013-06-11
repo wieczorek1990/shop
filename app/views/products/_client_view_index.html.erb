@@ -1,0 +1,36 @@
+<%- model_class = Product -%>
+<div class="row-fluid">
+  <% products.each do |product| %>
+    <div class="span12">
+      <h2><%= product.name %></h2><br>
+      <div class="row-fluid">
+        <div class="span6">
+          <%= image_tag product.image.url(:medium) %>
+        </div>
+        <div class="span6">
+          <b><%= model_class.human_attribute_name(:category_id) + ':' %></b>
+          <%= link_to Category.find(product.category_id).name, category_path(product.category_id) %><br>
+          <b><%= model_class.human_attribute_name(:producer_id) + ':' %></b>
+          <%= link_to Producer.find(product.producer_id).name, producer_path(product.producer_id) %><br>
+          <b><%= model_class.human_attribute_name(:availability) + ':' %></b>
+          <%= product.availability %><br>
+          <b><%= model_class.human_attribute_name(:net_price) + ':' %></b>
+          <%= number_to_currency2(product.net_price) %><br>
+          <b><%= model_class.human_attribute_name(:gross_price) + ':' %></b>
+          <%= number_to_currency2(product.gross_price) %><br>
+          <br>
+          <%# TODO %>
+          <%= link_to 'Add to basket', 'home/index', :class => 'btn btn-primary' %>
+        </div>
+      </div>
+      <b><%= model_class.human_attribute_name(:description) + ':' %></b><br>
+      <%= product.description %>
+      <hr>
+    </div>
+  <% end %>
+  <div class="row-fluid">
+    <div class="span6 offset3">
+      <%= will_paginate products %>
+    </div>
+  </div>
+</div>

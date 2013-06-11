@@ -14,7 +14,7 @@ class User < ActiveRecord::Base
   has_many :addresses
   has_one :basket
   validate :user_must_be_adult
-  validates :telephone_number, :format => { :with => /(\d{9})|(\+\d{11})/ }
+  validates_format_of :telephone_number, :with => /(\d{9})|(\+\d{11})/
 
   def user_must_be_adult
     if self.date_of_birth > Date.today - 18.years

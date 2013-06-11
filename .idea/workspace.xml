@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44c576ee-e7d8-47fe-a97a-0a6da606261d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/address.rb" afterPath="$PROJECT_DIR$/app/models/address.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/addresses_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/addresses_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shop.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -11,13 +13,13 @@
     <file path="/ability.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370551018184" ignored="false" />
     <file path="/users.yml" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370550788158" ignored="false" />
     <file path="/seeds.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370898748862" ignored="false" />
-    <file path="/user.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370962166517" ignored="false" />
+    <file path="/user.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370962745611" ignored="false" />
     <file path="/20130606182556_devise_create_users.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370728499017" ignored="false" />
     <file path="/countries.yml" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370604713504" ignored="false" />
     <file path="/development.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370960337935" ignored="false" />
     <file path="/product.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370959397246" ignored="false" />
     <file path="/producers.yml" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370607554662" ignored="false" />
-    <file path="/address.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370895588186" ignored="false" />
+    <file path="/address.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370963370679" ignored="false" />
     <file path="/profile.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370611111669" ignored="false" />
     <file path="/category.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370611408688" ignored="false" />
     <file path="/country.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370611327323" ignored="false" />
@@ -49,6 +51,7 @@
     <file path="/devise.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370960148363" ignored="false" />
     <file path="/Gemfile" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370960158811" ignored="false" />
     <file path="/production.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370960992581" ignored="false" />
+    <file path="/addresses_controller.rb" changelist="44c576ee-e7d8-47fe-a97a-0a6da606261d" time="1370963065951" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,19 +71,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <file leaf-file-name="address.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/address.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="75" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="106" selection-start="586" selection-end="586" vertical-scroll-proportion="0.4360465">
+            <state line="6" column="60" selection-start="388" selection-end="388" vertical-scroll-proportion="0.16666667">
               <folding />
             </state>
           </provider>
@@ -104,8 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/seeds.rb" />
-        <option value="$PROJECT_DIR$/test/fixtures/payment_methods.yml" />
         <option value="$PROJECT_DIR$/app/views/about/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
@@ -118,8 +110,10 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/models/address.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/addresses_controller.rb" />
       </list>
     </option>
   </component>
@@ -339,6 +333,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -689,20 +701,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/products/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="46" selection-start="1171" selection-end="1171" vertical-scroll-proportion="-13.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/products/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/products/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="8" selection-start="1308" selection-end="1308" vertical-scroll-proportion="0.6031746">
@@ -787,16 +785,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="75" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
+        <state line="15" column="72" selection-start="552" selection-end="552" vertical-scroll-proportion="0.4360465">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="106" selection-start="586" selection-end="586" vertical-scroll-proportion="0.4360465">
+        <state line="16" column="70" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/addresses_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="0" selection-start="1398" selection-end="1398" vertical-scroll-proportion="1.6274865">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/address.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="60" selection-start="388" selection-end="388" vertical-scroll-proportion="0.16666667">
           <folding />
         </state>
       </provider>

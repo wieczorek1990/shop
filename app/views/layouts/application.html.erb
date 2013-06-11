@@ -47,9 +47,10 @@
           <a class="brand" href="#">Shop</a>
           <div class="container-fluid nav-collapse">
             <ul class="nav">
-              <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
-              <li><%= link_to "Link3", "/path3"  %></li>
+              <li><%= link_to "Home", "/home/index"  %></li>
+              <li><%= link_to "Products", "/products"  %></li>
+              <li><%= link_to "About", "/about/index"  %></li>
+              <li><%= link_to "Contact", "/contact/index"  %></li>
               <% unless user_signed_in? %>
                 <li><%= link_to "Login", "/users/sign_in"  %></li>
                 <li><%= link_to "Register", "/users/sign_up"  %></li>
@@ -68,9 +69,9 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header">Sidebar</li>
-              <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
-              <li><%= link_to "Link3", "/path3"  %></li>
+              <% Category.all.each do |c| %>
+                <li><%= link_to ("&nbsp;"*2*c.depth + "#{c.name}").html_safe, "/categories/#{c.id}"  %></li>
+              <% end %>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->

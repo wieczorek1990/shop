@@ -1,4 +1,8 @@
 Shop::Application.routes.draw do
+  get "about/index"
+
+  get "contact/index"
+
   resources :orders
 
 

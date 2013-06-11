@@ -30,7 +30,6 @@ ActiveRecord::Schema.define(:version => 20130611140037) do
 
   create_table "baskets", :force => true do |t|
     t.integer  "user_id"
-    t.integer  "status"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

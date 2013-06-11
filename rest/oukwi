@@ -64,4 +64,3 @@ OrderPosition:
 Basket:
 	user : User
 	order_positions [] : OrderPosition
-	status

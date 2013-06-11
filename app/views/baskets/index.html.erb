@@ -7,8 +7,6 @@
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:user_id) %></th>
-      <th><%= model_class.human_attribute_name(:status) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
@@ -17,8 +15,6 @@
       <tr>
         <td><%= link_to basket.id, basket_path(basket) %></td>
         <td><%= basket.user_id %></td>
-        <td><%= basket.status %></td>
-        <td><%=l basket.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_basket_path(basket), :class => 'btn btn-mini' %>

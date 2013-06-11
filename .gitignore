@@ -14,5 +14,5 @@
 /log/*.log
 /tmp
 
-# Ignore public
-/public
+# Ignore images added
+/public/system

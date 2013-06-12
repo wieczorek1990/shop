@@ -7,6 +7,7 @@ class CreateOrders < ActiveRecord::Migration
       t.integer :delivery_cost
       t.references :delivery
       t.references :payment_method
+      t.references :user
 
       t.timestamps
     end

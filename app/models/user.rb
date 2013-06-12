@@ -13,6 +13,7 @@ class User < ActiveRecord::Base
   has_one :profile
   has_many :addresses
   has_one :basket
+  has_many :orders
   validate :user_must_be_adult
   validates_format_of :telephone_number, :with => /(\d{9})|(\+\d{11})/
 

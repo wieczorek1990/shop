@@ -1,4 +1,7 @@
 class BasketsController < ApplicationController
+  before_filter :authenticate_user!
+  load_and_authorize_resource
+
   # GET /baskets
   # GET /baskets.json
   def index

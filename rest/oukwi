@@ -54,6 +54,7 @@ Order:
 	delivery_cost
 	delivery : Delivery
 	payment_method : PaymentMethod
+	user : User
 
 OrderPosition:
 	product : Product

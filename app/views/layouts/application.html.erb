@@ -56,7 +56,8 @@
                 <li><%= link_to "Register", "/users/sign_up"  %></li>
               <% else %>
                 <li><%= link_to "Basket", basket_path(current_user.basket) %></li>
-                <li><%= link_to "Logout", "/users/sign_out", :method => :delete  %></li>
+                <li><%= link_to "Profile", edit_user_registration_path %></li>
+                <li><%= link_to "Logout", "/users/sign_out", :method => :delete %></li>
               <%end %>
             </ul>
           </div><!--/.nav-collapse -->

@@ -1,7 +1,14 @@
 Shop::Application.routes.draw do
-  get "about/index"
 
-  get "contact/index"
+  root :to => 'home#index'
+
+  get 'home/index'
+
+  get 'about/index'
+
+  get 'contact/index'
+
+  post 'add_to_basket/:product_id' => 'baskets#add_to_basket', :as => 'add_to_basket'
 
   resources :orders
 
@@ -32,10 +39,6 @@ Shop::Application.routes.draw do
 
   resources :countries
 
-
-  root :to => "home#index"
-
-  get "home/index"
 
   devise_for :users, :controllers => { :sessions => 'sessions' }
 

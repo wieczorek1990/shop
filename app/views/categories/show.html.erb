@@ -6,7 +6,7 @@
   </h1>
 </div>
 
-<% if user_signed_in? and current_user.has_role? :admin %>
+<% if admin? %>
   <dl class="dl-horizontal">
     <dt><strong>Path: </strong></dt>
     <dd><%= breadcrumbs(@category) %></dd>

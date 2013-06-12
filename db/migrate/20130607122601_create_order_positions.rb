@@ -5,6 +5,8 @@ class CreateOrderPositions < ActiveRecord::Migration
       t.references :container
       t.integer :price
       t.integer :amount
+      t.integer :container_id
+      t.string :container_type
 
       t.timestamps
     end

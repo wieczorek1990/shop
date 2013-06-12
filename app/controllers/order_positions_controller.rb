@@ -3,6 +3,7 @@ class OrderPositionsController < ApplicationController
   # GET /order_positions.json
   def index
     @order_positions = OrderPosition.all
+    session[:return_to] ||= order_positions_url
 
     respond_to do |format|
       format.html # index.html.erb
@@ -60,7 +61,7 @@ class OrderPositionsController < ApplicationController
 
     respond_to do |format|
       if @order_position.update_attributes(params[:order_position])
-        format.html { redirect_to @order_position, notice: 'Order position was successfully updated.' }
+        format.html { redirect_to session[:return_to], notice: 'Order position was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

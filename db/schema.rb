@@ -64,9 +64,9 @@ ActiveRecord::Schema.define(:version => 20130611140037) do
     t.integer  "container_id"
     t.integer  "price"
     t.integer  "amount"
-    t.integer  "weight"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.string   "container_type"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   add_index "order_positions", ["product_id"], :name => "index_order_positions_on_product_id"

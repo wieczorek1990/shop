@@ -14,6 +14,8 @@ class BasketsController < ApplicationController
   # GET /baskets/1.json
   def show
     @basket = Basket.find(params[:id])
+    @order_positions = @basket.order_positions.paginate(:page => params[:page])
+    session[:return_to] ||= basket_path(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -79,5 +81,10 @@ class BasketsController < ApplicationController
       format.html { redirect_to baskets_url }
       format.json { head :no_content }
     end
+  end
+
+  def add_to_basket
+    current_user.basket.add_to_basket(params[:product_id])
+    redirect_to :back
   end
 end

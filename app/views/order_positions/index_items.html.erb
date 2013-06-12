@@ -1,0 +1,35 @@
+<%- model_class = OrderPosition -%>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th><%= Product.human_attribute_name(:image) %></th>
+    <th><%= Product.human_attribute_name(:name) %></th>
+    <th><%= Product.human_attribute_name(:net_price) %></th>
+    <th><%= Product.human_attribute_name(:gross_price) %></th>
+    <th><%= model_class.human_attribute_name(:amount) %></th>
+    <th><%= model_class.human_attribute_name(:price) %></th>
+    <th><%=t '.actions', :default => t("helpers.actions") %></th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @order_positions.each do |order_position| %>
+    <tr>
+      <td><%= image_tag order_position.product.image.url(:thumb) %></td>
+      <td><%= order_position.product.name %></td>
+      <td><%= order_position.product.net_price %></td>
+      <td><%= order_position.product.gross_price %></td>
+      <td><%= order_position.amount %></td>
+      <td><%= order_position.price %></td>
+      <td>
+        <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                    edit_order_position_path(order_position), :class => 'btn btn-mini' %>
+        <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                    order_position_path(order_position),
+                    :method => :delete,
+                    :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                    :class => 'btn btn-mini btn-danger' %>
+      </td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

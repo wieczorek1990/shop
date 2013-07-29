@@ -17,6 +17,7 @@ class OrdersController < ApplicationController
   # GET /orders/1.json
   def show
     @order = Order.find(params[:id])
+    @order_positions = @order.order_positions
 
     respond_to do |format|
       format.html # show.html.erb
@@ -29,9 +30,8 @@ class OrdersController < ApplicationController
   def new
     @order = Order.new
     @order_positions = current_user.basket.order_positions
-    @order.order_positions = @order_positions
     @addresses = Address.where(:user_id => current_user.id)
-    @order.value = sum_price(@order.order_positions)
+    @order.value = sum_price(@order_positions)
 
     respond_to do |format|
       format.html # new.html.erb
@@ -48,14 +48,23 @@ class OrdersController < ApplicationController
   # POST /orders.json
   def create
     @order = Order.new(params[:order])
+    @addresses = Address.where(:user_id => current_user.id)
     @order.status = 0;
     @order.delivery_cost = @order.delivery.cost
     @order.user = current_user
-    @order.value = sum_price(current_user.basket.order_positions)
-    current_user.basket.order_positions.each { |op| op.destroy }
+    @order_positions = current_user.basket.order_positions
+    @order.order_positions = @order_positions
+    @order.value = sum_price(@order_positions)
 
     respond_to do |format|
       if @order.save
+        @order_positions.each do |op|
+          op.container = @order
+          op.save
+          p = op.product
+          p.availability -= op.amount
+          p.save
+        end
         format.html { redirect_to @order, notice: 'Order was successfully created.' }
         format.json { render json: @order, status: :created, location: @order }
       else

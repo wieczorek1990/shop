@@ -19,7 +19,11 @@
           <b><%= model_class.human_attribute_name(:gross_price) + ':' %></b>
           <%= number_to_currency2(product.gross_price) %><br>
           <br>
-          <%= link_to 'Add to basket', add_to_basket_path(:product_id => product.id), :method => :post, :class => 'btn btn-primary' %>
+          <% if product.availability > 0 %>
+            <%= link_to 'Add to basket', add_to_basket_path(:product_id => product.id), :method => :post, :class => 'btn btn-primary' %>
+          <% else %>
+            Product unavailable
+          <% end %>
         </div>
       </div>
       <b><%= model_class.human_attribute_name(:description) + ':' %></b><br>

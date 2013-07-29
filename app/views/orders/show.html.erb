@@ -4,6 +4,7 @@
 </div>
 
 <dl class="dl-horizontal">
+  <%= render :template => 'order_positions/index_items', :locals => { :show => true } %>
   <dt><strong><%= model_class.human_attribute_name(:value) %>:</strong></dt>
   <dd><%= number_to_currency2(@order.value) %></dd>
   <% if admin? %>

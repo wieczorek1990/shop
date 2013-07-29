@@ -5,7 +5,11 @@ class AddressesController < ApplicationController
   # GET /addresses
   # GET /addresses.json
   def index
-    @addresses = Address.all
+    if admin?
+      @addresses = Address.all
+    else
+      @addresses = Address.where(:user_id => current_user.id)
+    end
 
     respond_to do |format|
       format.html # index.html.erb

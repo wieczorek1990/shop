@@ -57,6 +57,7 @@
               <% else %>
                 <li><%= link_to "Basket", basket_path(current_user.basket) %></li>
                 <li><%= link_to "Profile", edit_user_registration_path %></li>
+                <li><%= link_to "Adresses", addresses_path %></li>
                 <li><%= link_to "Logout", "/users/sign_out", :method => :delete %></li>
               <%end %>
             </ul>

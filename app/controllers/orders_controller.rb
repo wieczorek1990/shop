@@ -28,6 +28,10 @@ class OrdersController < ApplicationController
   # GET /orders/new.json
   def new
     @order = Order.new
+    @order_positions = current_user.basket.order_positions
+    @order.order_positions = @order_positions
+    @addresses = Address.where(:user_id => current_user.id)
+    @order.value = sum_price(@order.order_positions)
 
     respond_to do |format|
       format.html # new.html.erb
@@ -45,6 +49,10 @@ class OrdersController < ApplicationController
   def create
     @order = Order.new(params[:order])
     @order.status = 0;
+    @order.delivery_cost = @order.delivery.cost
+    @order.user = current_user
+    @order.value = sum_price(current_user.basket.order_positions)
+    current_user.basket.order_positions.each { |op| op.destroy }
 
     respond_to do |format|
       if @order.save
@@ -83,5 +91,11 @@ class OrdersController < ApplicationController
       format.html { redirect_to orders_url }
       format.json { head :no_content }
     end
+  end
+
+  def sum_price(order_positions)
+    value = 0
+    order_positions.each { |op| value += op.price }
+    return value
   end
 end

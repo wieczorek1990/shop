@@ -14,6 +14,7 @@
 ActiveRecord::Schema.define(:version => 20130611140037) do
 
   create_table "addresses", :force => true do |t|
+    t.string   "name"
     t.string   "first_name"
     t.string   "last_name"
     t.string   "address_line_1"
@@ -78,6 +79,7 @@ ActiveRecord::Schema.define(:version => 20130611140037) do
     t.integer  "delivery_cost"
     t.integer  "delivery_id"
     t.integer  "payment_method_id"
+    t.integer  "user_id"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
   end

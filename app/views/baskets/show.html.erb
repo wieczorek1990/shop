@@ -16,5 +16,10 @@
                 :class => 'btn btn-danger' %>
   </div>
 <% else %>
-  <%= render :template => 'order_positions/index_items' %>
+    <% unless @basket.order_positions.empty? %>
+      <%= render :template => 'order_positions/index_items' %>
+      <%= link_to 'Checkout', new_order_path, :class => 'btn btn-primary' %>
+    <% else %>
+      Your basket is empty.
+    <% end %>
 <% end %>

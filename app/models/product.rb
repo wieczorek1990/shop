@@ -11,5 +11,5 @@ class Product < ActiveRecord::Base
       self.gross_price = self.net_price * (1.0 + Settings.vat_percent)
     end
 
-  self.per_page = 1
+  self.per_page = 2
 end

@@ -1,2 +1,13 @@
 <h1>Home</h1>
-<p>Welcome!</p>
+<% unless admin? %>
+    <p>Welcome!</p>
+<% else %>
+    <p>Hello admin!</p>
+    <%= link_to 'New orders', orders_path(:new => true) %><br>
+    <%= link_to 'Orders', orders_path %><br>
+    <%= link_to 'Categories', categories_path %><br>
+    <%= link_to 'Countries', countries_path %><br>
+    <%= link_to 'Deliveries', deliveries_path %><br>
+    <%= link_to 'Payment methods', payment_methods_path %><br>
+    <%= link_to 'Producers', producers_path %><br>
+<% end %>

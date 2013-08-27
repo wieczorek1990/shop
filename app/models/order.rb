@@ -6,6 +6,7 @@ class Order < ActiveRecord::Base
   has_many :order_positions, :as => :container
   attr_accessible :delivery_cost, :status, :value, :address_id, :delivery_id, :payment_method_id
   validate :available
+  validates :address_id, :presence => true
 
   private
     def available

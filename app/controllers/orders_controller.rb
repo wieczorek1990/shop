@@ -5,7 +5,11 @@ class OrdersController < ApplicationController
   # GET /orders
   # GET /orders.json
   def index
-    @orders = Order.all
+    unless params[:new] == 'true'
+      @orders = Order.all
+    else
+      @orders = Order.where(:status => 0)
+    end
 
     respond_to do |format|
       format.html # index.html.erb

@@ -23,6 +23,7 @@
 
 <% if admin? %>
 <div class="form-actions">
+  <%= link_to 'Processed', order_path(@order, :order => { :status => 1 }), :method => :put, :class => 'btn' %>
   <%= link_to t('.back', :default => t("helpers.links.back")),
               orders_path, :class => 'btn'  %>
   <%= link_to t('.edit', :default => t("helpers.links.edit")),

@@ -4,8 +4,11 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    #@products = Product.all
-    @products = Product.paginate(:page => params[:page])
+    if admin?
+      @products = Product.all
+    else
+      @products = Product.paginate(:page => params[:page])
+    end
 
     respond_to do |format|
       format.html # index.html.erb

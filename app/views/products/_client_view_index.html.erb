@@ -1,7 +1,7 @@
 <%- model_class = Product -%>
 <div class="row-fluid">
+  <div class="span12">
   <% products.each do |product| %>
-    <div class="span12">
       <h2><%= product.name %></h2><br>
       <div class="row-fluid">
         <div class="span6">
@@ -29,8 +29,8 @@
       <b><%= model_class.human_attribute_name(:description) + ':' %></b><br>
       <%= product.description %>
       <hr>
-    </div>
   <% end %>
+  </div>
   <div class="row-fluid">
     <div class="span6 offset3">
       <%= will_paginate products %>

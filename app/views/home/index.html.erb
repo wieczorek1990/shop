@@ -1,6 +1,7 @@
 <h1>Home</h1>
 <% unless admin? %>
     <p>Welcome!</p>
+    <p>Take a look at our  <%= link_to 'products', products_path %></p>
 <% else %>
     <p>Hello admin!</p>
     <%= link_to 'New orders', orders_path(:new => true) %><br>

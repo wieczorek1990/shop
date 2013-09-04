@@ -1,10 +1,4 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 pm1:
-  name: PayPal
-
-pm2:
-  name: Przelewy24
-
-pm3:
   name: Payment on delivery

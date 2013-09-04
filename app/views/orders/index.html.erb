@@ -21,11 +21,11 @@
       <tr>
         <td><%= link_to order.id, order_path(order) %></td>
         <td><%= order.address_id %></td>
-        <td><%= order.value %></td>
+        <td><%= number_to_currency2(order.value) %></td>
         <td><%= order.status %></td>
-        <td><%= order.delivery_cost %></td>
-        <td><%= order.delivery_id %></td>
-        <td><%= order.payment_method_id %></td>
+        <td><%= number_to_currency2(order.delivery_cost) %></td>
+        <td><%= Delivery.find(order.delivery_id).name %></td>
+        <td><%= PaymentMethod.find(order.payment_method_id).name %></td>
         <td><%=l order.created_at %></td>
         <td>
           <%= link_to 'Processed', order_path(order, :order => { :status => 1 }), :method => :put, :class => 'btn btn-mini' %>

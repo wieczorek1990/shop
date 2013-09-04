@@ -22,6 +22,7 @@ class OrdersController < ApplicationController
   def show
     @order = Order.find(params[:id])
     @order_positions = @order.order_positions
+    @address = Address.find(@order.address_id)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -46,6 +47,8 @@ class OrdersController < ApplicationController
   # GET /orders/1/edit
   def edit
     @order = Order.find(params[:id])
+    @order_positions = @order.order_positions
+    @address = Address.find(@order.address_id)
   end
 
   # POST /orders

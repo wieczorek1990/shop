@@ -3,10 +3,14 @@
   <div class="control-group">
     <%= f.label :address_id, :class => 'control-label' %>
     <div class="controls">
-    <% unless @addresses.empty? %>
-      <%= f.collection_select :address_id, @addresses, :id, :name %>
+    <% unless @addresses.nil? %>
+        <% unless @addresses.empty? %>
+          <%= f.collection_select :address_id, @addresses, :id, :name %>
+        <% else %>
+          <%= link_to 'Provide address info', new_address_path, :class => 'btn' %>
+        <% end %>
     <% else %>
-      <%= link_to 'Provide address info', new_address_path, :class => 'btn' %>
+      <%= link_to @address.name, address_path(@address.id) %>
     <% end %>
     </div>
   </div>

@@ -19,6 +19,7 @@
   <dd><%= Delivery.find(@order.delivery_id).name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:payment_method_id) %>:</strong></dt>
   <dd><%= PaymentMethod.find(@order.payment_method_id).name %></dd>
+  <%= render :template => 'addresses/show', :locals => { :show => true } %>
 </dl>
 
 <% if admin? %>

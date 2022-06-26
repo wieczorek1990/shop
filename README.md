@@ -1,14 +1,21 @@
+shop
+====
+
+Sample basic shop implementation.
+
+# Database schema
+
 User:
-	email
-	encrypted_password
-  first_name
-  last_name
-  date_of_birth
-  telephone_number
-  newsletter
-	addresses [] : Address
-	additional_info : Profile
-	basket : Basket
+    email
+    encrypted_password
+    first_name
+    last_name
+    date_of_birth
+    telephone_number
+    newsletter
+    addresses [] : Address
+    additional_info : Profile
+    basket : Basket
 
 Address:
 	first_name

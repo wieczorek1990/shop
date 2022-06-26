@@ -2,6 +2,7 @@ module ApplicationHelper
   def admin?
     user_signed_in? and current_user.has_role? :admin
   end
+
   def number_to_currency2(price)
     if price.nil?
       price = 0

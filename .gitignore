@@ -16,3 +16,7 @@
 
 # Ignore images added
 /public/system
+
+# Custom ignores
+/.idea/
+
